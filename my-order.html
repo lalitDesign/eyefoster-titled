@@ -1,0 +1,1088 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My -Orders</title>
+  <link rel="stylesheet" href="css/style.css">
+  <!--Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+  <!--Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <div class="desktop">
+    <!----------------- DESKTOP NAVBAR SECTION START -------------->
+    <div class="header_pro">
+      <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top nav_bar_main" style="z-index: 5000;">
+        <div class="container-fluid text-uppercase p-2">
+          <a class="navbar-brand font-weight-bold text-capitalize" href="index.html"><span
+              class="text-primary font-weight-bolder">C</span>ool <span
+              class="text-primary font-weight-bolder">W</span>inks</a>
+          <div>
+            <ul class="navbar-nav" style="margin-left: 2rem;">
+              <li class="nav-item px-2">
+                <a class="nav-link" aria-current="page" href="#" id="eyeglassId">EYEGLASSES</a>
+              </li>
+              <li class="nav-item px-2">
+                <a class="nav-link" href="#service_div" id="sunglassId">SUNGLASSES</a>
+              </li>
+              <li class="nav-item px-2">
+                <a class="nav-link" href="#pricing_div" id="lensId">CONTACT LENSES</a>
+              </li>
+              <li class="nav-item px-2">
+                <a class="nav-link" href="#projects_div" id="discoverId">DISCOVER</a>
+              </li>
+            </ul>
+          </div>
+
+          <form class="form-inline nav_form" action="/action_page.php" style="margin-right: 0.5rem;">
+            <div class="input-group search_main">
+              <i class="fa fa-search" aria-hidden="true"></i>
+              <input type="text" class="form-control search_input" placeholder="What are you looking for?"
+                class="bg-dark">
+            </div>
+          </form>
+
+          <ul class="ml-auto navbar-nav third_icon" style="margin-top: -0.5rem;">
+            <li class="nav-item px-4 text-center">
+              <span id="click_reg" class="nav-link text-dark" href=""><i class="fa fa-user-o" aria-hidden="true"></i>
+                <p class="font-weight-bolder" style="cursor: pointer;">Admin</p>
+              </span>
+            </li>
+
+            <li class="nav-item px-4 text-center">
+              <a class="nav-link text-dark" href=""><i class="fa fa-suitcase" aria-hidden="true"></i>
+                <p class="font-weight-bolder">Cart</p>
+              </a>
+            </li>
+          </ul>
+
+        </div>
+      </nav>
+
+      <!----------------- DESKTOP NAVBAR SECTION END -------------->
+
+      <!-------------- DROP DOWN MENU CODE STARTS ---------------->
+      <div style="position: relative; height: 100%" id="par_drop">
+        <div class="fir_nav_drop" style="visibility: hidden;" id="showOne">
+          <div class="row per_one_drop">
+            <div class="col-xl-3 col-md-3 col-3">
+              <div class="drop_con">
+                <h6 class="text-left pt-3 pl-1 font-weight-bolder">Select Gender</h6>
+                <ul class="pt-4" style="margin-left: -2rem;">
+                  <li>
+                    <a href=""><img src="images/men_cat.png" alt="" style="height: 35px;"><span
+                        style="padding-left: 3rem; font-size: 0.8rem;">MEN</a></span>
+                  </li>
+                  <li class="py-4">
+                    <a href=""><img src="images/women_cat.jpg" alt="" style="height: 35px;"><span
+                        style="padding-left: 2.8rem; font-size: 0.8rem;">WOMEN</a></span>
+                  </li>
+                  <li>
+                    <a href=""><img src="images/kids_cat.jpg" alt="" style="height: 35px;"><span
+                        style="padding-left: 1.6rem; font-size: 0.8rem;">KIDS</a></span>
+                  </li>
+
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-xl-3 col-md-3 col-3" style="background-color: #fafafa;">
+              <div class="drop_con">
+                <h6 class="text-left pt-3 pl-2 font-weight-bolder">Select Collection</h6>
+                <ul class="pt-4">
+                  <li class="" style="font-size: 0.8rem;">
+                    <a href="">XSTYL</a>
+                  </li>
+                  <li class="pt-3" style="font-size: 0.8rem;">
+                    <a href="">GRAVIATE</a>
+                  </li>
+                  <li class="pt-3" style="font-size: 0.8rem;">
+                    <a href="">GRAVIATE FIRST</a>
+                  </li>
+                  <li class="pt-3" style="font-size: 0.8rem;">
+                    <a href="">XSTYLE FIRST</a>
+                  </li>
+                  <li class="pt-3" style="font-size: 0.8rem;">
+                    <a href="">COMPUTER GLASSES</a>
+                  </li>
+                  <li class="pt-3" style="font-size: 0.8rem;">
+                    <a href="">READING GLASSES</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-xl-3 col-md-3 col-3">
+              <div class="drop_con">
+                <h6 class="text-left pt-3 pl-2 font-weight-bolder">Select Shape</h6>
+                <ul class="pt-4">
+                  <li style="font-size: 0.8rem;">
+                    <a href="">HEXAGON</a>
+                  </li>
+                  <li style="font-size: 0.8rem; padding-top: 0.6rem;">
+                    <a href="">RETEROSQUARE</a>
+                  </li>
+                  <li style="font-size: 0.8rem; padding-top: 0.6rem;">
+                    <a href="">ROUND</a>
+                  </li>
+                  <li style="font-size: 0.8rem; padding-top: 0.6rem;">
+                    <a href="">CLUBMASTER</a>
+                  </li>
+                  <li style="font-size: 0.8rem; padding-top: 0.6rem;">
+                    <a href="">OVAL</a>
+                  </li>
+                  <li style="font-size: 0.8rem; padding-top: 0.6rem;">
+                    <a href="">RECTANGLE</a>
+                  </li>
+                  <li style="font-size: 0.8rem; padding-top: 0.6rem;">
+                    <a href="">CATEYE</a>
+                  </li>
+                  <li style="font-size: 0.8rem; padding-top: 0.6rem;">
+                    <a href="">PILOT</a>
+                  </li>
+                </ul>
+              </div>
+
+            </div>
+            <div class="col-xl-3 col-md-3 col-3" style="background-color: #fafafa;">
+              <div class="drop_con">
+                <h6 class="text-left pt-3 pl-2 font-weight-bolder">Select Style</h6>
+                <ul class="pt-4">
+                  <li class="pt-3" style="font-size: 0.8rem;">
+                    <a href="">FULL FRAME</a>
+                  </li>
+                  <li class="pt-3" style="font-size: 0.8rem;">
+                    <a href="">HALF FRAME</a>
+                  </li>
+                  <li class="pt-3" style="font-size: 0.8rem;">
+                    <a href="">RIMLESS</a>
+                  </li>
+
+                </ul>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+
+        <div class="sec_nav_drop mx-auto" style="visibility: hidden;" id="showTwo">
+          <div class="row per_two_drop">
+            <div class="col-xl-3 col-md-3 col-3">
+              <div class="drop_con">
+                <h6 class="text-left pt-3 pl-2 font-weight-bolder">Select Gender</h6>
+                <ul class="pt-4" style="margin-left: -2rem;">
+                  <li>
+                    <a href=""><img src="images/men_cat.png" alt="" style="height: 35px;"><span
+                        style="padding-left: 3rem; font-size: 0.8rem;">MEN</a></span>
+                  </li>
+                  <li class="py-4">
+                    <a href=""><img src="images/women_cat.jpg" alt="" style="height: 35px;"><span
+                        style="padding-left: 2.8rem; font-size: 0.8rem;">WOMEN</a></span>
+                  </li>
+                  <li>
+                    <a href=""><img src="images/kids_cat.jpg" alt="" style="height: 35px;"><span
+                        style="padding-left: 1.6rem; font-size: 0.8rem;">KIDS</a></span>
+                  </li>
+
+                </ul>
+              </div>
+            </div>
+            <div class="col-xl-3 col-md-3 col-3" style="background-color: #fafafa;">
+              <div class="drop_con">
+                <h6 class="text-left pt-3 pl-2 font-weight-bolder">Select Collection</h6>
+                <ul class="pt-2 pl-2">
+                  <li class="pt-3" style="font-size: 0.8rem;">
+                    <a href="">FULL FRAME</a>
+                  </li>
+                  <li class="pt-3" style="font-size: 0.8rem;">
+                    <a href="">HALF FRAME</a>
+                  </li>
+                  <li class="pt-3" style="font-size: 0.8rem;">
+                    <a href="">RIMLESS</a>
+                  </li>
+
+                </ul>
+              </div>
+
+            </div>
+            <div class="col-xl-3 col-md-3 col-3">
+              <div class="drop_con">
+                <h6 class="text-left pt-3 pl-2 font-weight-bolder">Select Shape</h6>
+                <ul class="pt-4 pl-2">
+                  <li style="font-size: 0.8rem;">
+                    <a href="">PILOT</a>
+                  </li>
+                  <li style="font-size: 0.8rem; padding-top: 0.7rem;">
+                    <a href="">CATEYE</a>
+                  </li>
+                  <li style="font-size: 0.8rem; padding-top: 0.7rem;">
+                    <a href="">ROUND</a>
+                  </li>
+                  <li style="font-size: 0.8rem; padding-top: 0.7rem;">
+                    <a href="">BUTTERFLY</a>
+                  </li>
+                  <li style="font-size: 0.8rem; padding-top: 0.7rem;">
+                    <a href="">CLUBMASTER</a>
+                  </li>
+                  <li style="font-size: 0.8rem; padding-top: 0.7rem;">
+                    <a href="">WRAPAROUND</a>
+                  </li>
+                  <li style="font-size: 0.8rem; padding-top: 0.7rem;">
+                    <a href="">RETEROSQUARE</a>
+                  </li>
+
+                </ul>
+              </div>
+
+            </div>
+            <div class="col-xl-3 col-md-3 col-3" style="background-color: #fafafa;">
+              <div class="drop_con">
+                <h6 class="text-left pt-3 pl-2 font-weight-bolder">Select Style</h6>
+                <ul class="pt-2 pl-2">
+                  <li class="pt-3" style="font-size: 0.8rem;">
+                    <a href="">MIRROR</a>
+                  </li>
+                  <li class="pt-3" style="font-size: 0.8rem;">
+                    <a href="">GRADIENT</a>
+                  </li>
+                  <li class="pt-3" style="font-size: 0.8rem;">
+                    <a href="">TINTED</a>
+                  </li>
+                  <li class="pt-3" style="font-size: 0.8rem;">
+                    <a href="">FLASH</a>
+                  </li>
+                  <li class="pt-3" style="font-size: 0.8rem;">
+                    <a href="">POLARIZED</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="thr_nav_drop mx-auto" style="visibility: hidden;" id="showThree">
+          <div class="row per_thr_drop">
+            <div class="col-xl-4 col-md-4 col-4">
+              <div class="drop_con">
+                <h6 class="text-left pt-3 pl-2 font-weight-bolder">Select Usage</h6>
+                <ul class="pt-2 pl-2">
+                  <li class="pt-3" style="font-size: 0.8rem;">
+                    <a href="">DAILY</a>
+                  </li>
+                  <li class="pt-3" style="font-size: 0.8rem;">
+                    <a href="">MONTHLY</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-xl-4 col-md-4 col-4" style="background-color: #fafafa;">
+              <div class="drop_con">
+                <h6 class="text-left pt-3 pl-2 font-weight-bolder">Select Color</h6>
+                <ul class="pt-2 pl-2">
+                  <li class="pt-3" style="font-size: 0.8rem;">
+                    <a href="">TRANSAPARENT</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-xl-4 col-md-4 col-4">
+              <div class="drop_con">
+                <h6 class="text-left pt-3 pl-2 font-weight-bolder">Select Color</h6>
+                <ul class="pt-2 pl-2">
+                  <li class="pt-3" style="font-size: 0.8rem;"> <a href="">COOLWINKS COOL CONTACT</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="four_nav_drop mx-auto" style="visibility: hidden;" id="showFour">
+          <div class="row per_four_drop">
+            <div class="col-xl-4 col-md-4 col-4">
+              <div class="drop_con">
+                <h6 class="text-left pt-3 pl-2 font-weight-bolder">More Collections</h6>
+                <ul class="pt-4" style="margin-left: -2rem;">
+                  <li>
+                    <a href=""><img src="images/power-sunglasses.png" alt="" style="height: 25px;"><span
+                        style="padding-left: 3rem; font-size: 0.8rem;">MEN</a></span>
+                  </li>
+                  <li class="py-2">
+                    <a href=""><img src="images/reading-eyeglasses-hamburgericon.png" alt="" style="height: 65px;"><span
+                        style="padding-left: 2.8rem; font-size: 0.8rem;">WOMEN</a></span>
+                  </li>
+                  <li>
+                    <a href=""><img src="images/icon-wipes2.png" alt="" style="height: 25px;"><span
+                        style="padding-left: 2.5rem; font-size: 0.8rem;">KIDS</a></span>
+                  </li>
+
+                </ul>
+              </div>
+            </div>
+            <div class="col-xl-3 col-md-3 col-3" style="background-color: #fafafa;">
+              <div class="drop_con">
+                <h6 class="text-left pt-3 pl-2 font-weight-bolder">More Links</h6>
+                <ul class="pt-2 pl-2">
+                  <li class="pt-3" style="font-size: 0.8rem;">
+                    <a href="">OFFERS</a>
+                  </li>
+                  <li class="pt-3" style="font-size: 0.8rem;">
+                    <a href="">COOLCASH</a>
+                  </li>
+                  <li class="pt-3" style="font-size: 0.8rem;">
+                    <a href="">COLLECTIONS</a>
+                  </li>
+                  <li class="pt-3" style="font-size: 0.8rem;">
+                    <a href="">FREE EYE TEST CAMP</a>
+                  </li>
+                  <li class="pt-3" style="font-size: 0.8rem;">
+                    <a href="">KNOWLEDGE CENTER</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-xl-5 col-md-5 col-5">
+              <div class="drop_con">
+                <h6 class="text-left pt-3 pl-2 font-weight-bolder">Stay Connected On The Go</h6>
+                <ul class="pt-2 pl-2">
+                  <li class="pt-3" style="font-size: 0.8rem;">
+                    <a href=""><img src="images/download-app-menu2-8aug19.jpg" alt="" class="img-fluid"
+                        style="height: 200px;"></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <!--------------------------- RECENTLY VIEWED CONTENT SECTION STARTS ------------------------------>
+        <section class="myrecvw_hero"></section>
+        <div class="mypr_title_con">
+          <h4>MY ORDERS</h4>
+        </div>
+        <div class="order_pr_shape">
+
+        </div>
+        <div>
+          <div class="mypr_grand_con container">
+
+            <div class="row  no-gutters  pr_row_main">
+              <div class="col-xl-3 col-md-3 col-3">
+                <div class="row left_pr">
+                  <div class="col-xl-12 col-md-12 col-12 child_left_pr">
+                    <a href="my-profile.html"><i class="fa fa-user" aria-hidden="true"></i><span>PROFILE</span></a>
+                  </div>
+
+                  <div class="col-xl-12 col-md-12 col-12 child_left_pr">
+                    <a href="my-order.html">
+                      <i class="fa fa-bar-chart" aria-hidden="true" style="transform: rotate(90deg);"></i>
+                      <span> ORDERS</span></a>
+                  </div>
+
+                  <div class="col-xl-12 col-md-12 col-12 child_left_pr">
+                    <a href="my-favourite.html"><i class="fa fa-heart" aria-hidden="true"></i><span>MY
+                        FAVOURITES</span></a>
+                  </div>
+                  <div class="col-xl-12 col-md-12 col-12 child_left_pr">
+                    <a href="my-prescription.html"><i class="fa fa-hand-o-right" aria-hidden="true"></i><span>MY
+                        PRESCRIPRION</span></a>
+                  </div>
+                  <div class="col-xl-12 col-md-12 col-12 child_left_pr">
+                    <a href="recently-viewed.html"><i class="fa fa-eye" aria-hidden="true"></i><span>RECENTLY
+                        VIEWED</span></a>
+                  </div>
+                  <div class="col-xl-12 col-md-12 col-12 child_left_pr">
+                    <a href="offers.html"><i class="fa fa-percent" aria-hidden="true"></i><span>MY OFFERS</span></a>
+                  </div>
+                  <div class="col-xl-12 col-md-12 col-12 child_left_pr">
+                    <a href="cash-wallet.html"><i class="fa fa-money cash" aria-hidden="true"></i><span>COOLCASH
+                        WALLET</span></a>
+                  </div>
+                  <div class="col-xl-12 col-md-12 col-12 child_left_pr">
+                    <a href=""><i class="fa fa-lock" aria-hidden="true"></i> <span>LOGOUT</span></a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-xl-9 col-md-9 col-9  right_Pr" style="margin-left: -.7rem;">
+                <div class="row_tex">
+                  <p style="margin-left: 1.9rem;">Hello, lalit!</p>
+                </div>
+                <p style="margin-left: 1.9rem;">View a snapshot of your recent orders here. Click on View Details for
+                  detailed order information.</p>
+
+                <div class="col-xl-12 col-lg-12 col-md-12 col-12 mt-4 container ml-1"
+                  style="box-shadow: 0 0 0 #DADADA;">
+                  <div class="table table-bordered" style="height: auto; border-bottom: 1px solid #DADADA;">
+                    <div class="text-grey">
+                      <div style="display: flex; flex-direction: column; border: 1px solid #DADADA;">
+                        <span class="font-weight-bolder">CW2905217566732</span>
+                        <span class="order_date" style="margin-top: -1rem;">29-May-2021 01:34 PM</span>
+                      </div>
+                      <a href="#"
+                        style="cursor: pointer; float: right; margin-top: -2.8rem; margin-right: 1.8rem; font-size: .9rem; text-decoration: none;">View
+                        Details</a>
+                    </div>
+
+                    <table class="table table-bordered mt-3">
+                      <div class="row">
+                        <div class="col-xl-4 col-md-4 col-4">
+                          <img src="images/S21C6734-1.webp" alt="" class="img-fluid">
+                        </div>
+                        <div class="col-xl-5 col-md-5 col-5">
+                          <p class="mt-5 text-center font-weight-bolder" style="color: #5FC018; font-size: 1.1rem;">
+                            order confirmed</p>
+                        </div>
+                        <div class="col-xl-3 col-md-3 col-3 ml-auto" style="position: relative;">
+
+                          <pre><p style="position: absolute; left: 53%; top: 30%;" class="">  <span style="margin-left: 1.6rem; font-size: 1.1rem;">JRS</span> 
+<span style="font-size: 1.2rem; color: #0379BF; font-weight: bolder;">Rs. 990</span></p></pre>
+
+                        </div>
+                      </div>
+                      <div class="pt-2 pl-2" style=" border-top: 1px solid #DADADA;">
+                        <p style="position: absolute; left: 77%; font-weight: bolder;">Grand Total Rs: <span
+                            style="font-size:.9rem;">1217</span></p>
+                      </div>
+
+                    </table>
+
+                  </div>
+                </div>
+
+
+
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+
+        <!----------------- DESKTOP FOOTER SECTION START -------------->
+        <div class="desktop">
+          <section id="footer" style="margin-top: 4rem;">
+            <div class="container">
+              <div class="row" style="margin-top: -4rem">
+                <div class="col-md-3 font-weight-bolder">
+                  <p> <img src="images/footer1.svg" alt="" class="footer-logo"> 100% Genuine Product</p>
+                  <p> <img src="images/footer2.svg" alt="" class="footer-logo"> Easy Delivery & Returns</p>
+                  <p> <img src="images/footer3.svg" alt="" class="footer-logo"> Cash On Delivery</p>
+                  <p> <img src="images/footer4.svg" alt="" class="footer-logo"> 100% Secure Payments</p>
+
+                </div>
+                <div class="col-md-3 foot_two">
+                  <h1 class="font-weight-bolder">USEFUL LINKS</h1>
+                  <a href="">
+                    <p>About Us</p>
+                  </a>
+                  <a href="contact.html">
+                    <p>Contact Us</p>
+                  </a>
+                  <a href="">
+                    <p>Help</p>
+                  </a>
+                  <a href="">
+                    <p>Gift Of Vision</p>
+                  </a>
+                  <a href="">
+                    <p>Offers</p>
+                  </a>
+                  <a href="">
+                    <p>Blog</p>
+                  </a>
+                  <a href="">
+                    <p>CoolCash</p>
+                  </a>
+                  <a href="">
+                    <p>Knowledge Center</p>
+                  </a>
+                  <a href="">
+                    <p>Customer Reviews</p>
+                  </a>
+                  <a href="">
+                    <p>Sitemap</p>
+                  </a>
+                  <a href="">
+                    <p>Free Eye Test Camp</p>
+                  </a>
+                  <a href="">
+                    <p>Collections</p>
+                  </a>
+                </div>
+                <div class="col-md-3 foot_three">
+                  <h1 class="font-weight-bolder">POLICIES</h1>
+                  <a href="">
+                    <p> Cancellation & Refund Policy</p>
+                  </a>
+                  <a href="">
+                    <p> Terms Of Use</p>
+                  </a>
+                  <a href="">
+                    <p> Privacy Policy</p>
+                  </a>
+                  <a href="">
+                    <p> Delivery & Shipping Terms</p>
+                  </a>
+
+                </div>
+                <div class="col-md-3">
+                  <h1 class="font-weight-bolder" style="line-height: 1.3rem">EXPERIENCE COOLWINKS APP ON MOBILE</h1>
+                  <div class="">
+                    <a href=""><img src="images/google_play.png" class="img-fluid" width="100px"></a>
+                    <a href=""><img src="images/apple_store.png" class="img-fluid" width="100px"></a>
+                  </div>
+                  <p class="pt-3" style="font-size: 0.8rem;">KEEP IN TOUCH</p>
+                  <div class="d-flex foot_icon">
+                    <a href=""><i class="fa fa-youtube-play"></i></a>
+                    <a href=""><i class="fa fa-facebook-official"></i></a>
+                    <a href=""><i class="fa fa-google"></i></a>
+                    <a href=""><i class="fa fa-twitter"></i></a>
+                  </div>
+                </div>
+              </div>
+              <hr>
+              <p class="copyright">Copyright © 2021. All Rights Reserved</p>
+            </div>
+          </section>
+        </div>
+        <!----------------- DESKTOP FOOTER SECTION END -------------->
+
+
+        <!----------------- POPUP MY ACCOUNT PAGES STARTS -------------->
+        <div class="my_account" style="width: 15%; height: 58%; position: absolute; top: 7%; left: 79.4%;
+z-index: 2001; background-color: white; visibility: hidden;">
+          <div class="row main_myaccount mx-auto pt-4">
+            <div class="col-xl-12 col-md-12 col-12 child_myaccount">
+              <a href="my-profile.html"><i class="fa fa-user" aria-hidden="true"></i><span>PROFILE</span></a>
+            </div>
+
+            <div class="col-xl-12 col-md-12 col-12 child_myaccount">
+              <a href="my-order.html">
+                <i class="fa fa-bar-chart" aria-hidden="true" style="transform: rotate(90deg);"></i>
+                <span> ORDERS</span></a>
+            </div>
+
+            <div class="col-xl-12 col-md-12 col-12 child_myaccount">
+              <a href="my-favourite.html"><i class="fa fa-heart" aria-hidden="true"></i><span>MY FAVOURITES</span></a>
+            </div>
+            <div class="col-xl-12 col-md-12 col-12 child_myaccount">
+              <a href="my-prescription.html"><i class="fa fa-hand-o-right" aria-hidden="true"></i><span>MY
+                  PRESCRIPRION</span></a>
+            </div>
+            <div class="col-xl-12 col-md-12 col-12 child_myaccount">
+              <a href="recently-viewed.html"><i class="fa fa-eye" aria-hidden="true"></i><span>RECENTLY
+                  VIEWED</span></a>
+            </div>
+            <div class="col-xl-12 col-md-12 col-12 child_myaccount">
+              <a href="offers.html"><i class="fa fa-percent" aria-hidden="true"></i><span>MY OFFERS</span></a>
+            </div>
+            <div class="col-xl-12 col-md-12 col-12 child_myaccount">
+              <a href="cash-wallet.html"><i class="fa fa-money cash" aria-hidden="true"></i><span>COOLCASH
+                  WALLET</span></a>
+            </div>
+            <div class="col-xl-12 col-md-12 col-12 child_myaccount">
+              <a href=""><i class="fa fa-lock" aria-hidden="true"></i> <span>LOGOUT</span></a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+
+  <!----------------- POPUP MY ACCOUNT PAGES END -------------->
+
+  <!----------------- MOBILE NAVBAR SECTION START -------------->
+  <div class="mobile" style="display: none;">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top main-navigation">
+      <div class="container-fluid">
+
+        <a class="navbar-brand font-weight-bold order-2 mx-auto" href="#"><span class="text-primary"
+            style="font-size: 2rem;">C</span>ool <span class="text-primary" style="font-size: 2rem;">W</span>inks</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="icons order-3 pr-3">
+          <ul class="ml-auto navbar-nav third_icon">
+            <li class="nav-item  text-center">
+              <span class="nav-link text-dark"><i class="fa fa-user-o" aria-hidden="true"
+                  style="font-size: 2rem;"></i></span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="icons order-4" style="margin-right: 20px;">
+          <ul class="ml-auto navbar-nav third_icon">
+            <li class="nav-item  text-center">
+              <a class="nav-link text-dark" href=""><i class="fa fa-suitcase" aria-hidden="true"
+                  style="font-size: 2rem;"></i></a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="overlay d-flex d-lg-none"></div>
+
+        <div class="order-lg-2 bg-light d-lg-flex w-100 sidebar pb-3 pb-lg-0">
+
+          <ul class="navbar-nav mr-lg-auto mb-2 mb-lg-0">
+            <li class="nav-item welcome d-flex" style="background-color: #7f53ac;
+background-image: linear-gradient(315deg, #7f53ac 0%, #647dee 74%);">
+              <div class="left"><i class="fa fa-user-o" aria-hidden="true"
+                  style="border-radius: 50%; margin-top: 12px; color: white; font-size: 3rem;"></i></div>
+              <!-- <img src="images/men_cat.png " style="border-radius: 50%; margin-top: 12px; color: white;" alt="" width="40px" height="50px" class="mx-4 text-center"> -->
+              <div class="right" id="clk_reg">
+                <span class="nav-link px-3 px-lg-2 text-white">Welcome!
+                  <p class="my-1 text-white" style="font-size: .8rem;">Sign In/Sign Up</p>
+                </span>
+              </div>
+
+            </li>
+            <li class="nav-item mobilenav">
+              <a class="nav-link  px-lg-2 " href="#"><img
+                  src="https://cwcdn.coolwinks.com/mobile/mobile-site-content/menu-icon-home.svg" alt="">Home</a>
+            </li>
+
+            <li class="nav-item dropdown mobilenav">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                <img src="https://djgn3cwvdf3zo.cloudfront.net/appimages/app-menu-eyeglasses.png" alt=""> Eyeglasses
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="my-profile.html">Pilot Eyeglasses</a></li>
+                <li><a class="dropdown-item" href="#">Cateye Eyeglasses</a></li>
+                <li><a class="dropdown-item" href="#">Retrosquare Eyeglasses</a></li>
+                <li><a class="dropdown-item" href="#">Clubmaster Eyeglasses</a></li>
+                <li><a class="dropdown-item" href="#">Round Eyeglasses</a></li>
+                <li><a class="dropdown-item" href="#">Full Eyeglasses</a></li>
+                <li><a class="dropdown-item" href="#">Half Eyeglasses</a></li>
+                <li><a class="dropdown-item" href="#">Men Eyeglasses</a></li>
+                <li><a class="dropdown-item" href="#">Women Eyeglasses</a></li>
+
+
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown mobilenav">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                <img src="https://djgn3cwvdf3zo.cloudfront.net/appimages/app-menu-sunglasses.png" alt=""> Sunglasses
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Mirror Sunglasses</a></li>
+                <li><a class="dropdown-item" href="#">Tinted Sunglasses</a></li>
+                <li><a class="dropdown-item" href="#">Polarized Sunglasses</a></li>
+                <li><a class="dropdown-item" href="#">Flash Sunglasses</a></li>
+                <li><a class="dropdown-item" href="#">Gradient Sunglasses</a></li>
+                <li><a class="dropdown-item" href="#">Men Sunglasses</a></li>
+                <li><a class="dropdown-item" href="#">Women Sunglasses</a></li>
+
+
+
+              </ul>
+            </li>
+
+            <li class="nav-item mobilenav">
+              <a class="nav-link  px-lg-2 " href="#">
+                <img src="https://cwcdn.coolwinks.com/mobile/mobile-site-content/contact-lense/cl-hamburger.png"
+                  alt="">Contact lens</a>
+            </li>
+
+
+            <li class="nav-item dropdown mobilenav">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                <img src="https://djgn3cwvdf3zo.cloudfront.net/appimages/app-menu-powersunglasses.png" alt="">
+                Precription Sunglasses
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Men Power Sunglasses</a></li>
+                <li><a class="dropdown-item" href="#">Women Power Sunglasses</a></li>
+
+
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown mobilenav">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                <img src="https://djgn3cwvdf3zo.cloudfront.net/appimages/kids-eyeglasses.png" alt=""> Kids Glasses
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Kids Eyeglasses</a></li>
+                <li><a class="dropdown-item" href="#">Kids Sunglasses</a></li>
+
+
+              </ul>
+            </li>
+
+            <li class="nav-item mobilenav">
+              <a class="nav-link  px-lg-2 " href="#">
+                <img src="https://cwcdn.coolwinks.com/mobile/mobile-site-content/menu-icon-computer.svg" alt="">Computer
+                Glasses</a>
+            </li>
+
+            <li class="nav-item mobilenav">
+              <a class="nav-link  px-lg-2 " href="#">
+                <img src="https://cwcdn.coolwinks.com/mobile/site-images/reading-eyeglasses-hamburgericon.png"
+                  alt="">Rreading Glasses</a>
+            </li>
+
+            <li class="nav-item mobilenav">
+              <a class="nav-link  px-lg-2 " href="#">
+                <img src="https://cwcdn.coolwinks.com/mobile/site-images/icon-wipes.svg" alt="">Lens Clearing
+                Wipes</a>
+            </li>
+
+
+            <li class="nav-item mobilenav">
+              <a class="nav-link  px-lg-2 " href="#">
+                <img src="https://cwcdn.coolwinks.com/mobile/mobile-site-content/menu-icon-color-blindness.svg"
+                  alt="">Color Blind Glasses</a>
+            </li>
+
+
+            <li class="nav-item mobilenav">
+              <a class="nav-link  px-lg-2 " href="#">
+                <img src="https://cwcdn.coolwinks.com/mobile/mobile-site-content/menu-color-changable-frames.png"
+                  alt="">Color Changing Frame</a>
+            </li>
+
+
+            <li class="nav-item mobilenav">
+              <a class="nav-link  px-lg-2 " href="#">
+                <img src="https://cwcdn.coolwinks.com/mobile/mobile-site-content/menu-icon-offers.svg" alt="">Offers</a>
+            </li>
+
+
+            <li class="nav-item mobilenav">
+              <a class="nav-link  px-lg-2 " href="#">
+                <img src="https://cwcdn.coolwinks.com/mobile/mobile-site-content/eyetesticon.svg" alt="">Free Eye
+                Testing Camp</a>
+            </li>
+
+
+            <li class="nav-item mobilenav">
+              <a class="nav-link  px-lg-2 " href="#">
+                <img src="https://cwcdn.coolwinks.com/mobile/mobile-site-content/menu-icon-recentlyViewed.svg"
+                  alt="">Recent Viewed</a>
+            </li>
+
+
+            <li class="nav-item mobilenav">
+              <a class="nav-link  px-lg-2 " href="#">
+                <img src="https://cwcdn.coolwinks.com/mobile/mobile-site-content/menu-icon-help.svg" alt="">Help</a>
+            </li>
+
+
+            <li class="nav-item mobilenav">
+              <a class="nav-link  px-lg-2 " href="#">
+                <img src="https://cwcdn.coolwinks.com/mobile/mobile-site-content/menu-icon-chat-with-us.svg" alt="">Chat
+                With Us</a>
+            </li>
+
+
+            <li class="nav-item mobilenav">
+              <a class="nav-link  px-lg-2 " href="#">
+                <img src="https://cwcdn.coolwinks.com/mobile/mobile-site-content/menu-icon-help.svg" alt="">Contact
+                Us</a>
+            </li>
+
+          </ul>
+
+        </div>
+
+      </div>
+    </nav>
+    <!----------------- MOBILE NAVBAR SECTION END -------------->
+
+
+    <!--------------------------- MOBILE ORDER CONTENT SECTION STARTS ------------------------------>
+    <div style="margin-top: 7rem; text-align: center;">
+      <h2 class="font-weight-bolder"><span style="border-bottom: 3px solid black;">MY ORDERS</span></h2>
+    </div>
+
+    <div class="col-xl-12 col-lg-12 col-md-12 col-12 mt-4" style="box-shadow: 0 0 0 #DADADA;">
+      <div class="table table-bordered" style="height: auto; border-bottom: 1px solid #DADADA;">
+        <div class="text-grey">
+          <div style="display: flex; flex-direction: column; border: 1px solid #DADADA; font-size: 1.1rem;">
+            <span class="font-weight-bolder" style="color: grey;">CW2905217566732</span>
+            <span class="order_date"
+              style="margin-top: -1rem; font-size: .9rem; padding-top: .5rem;color: grey;">29-May-2021 01:34 PM</span>
+          </div>
+          <a href="#"
+            style="cursor: pointer; float: right; margin-top: -2.8rem; margin-right: 1.8rem; font-size: 1rem; text-decoration: none;">View
+            Details</a>
+        </div>
+
+        <table class="table table-bordered mt-3">
+          <div class="row">
+            <div class="col-xl-5 col-md-5 col-5">
+              <img src="images/S21C6734-1.webp" alt="" class="img-fluid">
+              <p class="text-left font-weight-bolder ml-3 order_green" style="color: #5FC018;">order confirmed</p>
+            </div>
+            <div class="col-xl-4 col-md-4 col-4">
+
+            </div>
+            <div class="col-xl-3 col-md-3 col-3 ml-auto order_price" style="position: relative;">
+
+              <pre><p style="position: absolute; left: 53%; top: 30%;" class="">  <span style="margin-left: 1.6rem; font-size: 1.2rem;">JRS</span> 
+<span style="font-size: 1.2rem; color: #0379BF; font-weight: bolder; padding-top: .9rem;">Rs. 990</span></p></pre>
+
+            </div>
+          </div>
+          <div class="pt-4 pl-2 order_total" style=" border-top: 1px solid #DADADA;">
+            <span class="ml-3" style="font-size: 1.1rem; font-weight: 900;">Grand Total Rs :</span> <span
+              class="mr-auto total_child_two" style="font-size:1.1rem;position: absolute; left: 88%;color: grey;">RS .
+              1217</span>
+          </div>
+
+        </table>
+
+      </div>
+    </div>
+
+  </div>
+  </div>
+  <!------------- MOBILE FOOTER CODE END  -------------------->
+
+
+
+
+
+
+
+
+  <script src="js/swiped-events.js"></script>
+  <script src="js/script.js"></script>
+
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
+    crossorigin="anonymous"></script>
+
+
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <!-- Popper JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <script>
+
+
+
+
+    $(document).ready(function () {
+      $('#eyeglassId').mouseenter(function () {
+        $('#showOne,#showTwo,#showThree,showFour').css("visibility", "visible");
+        $('#showTwo,#showThree,#showFour').css("visibility", "hidden");
+
+      });
+
+    });
+
+    $(document).ready(function () {
+      $('#showOne').mouseleave(function () {
+        $('#showOne').css("visibility", "hidden");
+      });
+    });
+
+    $(document).ready(function () {
+      $('#sunglassId').mouseenter(function () {
+        $('#showTwo').css("visibility", "visible");
+        $('#showOne,#showThree,#showFour').css("visibility", "hidden");
+      });
+    });
+
+
+    $(document).ready(function () {
+      $('#showTwo').mouseleave(function () {
+        $('#showTwo').css("visibility", "hidden");
+      });
+    });
+
+    $(document).ready(function () {
+      $('#lensId').mouseenter(function () {
+        $('#showThree').css("visibility", "visible");
+        $('#showTwo,#showOne,#showFour').css("visibility", "hidden");
+      });
+
+    });
+
+    $(document).ready(function () {
+      $('#showThree').mouseleave(function () {
+        $('#showThree').css("visibility", "hidden");
+      });
+    });
+
+    $(document).ready(function () {
+      $('#discoverId').mouseenter(function () {
+        $('#showFour').css("visibility", "visible");
+        $('#showTwo,#showThree,#showOne').css("visibility", "hidden");
+      });
+    });
+
+
+    $(document).ready(function () {
+      $('#showFour').mouseleave(function () {
+        $('#showFour').css("visibility", "hidden");
+      });
+    });
+
+    $(document).ready(function () {
+      $('#click_reg').click(function () {
+        $('#show_reg').css("visibility", "visible");
+      });
+    });
+
+    $(document).ready(function () {
+      $('#reg_can').click(function () {
+        $('#show_reg').css("visibility", "hidden");
+
+      });
+    });
+
+    // ---------------first time registration-----------------------
+
+    // $(document).ready(function(){
+    //   $('#reg_btn').click(function(){
+    //     $('#show_form').css("visibility","visible");
+    //   });
+    // });
+
+    // $(document).ready(function(){
+    //   $('#form_can').click(function(){
+    //     $('#show_form').css("visibility","hidden");
+    //     $('#show_reg').css("visibility","hidden");
+
+    //   });
+    // });
+
+    // ----------Sign In Form--------------------
+
+    $(document).ready(function () {
+      $('#reg_btn').click(function () {
+        $('#show_sigin').css("visibility", "visible");
+        $('#show_reg').css("visibility", "hidden");
+      });
+    });
+
+    $(document).ready(function () {
+      $('#sigin_can').click(function () {
+        $('#show_sigin').css("visibility", "hidden");
+
+
+      });
+    });
+
+    $(document).ready(function () {
+      $('#sigin_btn').click(function () {
+        $('#show_otp').css("visibility", "visible");
+        $('#show_sigin').css("visibility", "hidden");
+        $('#show_reg').css("visibility", "hidden");
+      });
+    });
+
+    $(document).ready(function () {
+      $('#sigin_email').click(function () {
+        $('#show_reg').css("visibility", "visible");
+        $('#show_sigin').css("visibility", "hidden");
+
+      });
+    });
+
+    $(document).ready(function () {
+      $('#sigin_frgtpass').click(function () {
+        $('#show_forget').css("visibility", "visible");
+        $('#show_sigin').css("visibility", "hidden");
+        $('#show_reg').css("visibility", "hidden");
+      });
+    });
+
+    // ----------Otp Form--------------------
+
+    $(document).ready(function () {
+      $('#otp_change').click(function () {
+        $('#show_reg').css("visibility", "visible");
+        $('#show_otp').css("visibility", "hidden");
+
+      });
+    });
+
+    $(document).ready(function () {
+      $('#otp_pass').click(function () {
+        $('#show_sigin').css("visibility", "visible");
+        $('#show_otp').css("visibility", "hidden");
+      });
+    });
+
+
+
+    $(document).ready(function () {
+      $('#otp_can').click(function () {
+        $('#show_otp').css("visibility", "hidden");
+
+
+      });
+    });
+
+    //----------- Forget----------
+
+    $(document).ready(function () {
+      $('#forget_can').click(function () {
+        $('#show_forget').css("visibility", "hidden");
+
+
+      });
+    });
+
+
+
+    $(document).ready(function () {
+      $('#clk_reg').click(function () {
+        $('#show_reg').css("visibility", "visible");
+      });
+    });
+
+
+    $(document).ready(function () {
+      $('#click_reg,.my_account').mouseenter(function () {
+        $('.my_account').css("visibility", "visible")
+      });
+
+      $('#click_reg,.my_account').mouseleave(function () {
+        $('.my_account').css("visibility", "hidden")
+      });
+    });
+
+
+
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,3007 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Single-product-page</title>
+  <link rel="stylesheet" href="css/style.css">
+  <!--Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+  <!--Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+  <!-- OwlCarousel minified CSS -->
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+  <!---------------- DESKTOP NAVBAR START ---------------------------------->
+
+  <div class="desktop">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top nav_bar_main" style="z-index: 75">
+      <div class="container-fluid text-uppercase p-2">
+        <a class="navbar-brand font-weight-bold text-capitalize" href="index.html"><span
+            class="text-primary font-weight-bolder">C</span>ool <span
+            class="text-primary font-weight-bolder">W</span>inks</a>
+        <div>
+          <ul class="navbar-nav" style="margin-left: 2rem;">
+            <li class="nav-item px-2">
+              <a class="nav-link" aria-current="page" href="#" id="eyeglassId">EYEGLASSES</a>
+            </li>
+            <li class="nav-item px-2">
+              <a class="nav-link" href="#service_div" id="sunglassId">SUNGLASSES</a>
+            </li>
+            <li class="nav-item px-2">
+              <a class="nav-link" href="#pricing_div" id="lensId">CONTACT LENSES</a>
+            </li>
+            <li class="nav-item px-2">
+              <a class="nav-link" href="#projects_div" id="discoverId">DISCOVER</a>
+            </li>
+          </ul>
+        </div>
+
+        <form class="form-inline nav_form" action="/action_page.php" style="margin-right: 0.5rem;">
+          <div class="input-group search_main">
+            <i class="fa fa-search" aria-hidden="true"></i>
+            <input type="text" class="form-control search_input" placeholder="What are you looking for?"
+              class="bg-dark">
+          </div>
+        </form>
+
+        <ul class="ml-auto navbar-nav third_icon" style="margin-top: -0.5rem;">
+          <li class="nav-item px-4 text-center">
+            <span id="click_reg" class="nav-link text-dark" href=""><i class="fa fa-user-o" aria-hidden="true"></i>
+              <p class="font-weight-bolder" style="cursor: pointer;">SIGN IN/SIGN UP</p>
+            </span>
+          </li>
+
+          <li class="nav-item px-4 text-center">
+            <a class="nav-link text-dark" href=""><i class="fa fa-suitcase" aria-hidden="true"></i>
+              <p class="font-weight-bolder">Cart</p>
+            </a>
+          </li>
+        </ul>
+
+      </div>
+    </nav>
+    <div style="position: relative; height: 100%" id="par_drop">
+      <div class="fir_nav_drop" style="visibility: hidden;" id="showOne">
+        <div class="row per_one_drop">
+          <div class="col-xl-3 col-md-3 col-3">
+            <div class="drop_con">
+              <h6 class="text-left pt-3 pl-1 font-weight-bolder">Select Gender</h6>
+              <ul class="pt-4" style="margin-left: -2rem;">
+                <li>
+                  <a href="my-profile.html"><img src="images/men_cat.png" alt="" style="height: 35px;"><span
+                      style="padding-left: 3rem; font-size: 0.8rem;">MEN</a></span>
+                </li>
+                <li class="py-4">
+                  <a href="my-favourite.html"><img src="images/women_cat.jpg" alt="" style="height: 35px;"><span
+                      style="padding-left: 2.8rem; font-size: 0.8rem;">WOMEN</a></span>
+                </li>
+                <li>
+                  <a href="offers.html"><img src="images/kids_cat.jpg" alt="" style="height: 35px;"><span
+                      style="padding-left: 1.6rem; font-size: 0.8rem;">KIDS</a></span>
+                </li>
+
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-md-3 col-3" style="background-color: #fafafa;">
+            <div class="drop_con">
+              <h6 class="text-left pt-3 pl-2 font-weight-bolder">Select Collection</h6>
+              <ul class="pt-4">
+                <li class="" style="font-size: 0.8rem;">
+                  <a href="recently-viewed.html">XSTYL</a>
+                </li>
+                <li class="pt-3" style="font-size: 0.8rem;">
+                  <a href="cash-wallet.html">GRAVIATE</a>
+                </li>
+                <li class="pt-3" style="font-size: 0.8rem;">
+                  <a href="my-order.html">GRAVIATE FIRST</a>
+                </li>
+                <li class="pt-3" style="font-size: 0.8rem;">
+                  <a href="my-prescription.html">XSTYLE FIRST</a>
+                </li>
+                <li class="pt-3" style="font-size: 0.8rem;">
+                  <a href="filter-page.html">COMPUTER GLASSES</a>
+                </li>
+                <li class="pt-3" style="font-size: 0.8rem;">
+                  <a href="">READING GLASSES</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-xl-3 col-md-3 col-3">
+            <div class="drop_con">
+              <h6 class="text-left pt-3 pl-2 font-weight-bolder">Select Shape</h6>
+              <ul class="pt-4">
+                <li style="font-size: 0.8rem;">
+                  <a href="">HEXAGON</a>
+                </li>
+                <li style="font-size: 0.8rem; padding-top: 0.6rem;">
+                  <a href="">RETEROSQUARE</a>
+                </li>
+                <li style="font-size: 0.8rem; padding-top: 0.6rem;">
+                  <a href="">ROUND</a>
+                </li>
+                <li style="font-size: 0.8rem; padding-top: 0.6rem;">
+                  <a href="">CLUBMASTER</a>
+                </li>
+                <li style="font-size: 0.8rem; padding-top: 0.6rem;">
+                  <a href="">OVAL</a>
+                </li>
+                <li style="font-size: 0.8rem; padding-top: 0.6rem;">
+                  <a href="">RECTANGLE</a>
+                </li>
+                <li style="font-size: 0.8rem; padding-top: 0.6rem;">
+                  <a href="">CATEYE</a>
+                </li>
+                <li style="font-size: 0.8rem; padding-top: 0.6rem;">
+                  <a href="">PILOT</a>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+          <div class="col-xl-3 col-md-3 col-3" style="background-color: #fafafa;">
+            <div class="drop_con">
+              <h6 class="text-left pt-3 pl-2 font-weight-bolder">Select Style</h6>
+              <ul class="pt-4">
+                <li class="pt-3" style="font-size: 0.8rem;">
+                  <a href="">FULL FRAME</a>
+                </li>
+                <li class="pt-3" style="font-size: 0.8rem;">
+                  <a href="">HALF FRAME</a>
+                </li>
+                <li class="pt-3" style="font-size: 0.8rem;">
+                  <a href="">RIMLESS</a>
+                </li>
+
+              </ul>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+
+      <div class="sec_nav_drop mx-auto" style="visibility: hidden;" id="showTwo">
+        <div class="row per_two_drop">
+          <div class="col-xl-3 col-md-3 col-3">
+            <div class="drop_con">
+              <h6 class="text-left pt-3 pl-2 font-weight-bolder">Select Gender</h6>
+              <ul class="pt-4" style="margin-left: -2rem;">
+                <li>
+                  <a href=""><img src="images/men_cat.png" alt="" style="height: 35px;"><span
+                      style="padding-left: 3rem; font-size: 0.8rem;">MEN</a></span>
+                </li>
+                <li class="py-4">
+                  <a href=""><img src="images/women_cat.jpg" alt="" style="height: 35px;"><span
+                      style="padding-left: 2.8rem; font-size: 0.8rem;">WOMEN</a></span>
+                </li>
+                <li>
+                  <a href=""><img src="images/kids_cat.jpg" alt="" style="height: 35px;"><span
+                      style="padding-left: 1.6rem; font-size: 0.8rem;">KIDS</a></span>
+                </li>
+
+              </ul>
+            </div>
+          </div>
+          <div class="col-xl-3 col-md-3 col-3" style="background-color: #fafafa;">
+            <div class="drop_con">
+              <h6 class="text-left pt-3 pl-2 font-weight-bolder">Select Collection</h6>
+              <ul class="pt-2 pl-2">
+                <li class="pt-3" style="font-size: 0.8rem;">
+                  <a href="">FULL FRAME</a>
+                </li>
+                <li class="pt-3" style="font-size: 0.8rem;">
+                  <a href="">HALF FRAME</a>
+                </li>
+                <li class="pt-3" style="font-size: 0.8rem;">
+                  <a href="">RIMLESS</a>
+                </li>
+
+              </ul>
+            </div>
+
+          </div>
+          <div class="col-xl-3 col-md-3 col-3">
+            <div class="drop_con">
+              <h6 class="text-left pt-3 pl-2 font-weight-bolder">Select Shape</h6>
+              <ul class="pt-4 pl-2">
+                <li style="font-size: 0.8rem;">
+                  <a href="">PILOT</a>
+                </li>
+                <li style="font-size: 0.8rem; padding-top: 0.7rem;">
+                  <a href="">CATEYE</a>
+                </li>
+                <li style="font-size: 0.8rem; padding-top: 0.7rem;">
+                  <a href="">ROUND</a>
+                </li>
+                <li style="font-size: 0.8rem; padding-top: 0.7rem;">
+                  <a href="">BUTTERFLY</a>
+                </li>
+                <li style="font-size: 0.8rem; padding-top: 0.7rem;">
+                  <a href="">CLUBMASTER</a>
+                </li>
+                <li style="font-size: 0.8rem; padding-top: 0.7rem;">
+                  <a href="">WRAPAROUND</a>
+                </li>
+                <li style="font-size: 0.8rem; padding-top: 0.7rem;">
+                  <a href="">RETEROSQUARE</a>
+                </li>
+
+              </ul>
+            </div>
+
+          </div>
+          <div class="col-xl-3 col-md-3 col-3" style="background-color: #fafafa;">
+            <div class="drop_con">
+              <h6 class="text-left pt-3 pl-2 font-weight-bolder">Select Style</h6>
+              <ul class="pt-2 pl-2">
+                <li class="pt-3" style="font-size: 0.8rem;">
+                  <a href="">MIRROR</a>
+                </li>
+                <li class="pt-3" style="font-size: 0.8rem;">
+                  <a href="">GRADIENT</a>
+                </li>
+                <li class="pt-3" style="font-size: 0.8rem;">
+                  <a href="">TINTED</a>
+                </li>
+                <li class="pt-3" style="font-size: 0.8rem;">
+                  <a href="">FLASH</a>
+                </li>
+                <li class="pt-3" style="font-size: 0.8rem;">
+                  <a href="">POLARIZED</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="thr_nav_drop mx-auto" style="visibility: hidden;" id="showThree">
+        <div class="row per_thr_drop">
+          <div class="col-xl-4 col-md-4 col-4">
+            <div class="drop_con">
+              <h6 class="text-left pt-3 pl-2 font-weight-bolder">Select Usage</h6>
+              <ul class="pt-2 pl-2">
+                <li class="pt-3" style="font-size: 0.8rem;">
+                  <a href="">DAILY</a>
+                </li>
+                <li class="pt-3" style="font-size: 0.8rem;">
+                  <a href="">MONTHLY</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-xl-4 col-md-4 col-4" style="background-color: #fafafa;">
+            <div class="drop_con">
+              <h6 class="text-left pt-3 pl-2 font-weight-bolder">Select Color</h6>
+              <ul class="pt-2 pl-2">
+                <li class="pt-3" style="font-size: 0.8rem;">
+                  <a href="">TRANSAPARENT</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-xl-4 col-md-4 col-4">
+            <div class="drop_con">
+              <h6 class="text-left pt-3 pl-2 font-weight-bolder">Select Color</h6>
+              <ul class="pt-2 pl-2">
+                <li class="pt-3" style="font-size: 0.8rem;"> <a href="">COOLWINKS COOL CONTACT</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="four_nav_drop mx-auto" style="visibility: hidden;" id="showFour">
+        <div class="row per_four_drop">
+          <div class="col-xl-4 col-md-4 col-4">
+            <div class="drop_con">
+              <h6 class="text-left pt-3 pl-2 font-weight-bolder">More Collections</h6>
+              <ul class="pt-4" style="margin-left: -2rem;">
+                <li>
+                  <a href=""><img src="images/power-sunglasses.png" alt="" style="height: 25px;"><span
+                      style="padding-left: 3rem; font-size: 0.8rem;">MEN</a></span>
+                </li>
+                <li class="py-2">
+                  <a href=""><img src="images/reading-eyeglasses-hamburgericon.png" alt="" style="height: 65px;"><span
+                      style="padding-left: 2.8rem; font-size: 0.8rem;">WOMEN</a></span>
+                </li>
+                <li>
+                  <a href=""><img src="images/icon-wipes2.png" alt="" style="height: 25px;"><span
+                      style="padding-left: 2.5rem; font-size: 0.8rem;">KIDS</a></span>
+                </li>
+
+              </ul>
+            </div>
+          </div>
+          <div class="col-xl-3 col-md-3 col-3" style="background-color: #fafafa;">
+            <div class="drop_con">
+              <h6 class="text-left pt-3 pl-2 font-weight-bolder">More Links</h6>
+              <ul class="pt-2 pl-2">
+                <li class="pt-3" style="font-size: 0.8rem;">
+                  <a href="">OFFERS</a>
+                </li>
+                <li class="pt-3" style="font-size: 0.8rem;">
+                  <a href="">COOLCASH</a>
+                </li>
+                <li class="pt-3" style="font-size: 0.8rem;">
+                  <a href="">COLLECTIONS</a>
+                </li>
+                <li class="pt-3" style="font-size: 0.8rem;">
+                  <a href="">FREE EYE TEST CAMP</a>
+                </li>
+                <li class="pt-3" style="font-size: 0.8rem;">
+                  <a href="">KNOWLEDGE CENTER</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-xl-5 col-md-5 col-5">
+            <div class="drop_con">
+              <h6 class="text-left pt-3 pl-2 font-weight-bolder">Stay Connected On The Go</h6>
+              <ul class="pt-2 pl-2">
+                <li class="pt-3" style="font-size: 0.8rem;">
+                  <a href=""><img src="images/download-app-menu2-8aug19.jpg" alt="" class="img-fluid"
+                      style="height: 200px;"></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+  </div>
+  <!----------- DESKTOP NAVBAR END ---------------------------------->
+
+
+  <!---------------------- MOBILE NAVBAR START --------------------------->
+
+  <div class="mobile" style="display: none; z-index: 5000;">
+    <div class="main_filt_con">
+      <div class="mobilecontent">
+
+        <div id="main_menu">
+
+
+          <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top main-navigation mob_nav">
+            <div class="container-fluid">
+
+              <a class="navbar-brand font-weight-bold order-2 mx-auto" href="#"><span class="text-primary"
+                  style="font-size: 2.3rem;">C</span><span style="font-size: 1.9rem;">ool</span> <span
+                  class="text-primary" style="font-size: 2.3rem;">W</span> <span
+                  style="font-size: 1.9rem;">inks</span></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <div class="icons order-3 mr-5">
+                <ul class="ml-auto navbar-nav third_icon">
+                  <li class="nav-item  text-center">
+                    <span class="nav-link text-dark" id="clk_reg"><i class="fa fa-search" aria-hidden="true"
+                        style="font-size: 2rem;"></i></span>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="icons order-4" style="margin-right: 20px;">
+                <ul class="ml-auto navbar-nav third_icon">
+                  <li class="nav-item  text-center">
+                    <a class="nav-link text-dark" href=""><i class="fa fa-suitcase" aria-hidden="true"
+                        style="font-size: 2rem;"></i></a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="overlay d-flex d-lg-none"></div>
+
+              <div class="order-lg-2 bg-light d-lg-flex w-100 sidebar pb-3 pb-lg-0">
+
+                <ul class="navbar-nav mr-lg-auto mb-2 mb-lg-0">
+                  <li class="nav-item welcome d-flex" style="background-color: #7f53ac;
+    background-image: linear-gradient(315deg, #7f53ac 0%, #647dee 74%);">
+                    <div class="left"><i class="fa fa-user-o" aria-hidden="true"
+                        style="border-radius: 50%; margin-top: 12px; color: white; font-size: 3rem;"></i></div>
+                    <div class="right" id="clk_reg">
+                      <span class="nav-link px-3 px-lg-2 text-white">Welcome !
+                        <p class="my-1 text-white" style="font-size: 1.3rem;">Sign In / Sign Up</p>
+                      </span>
+                    </div>
+
+                  </li>
+                  <li class="nav-item mobilenav">
+                    <a class="nav-link  px-lg-2 " href="#"><img
+                        src="https://cwcdn.coolwinks.com/mobile/mobile-site-content/menu-icon-home.svg" alt="">Home</a>
+                  </li>
+
+                  <li class="nav-item dropdown mobilenav">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                      data-bs-toggle="dropdown" aria-expanded="false">
+                      <img src="https://djgn3cwvdf3zo.cloudfront.net/appimages/app-menu-eyeglasses.png" alt="">
+                      Eyeglasses
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="my-profile.html">Pilot Eyeglasses</a></li>
+                      <li><a class="dropdown-item" href="my-favourite.html">Cateye Eyeglasses</a></li>
+                      <li><a class="dropdown-item" href="offers.html">Retrosquare Eyeglasses</a></li>
+                      <li><a class="dropdown-item" href="recently-viewed.html">Clubmaster Eyeglasses</a></li>
+                      <li><a class="dropdown-item" href="my-favourite.html">Round Eyeglasses</a></li>
+                      <li><a class="dropdown-item" href="my-order.html">Full Eyeglasses</a></li>
+                      <li><a class="dropdown-item" href="my-prescription.html">Half Eyeglasses</a></li>
+                      <li><a class="dropdown-item" href="#">Men Eyeglasses</a></li>
+                      <li><a class="dropdown-item" href="#">Women Eyeglasses</a></li>
+
+
+                    </ul>
+                  </li>
+
+                  <li class="nav-item dropdown mobilenav">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                      data-bs-toggle="dropdown" aria-expanded="false">
+                      <img src="https://djgn3cwvdf3zo.cloudfront.net/appimages/app-menu-sunglasses.png" alt="">
+                      Sunglasses
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#">Mirror Sunglasses</a></li>
+                      <li><a class="dropdown-item" href="#">Tinted Sunglasses</a></li>
+                      <li><a class="dropdown-item" href="#">Polarized Sunglasses</a></li>
+                      <li><a class="dropdown-item" href="#">Flash Sunglasses</a></li>
+                      <li><a class="dropdown-item" href="#">Gradient Sunglasses</a></li>
+                      <li><a class="dropdown-item" href="#">Men Sunglasses</a></li>
+                      <li><a class="dropdown-item" href="#">Women Sunglasses</a></li>
+
+
+
+                    </ul>
+                  </li>
+
+                  <li class="nav-item mobilenav">
+                    <a class="nav-link  px-lg-2 " href="#">
+                      <img src="https://cwcdn.coolwinks.com/mobile/mobile-site-content/contact-lense/cl-hamburger.png"
+                        alt="">Contact lens</a>
+                  </li>
+
+
+                  <li class="nav-item dropdown mobilenav">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                      data-bs-toggle="dropdown" aria-expanded="false">
+                      <img src="https://djgn3cwvdf3zo.cloudfront.net/appimages/app-menu-powersunglasses.png" alt="">
+                      Precription Sunglasses
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#">Men Power Sunglasses</a></li>
+                      <li><a class="dropdown-item" href="#">Women Power Sunglasses</a></li>
+
+
+                    </ul>
+                  </li>
+
+                  <li class="nav-item dropdown mobilenav">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                      data-bs-toggle="dropdown" aria-expanded="false">
+                      <img src="https://djgn3cwvdf3zo.cloudfront.net/appimages/kids-eyeglasses.png" alt=""> Kids Glasses
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#">Kids Eyeglasses</a></li>
+                      <li><a class="dropdown-item" href="#">Kids Sunglasses</a></li>
+
+
+                    </ul>
+                  </li>
+
+                  <li class="nav-item mobilenav">
+                    <a class="nav-link  px-lg-2 " href="#">
+                      <img src="https://cwcdn.coolwinks.com/mobile/mobile-site-content/menu-icon-computer.svg"
+                        alt="">Computer Glasses</a>
+                  </li>
+
+                  <li class="nav-item mobilenav">
+                    <a class="nav-link  px-lg-2 " href="#">
+                      <img src="https://cwcdn.coolwinks.com/mobile/site-images/reading-eyeglasses-hamburgericon.png"
+                        alt="">Rreading Glasses</a>
+                  </li>
+
+                  <li class="nav-item mobilenav">
+                    <a class="nav-link  px-lg-2 " href="#">
+                      <img src="https://cwcdn.coolwinks.com/mobile/site-images/icon-wipes.svg" alt="">Lens Clearing
+                      Wipes</a>
+                  </li>
+
+
+                  <li class="nav-item mobilenav">
+                    <a class="nav-link  px-lg-2 " href="#">
+                      <img src="https://cwcdn.coolwinks.com/mobile/mobile-site-content/menu-icon-color-blindness.svg"
+                        alt="">Color Blind Glasses</a>
+                  </li>
+
+
+                  <li class="nav-item mobilenav">
+                    <a class="nav-link  px-lg-2 " href="#">
+                      <img src="https://cwcdn.coolwinks.com/mobile/mobile-site-content/menu-color-changable-frames.png"
+                        alt="">Color Changing Frame</a>
+                  </li>
+
+
+                  <li class="nav-item mobilenav">
+                    <a class="nav-link  px-lg-2 " href="#">
+                      <img src="https://cwcdn.coolwinks.com/mobile/mobile-site-content/menu-icon-offers.svg"
+                        alt="">Offers</a>
+                  </li>
+
+
+                  <li class="nav-item mobilenav">
+                    <a class="nav-link  px-lg-2 " href="#">
+                      <img src="https://cwcdn.coolwinks.com/mobile/mobile-site-content/eyetesticon.svg" alt="">Free Eye
+                      Testing Camp</a>
+                  </li>
+
+                  <li class="nav-item mobilenav">
+                    <a class="nav-link  px-lg-2 " href="#">
+                      <img src="images/menu-icon-dashboard.svg" alt="">My Dashboard</a>
+                  </li>
+
+                  <li class="nav-item mobilenav">
+                    <a class="nav-link  px-lg-2 " href="#">
+                      <img src="images/menu-icon-wallet2.svg" alt="">Cash Walleet</a>
+                  </li>
+
+                  <li class="nav-item mobilenav">
+                    <a class="nav-link  px-lg-2 " href="#">
+                      <img src="images/menu-icon-myorders.svg" alt="">My Orders</a>
+                  </li>
+
+                  <li class="nav-item mobilenav">
+                    <a class="nav-link  px-lg-2 " href="#">
+                      <img src="images/menu-icon-myprescriptions.svg" alt="">My Prescription</a>
+                  </li>
+
+                  <li class="nav-item mobilenav">
+                    <a class="nav-link  px-lg-2 " href="#">
+                      <img src="images/menu-icon-myfavorites.svg" alt="">My Favourites</a>
+                  </li>
+
+
+                  <li class="nav-item mobilenav">
+                    <a class="nav-link  px-lg-2 " href="#">
+                      <img src="https://cwcdn.coolwinks.com/mobile/mobile-site-content/menu-icon-recentlyViewed.svg"
+                        alt="">Recent Viewed</a>
+                  </li>
+
+
+                  <li class="nav-item mobilenav">
+                    <a class="nav-link  px-lg-2 " href="#">
+                      <img src="https://cwcdn.coolwinks.com/mobile/mobile-site-content/menu-icon-help.svg"
+                        alt="">Help</a>
+                  </li>
+
+
+                  <li class="nav-item mobilenav">
+                    <a class="nav-link  px-lg-2 " href="#">
+                      <img src="https://cwcdn.coolwinks.com/mobile/mobile-site-content/menu-icon-chat-with-us.svg"
+                        alt="">Chat With Us</a>
+                  </li>
+
+
+                  <li class="nav-item mobilenav">
+                    <a class="nav-link  px-lg-2 " href="#">
+                      <img src="https://cwcdn.coolwinks.com/mobile/mobile-site-content/menu-icon-help.svg"
+                        alt="">Contact
+                      Us</a>
+                  </li>
+
+                  <li class="nav-item mobilenav">
+                    <a class="nav-link  px-lg-2 " href="#">
+                      <img src="images/menu-icon-logout.svg" alt="">Logout</a>
+                  </li>
+
+                </ul>
+
+              </div>
+
+            </div>
+          </nav>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!----------------DESKTOP SECTIONS START ----------------------->
+  <div class="desktop">
+    <section class="" style="min-height:100vh; padding-top: 7rem;">
+      <div style="display: flex; margin-top: -1.5rem; width: 100%; box-shadow: rgb(0 0 0 / 50%) 0px #F7F7F7">
+        <ul class="d-flex" style="font-size: .9rem; list-style: none;">
+          <li>
+            <a href="#" style="text-decoration: none; cursor: pointer;">Home ></a>
+          </li>
+          <li class="mx-3">
+            <a href="#" style="text-decoration: none; cursor: pointer;">Eyeglasses ></a>
+          </li>
+          <li>
+            <a href="#" style="text-decoration: none; cursor: pointer;">Men ></a>
+          </li>
+        </ul>
+        <span style="font-weight: 300; font-size: .8555rem; margin-left: 2rem;">GRAVIATE By Coolwinks E20A8507 Glossy
+          Blue Full Frame RetroSquare Eyeglasses For Men And Women</span>
+      </div>
+      <div class="container-fluid d-flex justify-content-between mx-auto main_indic" style="width: 98%;">
+        <div style="width: 62%;">
+          <div class="p-3" style="height: auto; border: 1px solid #ECEAEA; position: relative;">
+
+            <span class="like sing_like pull-right" style="margin-right: .5rem;">
+              <i class="fa fa-heart" aria-hidden="true"></i>
+            </span>
+
+            <div class="row">
+              <div class="col-xl-12 col-md-12 col-12">
+                <div class="py-3 d-flex justify-content-center">
+
+                  <div class="owl-carousel owl-theme desk-top-carousel">
+                    <div class="item">
+                      <img src="images/E208507-5.webp" alt="error" class="img-fluid mx-auto"
+                        style="height: 400px; width: 90%;" id="show_1caro_single_prd">
+                    </div>
+                    <div class="item">
+                      <img src="images/E208507-4.webp" alt="error" class="img-fluid mx-auto"
+                        style="height: 400px; width: 90%;" id="show_2caro_single_prd">
+                    </div>
+                    <div class="item">
+                      <img src="images/E208507-5.webp" alt="error" class="img-fluid mx-auto"
+                        style="height: 400px; width: 90%;" id="show_3caro_single_prd">
+                    </div>
+                    <div class="item">
+                      <img src="images/E208507-4.webp" alt="error" class="img-fluid mx-auto"
+                        style="height: 400px; width: 90%;" id="show_4caro_single_prd">
+                    </div>
+                    <div class="item">
+                      <img src="images/E208507-5.webp" alt="error" class="img-fluid mx-auto"
+                        style="height: 400px; width: 90%;" id="show_5caro_single_prd">
+                    </div>
+                  </div>
+
+
+
+                </div>
+              </div>
+
+
+            </div>
+            <div class="pro_bought_wrap">
+              <i class="fa fa-user"></i> 453 people bought this
+            </div>
+          </div>
+
+          <div class="d-flex justify-content-between mt-2">
+            <div style="border:1px solid #ECEAEA; cursor: pointer;" class="py-3" id="click_1caro_single_prd">
+              <img src="images/E208507-5.webp" alt="" class="img-fluid">
+            </div>
+            <div style="border:1px solid #ECEAEA; cursor: pointer;" class="py-3 ml-2" id="click_2caro_single_prd">
+              <img src="images/E208507-4.webp" alt="" class="img-fluid">
+            </div>
+            <div style="border:1px solid #ECEAEA; cursor: pointer;" class="py-3 ml-2" id="click_3caro_single_prd">
+              <img src="images/E208507-5.webp" alt="" class="img-fluid">
+            </div>
+            <div style="border:1px solid #ECEAEA; cursor: pointer;" class="py-3 ml-2" id="click_4caro_single_prd">
+              <img src="images/E208507-4.webp" alt="" class="img-fluid">
+            </div>
+            <div style="border:1px solid #ECEAEA; cursor: pointer;" class="py-3 ml-2" id="click_5caro_single_prd">
+              <img src="images/E208507-5.webp" alt="" class="img-fluid">
+            </div>
+          </div>
+
+          <div class="d-flex justify-content-between align-items-stretch mt-5">
+            <div
+              style="background-color: #F7F7F7; cursor: pointer; border-radius: 10px; width: 100%; position: relative; overflow: hidden;"
+              class=" pt-4 single_prd_com">
+              <div class="mt-3">
+                <h5 style="font-weight: 400; font-size: 1.1rem;" class="px-3">Khambhat halavason</h5>
+
+                <p style="font-size: .7rem; float: right;">19-july-2021</p>
+              </div>
+              <div class="pb-3 px-3">
+                <div class="d-flex">
+                  <i class="fa fa-star" aria-hidden="true" style="color: #FCB016;"></i>
+                  <i class="fa fa-star" aria-hidden="true" style="color: #FCB016;"></i>
+                  <i class="fa fa-star" aria-hidden="true" style="color: #FCB016;"></i>
+                  <i class="fa fa-star" aria-hidden="true" style="color: #FCB016;"></i>
+                  <i class="fa fa-star" aria-hidden="true" style="color: #FCB016;"></i>
+                </div>
+                <p style="font-size: .75rem; font-weight: 500; color: #8d8585; margin-top: .4rem;"><span>It very owsame
+                    eyes glass. Product are 100% original. I am satisfy i...</span> <span style="display: none;">n this
+                    websites.</span>
+                </p>
+              </div>
+              <div
+                style="position: absolute; top: -3%; left: -3%; width :2.7rem; height: 2.6rem; border-radius: 50%; background-color: #F7F7F7;">
+                <i class="fa fa-quote-left" aria-hidden="true"
+                  style="color: #eae4e4; font-size: 1.35rem; font-weight: 400; margin-left: .8rem; margin-top: .7rem;"></i>
+              </div>
+            </div>
+
+            <div
+              style="background-color: #F7F7F7; cursor: pointer; border-radius: 10px; width: 100%; position: relative; overflow: hidden;"
+              class=" pt-4 single_prd_com mx-2">
+              <div class="mt-3">
+                <h5 style="font-weight: 400; font-size: 1.1rem;" class="px-3">Khambhat halavason</h5>
+
+                <p style="font-size: .7rem; float: right;">19-july-2021</p>
+              </div>
+              <div class="pb-3 px-3">
+                <div class="d-flex">
+                  <i class="fa fa-star" aria-hidden="true" style="color: #FCB016;"></i>
+                  <i class="fa fa-star" aria-hidden="true" style="color: #FCB016;"></i>
+                  <i class="fa fa-star" aria-hidden="true" style="color: #FCB016;"></i>
+                  <i class="fa fa-star" aria-hidden="true" style="color: #FCB016;"></i>
+                  <i class="fa fa-star" aria-hidden="true" style="color: #FCB016;"></i>
+                </div>
+                <p style="font-size: .75rem; font-weight: 500; color: #8d8585; margin-top: .4rem;"><span>It very owsame
+                    eyes glass. Product are 100% original. I am satisfy i...</span> <span style="display: none;">n this
+                    websites.</span>
+                </p>
+              </div>
+              <div
+                style="position: absolute; top: -3%; left: -3%; width :2.7rem; height: 2.6rem; border-radius: 50%; background-color: #F7F7F7;">
+                <i class="fa fa-quote-left" aria-hidden="true"
+                  style="color: #eae4e4; font-size: 1.35rem; font-weight: 400; margin-left: .8rem; margin-top: .7rem;"></i>
+              </div>
+            </div>
+
+            <div
+              style="background-color: #F7F7F7; cursor: pointer; border-radius: 10px; width: 100%; position: relative; overflow: hidden;"
+              class=" pt-4 single_prd_com">
+              <div class="mt-3">
+                <h5 style="font-weight: 400; font-size: 1.1rem;" class="px-3">Khambhat halavason</h5>
+
+                <p style="font-size: .7rem; float: right;">19-july-2021</p>
+              </div>
+              <div class="pb-3 px-3">
+                <div class="d-flex">
+                  <i class="fa fa-star" aria-hidden="true" style="color: #FCB016;"></i>
+                  <i class="fa fa-star" aria-hidden="true" style="color: #FCB016;"></i>
+                  <i class="fa fa-star" aria-hidden="true" style="color: #FCB016;"></i>
+                  <i class="fa fa-star" aria-hidden="true" style="color: #FCB016;"></i>
+                  <i class="fa fa-star" aria-hidden="true" style="color: #FCB016;"></i>
+                </div>
+                <p style="font-size: .75rem; font-weight: 500; color: #8d8585; margin-top: .4rem;"><span>It very owsame
+                    eyes glass. Product are 100% original. I am satisfy i...</span> <span style="display: none;">n this
+                    websites.</span>
+                </p>
+              </div>
+              <div
+                style="position: absolute; top: -3%; left: -3%; width :2.7rem; height: 2.6rem; border-radius: 50%; background-color: #F7F7F7;">
+                <i class="fa fa-quote-left" aria-hidden="true"
+                  style="color: #eae4e4; font-size: 1.35rem; font-weight: 400; margin-left: .8rem; margin-top: .7rem;"></i>
+              </div>
+            </div>
+          </div>
+          <a href="#" style="font-size:.75rem; font-weight:400; float: right; margin-top: 1rem;"
+            class="single_prd_rmr">Read more reviews ></a>
+        </div>
+
+        <div style="width: 36%; margin-top: 1rem; margin-left: 4rem;">
+          <div style="width: 100%;">
+            <h5 style="font-weight: 600; font-size: 23px;">GRAVIATE</h5>
+            <div style="position: relative; top: -1.8rem;">
+              <span style="font-size: .755rem; font-weight: 500; color: black; position: absolute; right: 0;">Product
+                Id: E20A8507</span>
+            </div>
+            <p style="font-size: .755rem; font-weight: 600; width: 90%; color: #2c2c2c; margin-top: .7rem;">GRAVIATE by
+              Coolwinks E20A8507 Glossy Blue Full Frame RetroSquare Eyeglasses for Men and Women</p>
+            <div class="d-flex">
+              <p style="font-size: 1.4rem; font-weight: 600; color: #0458A5;">Rs. 990</p>
+              <strike>
+                <p style="font-size: 1.1rem; font-weight: 400; color: #a3a3a3; margin-top: .155rem;" class="ml-4">Rs.
+                  1980</p>
+              </strike>
+            </div>
+            <p style="font-size: .9rem; font-weight: 400; color: black; margin-top: -1rem;">Including basic lenses
+            </p>
+          </div>
+
+          <div class="mt-3 ml-1">
+            <hr>
+
+            <div class="d-flex">
+
+              <p style="font-size: .9rem; font-weight: 600; color: black;" class="my-auto">Color</p>
+
+              <span style="margin-left: .5rem;">
+                <span class="sngl_clr_choose">
+                  <img src="images/Brown.jpg" alt="" class="clk_sngl_clr_choose img-fluid" data-toggle="tooltip"
+                    data-placement="top" title="Brown">
+                  </img>
+                </span>
+              </span>
+
+
+              <span style="margin-left:.5rem">
+                <span class="sngl_clr_choose">
+                  <img src="images/Black.jpg" alt="" class="clk_sngl_clr_choose img-fluid" data-toggle="tooltip"
+                    data-placement="top" title="Black">
+                  </img>
+                </span>
+              </span>
+            </div>
+            <hr>
+          </div>
+          </span>
+
+          <div class="mt-3 ml-1 d-flex" style="width: 100%;">
+            <div class="d-flex" style="width: 50%;">
+              <p style="font-size: .9rem; font-weight: 600; color: black;" class="my-auto">Frame Size</p>
+              <span style="height: 2rem; width: 2rem; border-radius: 50%;background-color: #E2E2E2;
+              margin-left: .5rem;" class="d-flex justify-content-center align-items-center"><span
+                  style="font-weight: 600;">M</span></span>
+            </div>
+
+            <div style="width: 50%; position: relative;">
+              <a href="#" class="ml-auto"
+                style="position: absolute; right: 0; font-size: .7rem; font-weight: 800; text-decoration: none; color: #27629B;">Know
+                Your Size</a>
+            </div>
+          </div>
+
+          <div class="mt-3 ml-1 d-flex justify-content-between" style="width: 85%;">
+            <div style="line-height: .2rem;">
+              <img src="images/left-frame_25oct17.jpg" alt="error" class="img-fluid" style="width: 80px;">
+              <h6 style="font-size: 1.1rem; font-weight: 700; color: #035391; text-align: center;">51</h6>
+              <p style="font-size: .855rem; font-weight: 400; color: Temple; text-align: center;">Lens Width</p>
+            </div>
+            <div style="line-height: .2rem;">
+              <img src="images/mid-frame_25oct17.jpg" alt="error" class="img-fluid" style="width: 80px;">
+              <h6 style="font-size: 1.1rem; font-weight: 700; color: #035391; text-align: center;">17</h6>
+              <p style="font-size: .855rem; font-weight: 400; color: Temple; text-align: center;">Bridge</p>
+            </div>
+            <div style="line-height: .2rem;">
+              <img src="images/last-frame_25oct17.jpg" alt="error" class="img-fluid" style="width: 80px;">
+              <h6 style="font-size: 1.1rem; font-weight: 700; color: #035391; text-align: center;">140</h6>
+              <p style="font-size: .855rem; font-weight: 400; color: Temple; text-align: center;">Temple</p>
+            </div>
+          </div>
+
+          <button class="btn btn-block py-3" data-toggle="modal" data-target="#myModal"
+            style="background-color: #27629B!important; line-height: .3rem; margin-top: 1.7rem; border: 0!important;">
+            <h6 style="font-weight: 700; color: #ffffff;">BUY NOW</h6>
+            <span class="text-white" style="margin-bottom: 0!important;">(<span
+                style="font-size: .7rem; font-weight: 400;">USE COOLCASH &</span> <span
+                style="font-size: .7rem; font-weight: 700;">SAVE Up TO 60%</span>)</span>
+          </button>
+
+          <div style="background-color: #F5F5F8; width: 100%; line-height: 1.2rem;"
+            class="mt-3 p-x pt-3 pb-1 d-flex justify-content-center">
+            <div style="width: 30%;">
+              <img src="images/rocket.png" alt="" class="img-fluid ml-3" style="height: 60px;">
+            </div>
+            <div>
+              <h6 style="font-size: .9rem; font-weight: 700; color: #2e2e2e; font-style: italic;">Place order now and
+                get it delivered by</h6>
+              <h6 style="margin-top: -.2rem; font-size: .95rem; font-weight: 700; color: #035391; font-style: italic;">
+                2021-06-25</h6>
+              <p style="font-size: .8rem; font-weight: 400; color: #ff2121;"><span
+                  style="font-weight: 700;width: 60%;">Note:</span> Delivery might take longer than usual due to
+                COVID-19 situation in your area</p>
+            </div>
+            <div style=" width: 10%;">
+              <i class="fa fa-info-circle ml-auto" aria-hidden="true" style="color:#27629b; cursor:pointer"
+                data-toggle="tooltip" data-placement="top" title=""></i>
+            </div>
+
+          </div>
+          <div class="d-flex justify-content-between mt-5 px-4">
+            <p style="margin-top: -.4rem; font-size: .8rem; font-weight: 400; color: #C2C2C3;"
+              class="single_prd_click_feature">FEATURES</p>
+            <p style="margin-top: -.4rem; font-size: .8rem; font-weight: 400; color: #C2C2C3;"
+              class="single_prd_clk_desc">DESCRIPTION</p>
+            <p style="margin-top: -.4rem; font-size: .8rem; font-weight: 400; color: #C2C2C3;"
+              class="single_prd_click_table">SPECIFICATIONS</p>
+          </div>
+          <hr style="margin-top: -.3rem;">
+
+
+          <table class="table table-bordered single_prd_table" style="width: 100%!important;">
+
+            <tbody style="width: 100%!important;">
+              <tr style="width: 100%!important;">
+                <td style="background-color: #F7F7F7; font-weight: 600; color: #212529; font-size: .75rem;width: 50%;">
+                  Frame Material</td>
+                <td style="font-weight: 500; color: #212529; font-size: .75rem; width: 50%;">Acetate</td>
+              </tr>
+              <tr>
+                <td style="background-color: #F7F7F7; font-weight: 600; color: #212529; font-size: .75rem;width: 50%;">
+                  Raw Material Sourced from<span style="visibility: hidden;">hshh..ss</span> </td>
+                <td style="font-weight: 500; color: #212529; font-size: .75rem; width: 50%;">China</td>
+              </tr>
+              <tr>
+                <td style="background-color: #F7F7F7; font-weight: 600; color: #212529; font-size: .75rem;width: 50%;">
+                  Frame Material</td>
+                <td style="font-weight: 500; color: #212529; font-size: .75rem; width: 50%;">Acetate</td>
+              </tr>
+              <tr>
+                <td style="background-color: #F7F7F7; font-weight: 600; color: #212529; font-size: .75rem;width: 50%;">
+                  Frame Material</td>
+                <td style="font-weight: 500; color: #212529; font-size: .75rem; width: 50%;">Acetate</td>
+              </tr>
+              <tr>
+                <td style="background-color: #F7F7F7; font-weight: 600; color: #212529; font-size: .75rem;width: 50%;">
+                  Frame Material</td>
+                <td style="font-weight: 500; color: #212529; font-size: .75rem; width: 50%;">Acetate</td>
+              </tr>
+              <tr>
+                <td style="background-color: #F7F7F7; font-weight: 600; color: #212529; font-size: .75rem;width: 50%;">
+                  Frame Material</td>
+                <td style="font-weight: 500; color: #212529; font-size: .75rem; width: 50%;">Acetate</td>
+              </tr>
+              <tr>
+                <td style="background-color: #F7F7F7; font-weight: 600; color: #212529; font-size: .75rem;width: 50%;">
+                  Frame Material</td>
+                <td style="font-weight: 500; color: #212529; font-size: .75rem; width: 50%;">Acetate</td>
+              </tr>
+              <tr>
+                <td style="background-color: #F7F7F7; font-weight: 600; color: #212529; font-size: .75rem;width: 50%;">
+                  Frame Material</td>
+                <td style="font-weight: 500; color: #212529; font-size: .75rem; width: 50%;">Acetate</td>
+              </tr>
+              <tr>
+                <td style="background-color: #F7F7F7; font-weight: 600; color: #212529; font-size: .75rem;width: 50%;">
+                  Frame Material</td>
+                <td style="font-weight: 500; color: #212529; font-size: .75rem; width: 50%;">Acetate</td>
+              </tr>
+              <tr>
+                <td style="background-color: #F7F7F7; font-weight: 600; color: #212529; font-size: .75rem;width: 50%;">
+                  Frame Material</td>
+                <td style="font-weight: 500; color: #212529; font-size: .75rem; width: 50%;">Acetate</td>
+              </tr>
+              <tr>
+                <td style="background-color: #F7F7F7; font-weight: 600; color: #212529; font-size: .75rem;width: 50%;">
+                  Frame Material</td>
+                <td style="font-weight: 500; color: #212529; font-size: .75rem; width: 50%;">Acetate</td>
+              </tr>
+              <tr>
+                <td style="background-color: #F7F7F7; font-weight: 600; color: #212529; font-size: .75rem;width: 50%;">
+                  Frame Material</td>
+                <td style="font-weight: 500; color: #212529; font-size: .75rem; width: 50%;">Acetate</td>
+              </tr>
+              <tr>
+                <td style="background-color: #F7F7F7; font-weight: 600; color: #212529; font-size: .75rem;width: 50%;">
+                  Frame Material</td>
+                <td style="font-weight: 500; color: #212529; font-size: .75rem; width: 50%;">Acetate</td>
+              </tr>
+              <tr>
+                <td style="background-color: #F7F7F7; font-weight: 600; color: #212529; font-size: .75rem;width: 50%;">
+                  Frame Material</td>
+                <td style="font-weight: 500; color: #212529; font-size: .75rem; width: 50%;">Acetate</td>
+              </tr>
+              <tr>
+                <td style="background-color: #F7F7F7; font-weight: 600; color: #212529; font-size: .75rem;width: 50%;">
+                  Frame Material</td>
+                <td style="font-weight: 500; color: #212529; font-size: .75rem; width: 50%;">Acetate</td>
+              </tr>
+            </tbody>
+          </table>
+
+
+          <div style="display: none;" class="single_prd_desc">
+            <p style="font-size: .75rem; font-weight: 500; line-height: 1.1rem; color: #212529;">Manage your daily
+              avatars with the E20A8507 eyeglasses from Graviate by Coolwinks. Outfitting your appearance with a spark
+              of flamboyance, these blue colored rectangle frames impart you with the one-of-a-kind charming appeal. An
+              ideal match for those with heart & square face shapes, these glasses pair along with every attire of your
+              choice. Actual product colors may vary slightly from colors shown on your Computer/Mobile Screen.
+            </p>
+          </div>
+
+          <div style="display: none; line-height: .1rem;" class="single_prd_feature">
+            <p style=" color: #212529; font-size: .75rem; font-weight: 500;">✔ Glossy Full Frame</p>
+            <br>
+            <p style=" color: #212529; font-size: .75rem; font-weight: 500;">✔ Glossy Full Frame</p>
+            <br>
+            <p style=" color: #212529; font-size: .75rem; font-weight: 500;">✔ Glossy Full Frame</p>
+            <br>
+            <p style=" color: #212529; font-size: .75rem; font-weight: 500;">✔ Glossy Full Frame</p>
+
+          </div>
+
+        </div>
+      </div>
+
+      <div class="fifth_one container-fluid" style="margin-top: 7rem;">
+        <div class="fourth_head">
+          <h4 class="text-center" style="font-weight: 700; color: #000000;">SIMILAR PRODUCTS</h4>
+        </div>
+
+
+        <div class="owl-carousel desk-owl-car owl-theme">
+          <div class="item">
+            <div class="px-4 coool">
+              <img src="images/E15B6386-1.webp" class="img img-fluid" alt="">
+              <h3 class="text-center fav-name ml-4">GRAVIATE
+                <span class="like pull-right">
+                  <i class="fa fa-heart" aria-hidden="true"></i>
+                </span>
+              </h3>
+              <div class="d-flex justify-content-center">
+                <p class="text-center fav-price">Rs.700</p>
+                <strike>
+                  <p style="font-size: .95rem; font-weight: 400; color: #a3a3a3;" class="ml-3">Rs. 1980</p>
+                </strike>
+              </div>
+              <p class="text-center fav-desc">Including basic lenses</p>
+            </div>
+
+          </div>
+          <div class="item">
+            <div class="px-4 coool">
+              <img src="images/E18B7009-1.webp" class="img img-fluid" alt="">
+              <h3 class="text-center fav-name ml-4">GRAVIATE
+                <span class="like pull-right mr-3">
+                  <i class="fa fa-heart" aria-hidden="true"></i>
+                </span>
+              </h3>
+              <div class="d-flex justify-content-center">
+                <p class="text-center fav-price">Rs.700</p>
+                <strike>
+                  <p style="font-size: .95rem; font-weight: 400; color: #a3a3a3;" class="ml-3">Rs. 1980</p>
+                </strike>
+              </div>
+              <p class="text-center fav-desc">Including basic lenses</p>
+            </div>
+
+          </div>
+          <div class="item">
+            <div class="px-4 coool">
+              <img src="images/E12A6420-1.webp" class="img img-fluid" alt="">
+              <h3 class="text-center fav-name ml-4">GRAVIATE
+                <span class="like pull-right mr-3">
+                  <i class="fa fa-heart" aria-hidden="true"></i>
+                </span>
+              </h3>
+              <div class="d-flex justify-content-center">
+                <p class="text-center fav-price">Rs.700</p>
+                <strike>
+                  <p style="font-size: .95rem; font-weight: 400; color: #a3a3a3;" class="ml-3">Rs. 1980</p>
+                </strike>
+              </div>
+              <p class="text-center fav-desc">Including basic lenses</p>
+            </div>
+
+          </div>
+          <div class="item">
+            <div class="px-4 coool">
+              <img src="images/E15B6287-1.webp" class="img img-fluid" alt="">
+              <h3 class="text-center fav-name ml-4">GRAVIATE
+                <span class="like pull-right mr-3">
+                  <i class="fa fa-heart" aria-hidden="true"></i>
+                </span>
+              </h3>
+              <div class="d-flex justify-content-center">
+                <p class="text-center fav-price">Rs.700</p>
+                <strike>
+                  <p style="font-size: .95rem; font-weight: 400; color: #a3a3a3;" class="ml-3">Rs. 1980</p>
+                </strike>
+              </div>
+              <p class="text-center fav-desc">Including basic lenses</p>
+            </div>
+
+          </div>
+          <div class="item">
+            <div class="px-4 coool">
+              <img src="images/E15B6386-1.webp" class="img img-fluid" alt="">
+              <h3 class="text-center fav-name ml-4">GRAVIATE
+                <span class="like pull-right mr-3">
+                  <i class="fa fa-heart" aria-hidden="true"></i>
+                </span>
+              </h3>
+              <div class="d-flex justify-content-center">
+                <p class="text-center fav-price">Rs.700</p>
+                <strike>
+                  <p style="font-size: .95rem; font-weight: 400; color: #a3a3a3;" class="ml-3">Rs. 1980</p>
+                </strike>
+              </div>
+              <p class="text-center fav-desc">Including basic lenses</p>
+            </div>
+
+          </div>
+
+
+        </div>
+
+
+
+      </div>
+      <!-- The Modal -->
+      <div class="modal pr-0 modal_main" id="myModal" style="z-index: 50000;">
+        <div class="modal-dialog my-0" style="min-width: 100%!important;">
+          <div class="modal-content" style="height:100vh!important;">
+
+            <!-- Modal Header -->
+            <div class="modal-header py-1" style="position: relative; background-color: #efefef;">
+              <div class="steps ml-auto">
+                <ul class="mb-0 pl-0 pt-2">
+                  <li class="step_first active mt-2">
+                    Select Your Frame
+                    <span class="img">
+                      <img src="images/reading-eyeglasses-hamburgericon.png" class="img-fluid mt-2" alt="">
+                    </span>
+                    <span class="glass_name">rimless rectangle</span>
+                    <span class="s-no" style="visibility: hidden;">1</span>
+                  </li>
+                  <li class="step_power active mt-2">
+                    Select Your Frame
+                    <span class="img">
+                      <img src="images/reading-eyeglasses-hamburgericon.png" class="img-fluid mt-2" alt="">
+                    </span>
+                    <span class="glass_name">rimless rectangle</span>
+                    <span class="s-no" style="visibility: hidden;">1</span>
+                  </li>
+
+                  <li class="step_lenses unactive mt-2">
+                    Select Your Frame
+                    <span class="img">
+                      <img src="images/reading-eyeglasses-hamburgericon.png" class="img-fluid mt-2" alt="">
+                    </span>
+                    <span class="glass_name">rimless rectangle</span>
+                    <span class="s-no" style="visibility: hidden;">1</span>
+                  </li>
+
+                  <li class="mt-2">
+                    <span class="img">
+                      <img src="images/reading-eyeglasses-hamburgericon.png" class="img-fluid mt-2" alt="">
+                    </span>
+                  </li>
+
+
+                </ul>
+              </div>
+              <button type="button" class="p-0"
+                style="position: absolute; top: 15%; right: 4%; font-size: 2rem!important; color: gray!important; border: none!important; font-weight: 700;"
+                data-dismiss="modal">x</button>
+            </div>
+
+            <!-- Modal body -->
+            <div class="modal-body">
+              <div class="bdy_head mt-4 d-flex justify-content-center">
+                <h5 style="font-size: 18px; font-weight: 600; color: #212529; text-align: center;">SELECT POWER TYPE
+                </h5>
+              </div>
+
+              <div class="d-flex justify-content-center">
+                <form action="">
+                  <label class="popup_product_detail mt-4" style="width:100%;">
+                    <img src="images/reading-eyeglasses-hamburgericon.png" class="img-fluid"
+                      style="width: 45px; height: 33px;" alt="">
+                    <div style="padding-right: 2rem; padding-left: 1.5rem;">
+                      <h5 class="mb-1" style="font-size: 18px; font-weight: 600; color: #262626;">Single Vision/Powered
+                        Eyeglasses</h5>
+                      <p class="mb-0" style="font-size:12px;">For distance or near vision.</p>
+                    </div>
+                    <div class="form-check pr-4">
+                      <input class="form-check-input ml-auto" type="radio" name="body_choose" value=""
+                        id="defaultCheck1" style="border-radius: 50%!important; padding: .6rem!important;">
+                    </div>
+                  </label>
+
+                  <label class="popup_product_detail mt-2" style="width:100%;">
+                    <img src="images/reading-eyeglasses-hamburgericon.png" class="img-fluid"
+                      style="width: 45px; height: 33px;" alt="">
+                    <div style="padding-right: 2rem; padding-left: 1.5rem;">
+                      <h5 class="mb-1" style="font-size: 18px; font-weight: 600; color: #262626;">Single Vision/Powered
+                        Eyeglasses</h5>
+                      <p class="mb-0" style="font-size:12px;">For distance or near vision.</p>
+                    </div>
+                    <div class="form-check pr-4">
+                      <input class="form-check-input ml-auto" type="radio" name="body_choose" value=""
+                        id="defaultCheck1" style="border-radius: 50%!important; padding: .6rem!important;">
+                    </div>
+                  </label>
+
+                  <label class="popup_product_detail mt-2" style="width:100%;">
+                    <img src="images/reading-eyeglasses-hamburgericon.png" class="img-fluid"
+                      style="width: 45px; height: 33px;" alt="">
+                    <div style="padding-right: 2rem; padding-left: 1.5rem;">
+                      <h5 class="mb-1" style="font-size: 18px; font-weight: 600; color: #262626;">Single Vision/Powered
+                        Eyeglasses</h5>
+                      <p class="mb-0" style="font-size:12px;">For distance or near vision.</p>
+                    </div>
+                    <div class="form-check pr-4">
+                      <input class="form-check-input ml-auto" type="radio" name="body_choose" value=""
+                        id="defaultCheck1" style="border-radius: 50%!important; padding: .6rem!important;">
+                    </div>
+                  </label>
+
+                  <label class="popup_product_detail mt-2" style="width:100%;">
+                    <img src="images/reading-eyeglasses-hamburgericon.png" class="img-fluid"
+                      style="width: 45px; height: 33px;" alt="">
+                    <div style="padding-right: 2rem; padding-left: 1.5rem;">
+                      <h5 class="mb-1" style="font-size: 18px; font-weight: 600; color: #262626;">Single Vision/Powered
+                        Eyeglasses</h5>
+                      <p class="mb-0" style="font-size:12px;">For distance or near vision.</p>
+                    </div>
+                    <div class="form-check pr-4">
+                      <input class="form-check-input ml-auto" type="radio" name="body_choose" value=""
+                        id="defaultCheck1" style="border-radius: 50%!important; padding: .6rem!important;">
+                    </div>
+                  </label>
+
+                  <div class="bdy_button">
+                    <input type="button" class="btn" value="CONTINUE" data-toggle="modal" data-target="#myModal2">
+                  </div>
+
+                </form>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- The Modal -->
+      <div class="modal pr-0" id="myModal2" style="z-index: 500001;">
+        <div class="modal-dialog my-0" style="min-width: 100%!important;">
+          <div class="modal-content" style="min-height:100vh!important;">
+
+            <!-- Modal Header -->
+            <div class="modal-header py-1" style="position: relative; background-color: #efefef;">
+              <div class="steps ml-auto">
+                <ul class="mb-0 pl-0 pt-2">
+                  <li class="step_first active mt-2">
+                    Select Your Frame
+                    <span class="img">
+                      <img src="images/reading-eyeglasses-hamburgericon.png" class="img-fluid mt-2" alt="">
+                    </span>
+                    <span class="glass_name">rimless rectangle</span>
+                    <span class="s-no" style="visibility: hidden;">1</span>
+                  </li>
+                  <li class="step_power active mt-2">
+                    Select Your Frame
+                    <span class="img">
+                      <img src="images/reading-eyeglasses-hamburgericon.png" class="img-fluid mt-2" alt="">
+                    </span>
+                    <span class="glass_name">rimless rectangle</span>
+                    <span class="s-no" style="visibility: hidden;">1</span>
+                  </li>
+
+                  <li class="step_lenses active mt-2">
+                    Select Your Frame
+                    <span class="img">
+                      <img src="images/reading-eyeglasses-hamburgericon.png" class="img-fluid mt-2" alt="">
+                    </span>
+                    <span class="glass_name">rimless rectangle</span>
+                    <span class="s-no" style="visibility: hidden;">1</span>
+                  </li>
+
+                  <li class="mt-2">
+                    <span class="img">
+                      <img src="images/reading-eyeglasses-hamburgericon.png" class="img-fluid mt-2" alt="">
+                    </span>
+                  </li>
+
+
+                </ul>
+              </div>
+              <button type="button" class="p-0"
+                style="position: absolute; top: 15%; right: 4%; font-size: 2rem!important; color: gray!important; border: none!important; font-weight: 700;"
+                data-dismiss="modal">x</button>
+            </div>
+
+            <!-- Modal body -->
+            <div class="modal-body">
+              <div class="bdy_head mt-4 d-flex justify-content-center">
+                <h5 style="font-size: 18px; font-weight: 600; color: #212529; text-align: center;">SELECT YOUR LENSES
+
+                </h5>
+              </div>
+
+              <table class="table table-bordered single_prd_table" style="width: 57%; margin-left: 55px;">
+
+                <tbody>
+                  <tr>
+                    <td class="pt-5 px-3" style="width: 25%; position: relative;">
+                      <div style="font-size: 38px; font-weight: 500; color: #262626; position: absolute; bottom: 10%;">
+                        Lens
+                        <span style="font-size: 20px; position: absolute; left: 2px; top: 75%;">Features</span>
+                      </div>
+                    </td>
+
+                    <td style="font-weight: 600; text-align: center; color: #262626; width: 16%;">
+                      <div>
+                        <div style="font-size: 14px;">
+                          Premium Anti Glare With Uv Protection
+                        </div>
+                        <div style="font-size: 20px; margin-top:.5rem;">
+                          ₹ 1790 <br>
+                          <p style="font-size: 12px; font-weight: 400; color: #262626;">(Include Frame)</p>
+                        </div>
+                        <div class="px-3">
+                          <input type="button" class="btn" value="SELECT THIS LENS" data-toggle="modal"
+                            data-target="#myModal2"
+                            style="font-size: 14px; font-weight: 600; background: #fc8044; box-shadow: 1px 1px 9px rgb(0 0 0 / 10%); border-radius: 4px; color: #fff; width: 100%;">
+                        </div>
+                        <div class="px-3 mt-2" style="font-size: 12px; color: #38b6ff;">
+                          <img src="images/cw-icon-offer.svg" class="img-fluid" style="height: 12px; width: 12px;"
+                            alt=""> Use COOLCASH & Get upto 60% Off
+                        </div>
+                      </div>
+                    </td>
+
+                    <td style="font-weight: 600; text-align: center; color: #262626; width: 16%;">
+                      <div>
+                        <div style="font-size: 14px;">
+                          Anti Glare
+                        </div>
+                        <div style="font-size: 20px; margin-top: 1.75rem;">
+                          ₹ 1590 <br>
+                          <p style="font-size: 12px; font-weight: 400; color: #262626;">(Include Frame)</p>
+                        </div>
+                        <div class="px-3">
+                          <input type="button" class="btn" value="SELECT THIS LENS" data-toggle="modal"
+                            data-target="#myModal2"
+                            style="font-size: 14px; font-weight: 600; background: #fc8044; box-shadow: 1px 1px 9px rgb(0 0 0 / 10%); border-radius: 4px; color: #fff; width: 100%;">
+                        </div>
+                        <div class="px-3 mt-2" style="font-size: 12px; color: #38b6ff;">
+                          <img src="images/cw-icon-offer.svg" class="img-fluid" style="height: 12px; width: 12px;"
+                            alt=""> Use COOLCASH & Get upto 60% Off
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="font-weight: 600; color: #212529; font-size: .75rem;">
+                      <img src="images/lense-Warranty.svg" class="img-fluid" style="width: 20px; height: 25px;" alt="">
+                      <span class="ml-2">Warranty Period</span>
+
+                    </td>
+
+                    <td
+                      style="font-weight: 500; color: #212529; font-size: .75rem; text-align: center; vertical-align: middle;">
+                      1 Year</td>
+                    <td
+                      style="font-weight: 500; color: #212529; font-size: .75rem; text-align: center; vertical-align: middle;">
+                      6 Months</td>
+                  </tr>
+
+                  <tr>
+                    <td style="font-weight: 600; color: #212529; font-size: .75rem;">
+                      <img src="images/lense-index.svg" class="img-fluid" style="width: 20px; height: 25px;" alt="">
+                      <span class="ml-2">Index/Thickness</span>
+                    </td>
+                    <td
+                      style="font-weight: 500; color: #212529; font-size: .75rem; text-align: center; vertical-align: middle;">
+                      1.56</td>
+                    <td
+                      style="font-weight: 500; color: #212529; font-size: .75rem; text-align: center; vertical-align: middle;">
+                      1.56</td>
+                  </tr>
+
+                  <tr>
+                    <td style="font-weight: 600; color: #212529; font-size: .75rem;">
+                      <img src="images/lense-power.svg" class="img-fluid" style="width: 20px; height: 25px;" alt="">
+                      <span class="ml-2">Power Range</span>
+                    </td>
+                    <td
+                      style="font-weight: 500; color: #212529; font-size: .75rem; text-align: center; vertical-align: middle;">
+                      upto +/-8</td>
+                    <td
+                      style="font-weight: 500; color: #212529; font-size: .75rem; text-align: center; vertical-align: middle;">
+                      upto +/-8</td>
+
+                  </tr>
+
+                  <tr>
+                    <td style="font-weight: 600; color: #212529; font-size: .75rem;">
+                      <img src="images/anti-scratch-coating.svg" class="img-fluid" style="width: 20px; height: 25px;"
+                        alt="">
+                      <span class="ml-2">Anti Scratch Coating</span> <i class="fa fa-info-circle" aria-hidden="true"
+                        style="color: grey;"></i>
+                    </td>
+                    <td
+                      style="font-weight: 500; color: #212529; font-size: .75rem; text-align: center; vertical-align: middle;">
+                      <img src="images/tick-icon.svg" class="img-fluid" alt="">
+                    </td>
+                    <td
+                      style="font-weight: 500; color: #212529; font-size: .75rem; text-align: center; vertical-align: middle;">
+                      <img src="images/tick-icon.svg" class="img-fluid" alt="">
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td style="font-weight: 600; color: #212529; font-size: .75rem">
+                      <img src="images/both-side-anti-glare-coating.svg" class="img-fluid"
+                        style="width: 20px; height: 25px;" alt="">
+                      <span class="ml-2">Both Side Anti Glare Coating</span> <i class="fa fa-info-circle"
+                        aria-hidden="true" style="color: grey;"></i>
+                    </td>
+                    <td
+                      style="font-weight: 500; color: #212529; font-size: .75rem; text-align: center; vertical-align: middle;">
+                      <img src="images/tick-icon.svg" class="img-fluid" alt="">
+                    <td
+                      style="font-weight: 500; color: #212529; font-size: .75rem; text-align: center; vertical-align: middle;">
+                      <img src="images/tick-icon.svg" class="img-fluid" alt="">
+                    </td>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td style="font-weight: 600; color: #212529; font-size: .75rem">
+                      <img src="images/both-side-anti-reflective-coating.svg" class="img-fluid"
+                        style="width: 20px; height: 25px;" alt="">
+                      <span class="ml-2">Both Side Anti Reflective Coating</span> <i class="fa fa-info-circle"
+                        aria-hidden="true" style="color: grey; margin-left: 2rem;"></i>
+                    </td>
+                    <td
+                      style="font-weight: 500; color: #212529; font-size: .75rem; text-align: center; vertical-align: middle;">
+                      <img src="images/tick-icon.svg" class="img-fluid" alt="">
+                    </td>
+                    <td
+                      style="font-weight: 500; color: #212529; font-size: .75rem; text-align: center; vertical-align: middle;">
+                      <img src="images/cross-icon.svg" class="img-fluid" alt="">
+                    </td>
+
+                  </tr>
+
+                  <tr>
+                    <td style="font-weight: 600; color: #212529; font-size: .75rem;">
+                      <img src="images/uv-protection.svg" class="img-fluid" style="width: 20px; height: 25px;" alt="">
+                      <span class="ml-2">UV Protection</span> <i class="fa fa-info-circle" aria-hidden="true"
+                        style="color: grey;"></i>
+                    </td>
+                    <td
+                      style="font-weight: 500; color: #212529; font-size: .75rem; text-align: center; vertical-align: middle;">
+                      <img src="images/tick-icon.svg" class="img-fluid" alt="">
+                    </td>
+                    <td
+                      style="font-weight: 500; color: #212529; font-size: .75rem; text-align: center; vertical-align: middle;">
+                      <img src="images/cross-icon.svg" class="img-fluid" alt="">
+                    </td>
+
+                  </tr>
+
+                  <tr>
+                    <td style="font-weight: 600; color: #212529; font-size: .75rem;">
+                      <img src="images/water-and-dust-repellent.svg" class="img-fluid"
+                        style="width: 20px; height: 25px;" alt="">
+                      <span class="ml-2">Water and Dust Repellent</span> <i class="fa fa-info-circle" aria-hidden="true"
+                        style="color: grey;"></i>
+                    </td>
+                    <td
+                      style="font-weight: 500; color: #212529; font-size: .75rem; text-align: center; vertical-align: middle;">
+                      <img src="images/tick-icon.svg" class="img-fluid" alt="">
+                    </td>
+                    <td
+                      style="font-weight: 500; color: #212529; font-size: .75rem; text-align: center; vertical-align: middle;">
+                      <img src="images/cross-icon.svg" class="img-fluid" alt="">
+                    </td>
+
+                  </tr>
+                </tbody>
+              </table>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+
+
+
+  <!---------- MOBILE SECTIONS START --------------------->
+  <div class="mobile" style="display: none; background-color: #FBFBFB;">
+    <span class="like sing_like pull-right" style="margin-right: .5rem; margin-top: 4.5rem;">
+      <i class="fa fa-heart" aria-hidden="true"></i>
+    </span>
+    <section style="margin-top: 5rem; background-color: white;">
+      <div class="owl-carousel mob-owl-carousel owl-theme">
+        <div class="item">
+          <div class="px-4 coool">
+            <img src="images/E_DSC_4576_1.jpg" class="img img-fluid" alt="">
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="px-4 coool">
+            <img src="images/E_DSC_4577_1.webp" class="img img-fluid" alt="">
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="px-4 coool">
+            <img src="images/E_DSC_4579_1.webp" class="img img-fluid" alt="">
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="px-4 coool">
+            <img src="images/E_DSC_4577_1.webp" class="img img-fluid" alt="">
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="px-4 coool">
+            <img src="images/E_DSC_4576_1.jpg" class="img img-fluid" alt="">
+
+          </div>
+        </div>
+
+
+
+
+
+      </div>
+    </section>
+
+    <div class="mobile_sng_prd_info" style="margin-top: 2rem; padding: 1.4rem 1rem;">
+      <div class="d-flex justify-content-between">
+        <h4 style="font-size: 1.7rem; font-weight: 700;">GRAVIATE</h4>
+        <span style="line-height: 1rem; margin-top: 1rem;">
+          <p style="font-size: 1.5rem; float: right; font-weight: 600; color: #035391;">₹ 1090</p>
+          <br>
+          <p style="font-size: 1.4rem; float: right; font-weight: 500;">Incluiding basic lenses</p>
+        </span>
+      </div>
+
+      <div class="d-flex mt-2">
+        <a href="#">3.5 Rating</a>
+        <div class="d-flex ml-2">
+          <i class="fa fa-star" aria-hidden="true" style="color: #FCB016;"></i>
+          <i class="fa fa-star" aria-hidden="true" style="color: #FCB016;"></i>
+          <i class="fa fa-star" aria-hidden="true" style="color: #FCB016;"></i>
+          <i class="fa fa-star" aria-hidden="true" style="color: #FCB016;"></i>
+          <i class="fa fa-star" aria-hidden="true" style="color: #FCB016;"></i>
+        </div>
+      </div>
+
+      <div class="d-flex mt-4">
+
+        <p style="font-size: 1.3rem; color: #000000;">Size: <span
+            style="width: 24px; height: 24px; border-radius:50%; background-color:#f5f5f5; border:1px solid #fff; color: #000000; padding: .5rem; font-size: 1.1rem;">M</span>
+        </p>
+
+        <a href="#" class="ml-3">Size Guide</a>
+      </div>
+
+    </div>
+
+    <div class="mobile_ttl_delv bg-white">
+      <div class="d-flex">
+        <img src="images/bought.svg" alt="" class="img-fluid ml-3" style="width: 50px;">
+
+        <p class="ml-3 mt-2 text-primary" style="font-size: 1.1rem;">1269 people bought this</p>
+      </div>
+
+    </div>
+
+
+    <div class="mobile_delv_sec bg-white mt-4 py-1">
+      <div class="d-flex">
+        <img src="images/delivery_icon.svg" alt="" class="img-fluid ml-4" style="width: 45px;">
+
+        <div style="line-height: .3rem;">
+          <p class="ml-3 mt-3" style="font-size: 1.1rem;">Place order now and get it delivery by</p><br>
+          <p class="text-primary ml-3" style="font-size: 1.1rem;">2021-06-28</p>
+        </div>
+      </div>
+
+      <div class="d-flex">
+        <img src="images/delivery_icon.svg" alt="" class="img-fluid ml-4" style="width: 45px; visibility: hidden;">
+
+        <p class="ml-3" style="font-size: .1.1rem; font-weight: 400; color: #ff2121;"><span
+            style="font-weight: 700;width: 60%;">Note:</span> Delivery might take longer than usual due to
+          COVID-19 situation in your area</p>
+      </div>
+    </div>
+
+    <div style="padding: 2rem 1rem;">
+      <p style="font-size: 1.15rem; font-weight: 400; color: #2c2c2c;">GRAVIATE By Coolwinks
+        E20A8507 Glossy
+        Blue Full Frame RetroSquare Eyeglasses For Men And Women</p>
+
+
+
+      <div style="border: 1px dotted blue; padding: .5rem 1rem;">
+        <p style="font-size: 1.15rem; font-weight: 400; margin-bottom: 0;">Best Offer</p>
+        <p style="margin-bottom: 0;">> Use code FLAT350 & Get Rs 350 Off</p>
+      </div>
+    </div>
+
+
+    <!------------------- FIXED BUTTON CODE START -------------------------->
+    <div style="width: 100%; position: fixed; z-index: 100; bottom: 0;">
+      <div class="d-flex  mx-auto" style="width: 100%;">
+        <div style="width: 50%; background-color: #ffffff!important;" class="d-flex align-items-center">
+          <button id="" class="btn mobile_single_buy_click"
+            style="color: #3d3d3d; font-size: 1.5rem; font-weight: 500; width: 100%;">BUY
+            ON CALL <br>
+
+          </button>
+        </div>
+        <div style="width: 50%; background-color: #27629B;" class="pt-2">
+          <button id="" class="btn text-white mobile_bdy_button"
+            style="font-size: 1.5rem; font-weight: 500; width: 100%;">SELECT
+            LENSES <br>
+            <P style="font-size: .7rem; color: #ffffff;">(SUBMIT POWER POST CHECKPOST)</P>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!------------------- FIXED BUTTON CODE END -------------------------->
+
+
+    <div style="border-top: 4px solid #f1f1f2; padding: 2rem 1rem; background-color: #ffff;">
+      <p style="font-size: 1.5rem; text-align: center; color: #515151; font-weight: 600;">Frame</p>
+      <p style="color: #2c2c2c; font-size: 1.1rem; text-align:center">
+        Our frames are categorized as small, medium and large to help you find a comfortable pair. Below are the
+        dimentions of the same</p>
+      <div class="d-flex justify-content-center">
+        <img src="images/frame.webp" alt="" class="img-fluid mx-auto" width="80%">
+      </div>
+
+      <div class="row">
+        <div class="col-md-4 col-4 text-center" style="line-height: .5rem;">
+          <p style="font-size: 1.2rem;">FRAME FIT</p>
+          <p style="font-size: 1.1rem;">Medium</p>
+        </div>
+        <div class="col-md-4 col-4 text-center" style="line-height: .5rem;">
+          <p style="font-size: 1.2rem;">MEASUREMENT</p>
+          <p style="font-size: 1.1rem;">Medium</p>
+        </div>
+        <div class="col-md-4 col-4 text-center" style="line-height: .5rem;">
+          <p style="font-size: 1.2rem;">WEIGHT</p>
+          <p style="font-size: 1.1rem;">Medium</p>
+        </div>
+      </div>
+    </div>
+
+
+    <div style="border-top: 4px solid #f1f1f2; padding: 0 1rem; background-color: #ffff; margin-bottom: 5rem;">
+      <div class="d-flex justify-content-around align-items-center" style="margin-bottom: 1px solid #f1f1f2;">
+        <div class="mobile_click_feature px-3 py-2" style="width: 100%;">
+          <p style="font-size: 1.2rem; margin-bottom: 0; text-align: center;">Features</p>
+        </div>
+        <div class="mobile_click_desc px-3 py-2" style="width: 100%;">
+          <p style="font-size: 1.2rem; margin-bottom: 0; text-align: center;">Description</p>
+        </div>
+        <div class="mobile_click_table px-3 py-2" style="width: 100%;">
+          <p style="font-size: 1.2rem; margin-bottom: 0; text-align: center;">Specifications</p>
+        </div>
+      </div>
+      <hr>
+
+      <table class="table table-bordered mobile_show_table mt-3" style="width: 100%!important;">
+
+        <tbody>
+          <tr>
+            <td style="font-weight: 500; color: #212529; font-size: 1.1rem; width: 50%;">
+              Frame Material</td>
+            <td style="font-weight: 500; color: #7d888b; font-size: 1.1rem; width: 50%;">Acetate</td>
+          </tr>
+          <tr>
+            <td style="font-weight: 500; color: #212529; font-size: 1.1rem; width: 50%;">
+              Frame color
+            <td style="font-weight: 500; color: #7d888b; font-size: 1.1rem; width: 50%;">Black</td>
+          </tr>
+          <tr>
+            <td style="font-weight: 500; color: #212529; font-size: 1.1rem; width: 50%;">
+              Frame Material</td>
+            <td style="font-weight: 500; color: #7d888b; font-size: 1.1rem; width: 50%;">Acetate</td>
+          </tr>
+          <tr>
+            <td style="font-weight: 500; color: #212529; font-size: 1.1rem;width: 50%;">
+              Raw Material Sourced From<span style="visibility: hidden;"></span> </td>
+            </td>
+            <td style="font-weight: 500; color: #7d888b; font-size: 1.1rem; width: 50%;">India</td>
+          </tr>
+          <tr>
+            <td style="font-weight: 500; color: #212529; font-size: 1.1rem;width: 50%;">
+              Frame Material</td>
+            <td style="font-weight: 500; color: #7d888b; font-size: 1.1rem; width: 50%;">Acetate</td>
+          </tr>
+          <tr>
+            <td style="font-weight: 500; color: #212529; font-size: 1.1rem;width: 50%;">
+              Frame Material</td>
+            <td style="font-weight: 500; color: #7d888b; font-size: 1.1rem; width: 50%;">Acetate</td>
+          </tr>
+          <tr>
+            <td style="font-weight: 500; color: #212529; font-size: 1.1rem;width: 50%;">
+              Frame Material</td>
+            <td style="font-weight: 500; color: #7d888b; font-size: 1.1rem; width: 50%;">Acetate</td>
+          </tr>
+          <tr>
+            <td style="font-weight: 500; color: #212529; font-size: 1.1rem;width: 50%;">
+              Frame Material</td>
+            <td style="font-weight: 500; color: #7d888b; font-size: 1.1rem; width: 50%;">Acetate</td>
+          </tr>
+          <tr>
+            <td style="font-weight: 500; color: #212529; font-size: 1.1rem;width: 50%;">
+              Frame Material</td>
+            <td style="font-weight: 500; color: #7d888b; font-size: 1.1rem; width: 50%;">Acetate</td>
+          </tr>
+          <tr>
+            <td style="font-weight: 500; color: #212529; font-size: 1.1rem;width: 50%;">
+              Frame Material</td>
+            <td style="font-weight: 500; color: #7d888b; font-size: 1.1rem; width: 50%;">Acetate</td>
+          </tr>
+          <tr>
+            <td style="font-weight: 500; color: #212529; font-size: 1.1rem;width: 50%;">
+              Frame Material</td>
+            <td style="font-weight: 500; color: #7d888b; font-size: 1.1rem; width: 50%;">Acetate</td>
+          </tr>
+          <tr>
+            <td style="font-weight: 500; color: #212529; font-size: 1.1rem;width: 50%;">
+              Frame Material</td>
+            <td style="font-weight: 500; color: #7d888b; font-size: 1.1rem; width: 50%;">Acetate</td>
+          </tr>
+          <tr>
+            <td style="font-weight: 500; color: #212529; font-size: 1.1rem;width: 50%;">
+              Frame Material</td>
+            <td style="font-weight: 500; color: #7d888b; font-size: 1.1rem; width: 50%;">Acetate</td>
+          </tr>
+          <tr>
+            <td style="font-weight: 500; color: #212529; font-size: 1.1rem;width: 50%;">
+              Frame Material</td>
+            <td style="font-weight: 500; color: #7d888b; font-size: 1.1rem; width: 50%;">Acetate</td>
+          </tr>
+          <tr>
+            <td style="font-weight: 500; color: #212529; font-size: 1.1rem;width: 50%;">
+              Frame Material</td>
+            <td style="font-weight: 500; color: #7d888b; font-size: 1.1rem; width: 50%;">Acetate</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div style="display: none;" class="mobile_show_desc">
+        <p style="font-size: 1rem; font-weight: 400; line-height: 1.5rem; color: #212529;">Manage your daily
+          avatars with the E20A8507 eyeglasses from Graviate by Coolwinks. Outfitting your appearance with a spark
+          of flamboyance, these blue colored rectangle frames impart you with the one-of-a-kind charming appeal. An
+          ideal match for those with heart & square face shapes, these glasses pair along with every attire of your
+          choice. Actual product colors may vary slightly from colors shown on your Computer/Mobile Screen.
+        </p>
+      </div>
+
+      <div style="display: none; line-height: .5rem;" class="mobile_show_feature">
+        <p style=" color: #212529; font-size: 1rem; font-weight: 400;">✔ Glossy Full Frame</p>
+        <br>
+        <p style=" color: #212529; font-size: 1rem; font-weight: 400;">✔ Glossy Full Frame</p>
+        <br>
+        <p style=" color: #212529; font-size: 1rem; font-weight: 400;">✔ Glossy Full Frame</p>
+        <br>
+        <p style=" color: #212529; font-size: 1rem; font-weight: 400;">✔ Glossy Full Frame</p>
+
+      </div>
+    </div>
+
+
+
+    <div style="border-top: 4px solid #f1f1f2; background-color: #ffff; margin-top: 1rem; padding: 1rem 1rem;">
+      <p class="my-auto" style="font-size: 1.5rem; text-align: center; color: #515151; font-weight: 600;">REVIEWS</p>
+    </div>
+
+    <div
+      style="background-color: #FBFBFB; cursor: pointer; width: 100%; position: relative; overflow: hidden; padding: 2rem 1.5rem;"
+      class="single_prd_com">
+      <div class="d-flex">
+        <img src="images/useravtar.webp" class="img-fluid" alt="" style="width: 35px; height: 35px;">
+        <div>
+          <div class="">
+            <span style="font-weight: 400; font-size: 1.2rem;" class="px-3 text-primary">Khambhat halavason</span>
+
+            <span style="font-size: .955rem; float: right;">19-july-2021</span>
+          </div>
+
+          <div class="pl-3 pt-2">
+            <div class="d-flex">
+              <i class="fa fa-star" aria-hidden="true" style="color: #FCB016;"></i>
+              <i class="fa fa-star" aria-hidden="true" style="color: #FCB016;"></i>
+              <i class="fa fa-star" aria-hidden="true" style="color: #FCB016;"></i>
+              <i class="fa fa-star" aria-hidden="true" style="color: #FCB016;"></i>
+              <i class="fa fa-star" aria-hidden="true" style="color: #FCB016;"></i>
+            </div>
+            <p class="pt-2" style="font-size: 1rem; font-weight: 600; color: #8d8585;"><span>It very owsame
+                eyes glass. Product are 100% original. I am satisfy i...</span>
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div
+      style="background-color: #FFFFFF; cursor: pointer; width: 100%; position: relative; overflow: hidden; padding: 2rem 1.5rem;"
+      class="single_prd_com">
+      <div class="d-flex">
+        <img src="images/useravtar.webp" class="img-fluid" alt="" style="width: 35px; height: 35px;">
+        <div>
+          <div class="">
+            <span style="font-weight: 400; font-size: 1.2rem;" class="px-3 text-primary">Khambhat halavason</span>
+
+            <span style="font-size: .955rem; float: right;">19-july-2021</span>
+          </div>
+
+          <div class="pl-3 pt-2">
+            <div class="d-flex">
+              <i class="fa fa-star" aria-hidden="true" style="color: #FCB016;"></i>
+              <i class="fa fa-star" aria-hidden="true" style="color: #FCB016;"></i>
+              <i class="fa fa-star" aria-hidden="true" style="color: #FCB016;"></i>
+              <i class="fa fa-star" aria-hidden="true" style="color: #FCB016;"></i>
+              <i class="fa fa-star" aria-hidden="true" style="color: #FCB016;"></i>
+            </div>
+            <p class="pt-2" style="font-size: 1rem; font-weight: 600; color: #8d8585;"><span>It very owsame
+                eyes glass. Product are 100% original. I am satisfy i...</span>
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div
+      style="background-color: #FBFBFB; cursor: pointer; width: 100%; position: relative; overflow: hidden; padding: 2rem 1.5rem;"
+      class="single_prd_com">
+      <div class="d-flex">
+        <img src="images/useravtar.webp" class="img-fluid" alt="" style="width: 35px; height: 35px;">
+        <div>
+          <div class="">
+            <span style="font-weight: 400; font-size: 1.2rem;" class="px-3 text-primary">Khambhat halavason</span>
+
+            <span style="font-size: .955rem; float: right;">19-july-2021</span>
+          </div>
+
+          <div class="pl-3 pt-2">
+            <div class="d-flex">
+              <i class="fa fa-star" aria-hidden="true" style="color: #FCB016;"></i>
+              <i class="fa fa-star" aria-hidden="true" style="color: #FCB016;"></i>
+              <i class="fa fa-star" aria-hidden="true" style="color: #FCB016;"></i>
+              <i class="fa fa-star" aria-hidden="true" style="color: #FCB016;"></i>
+              <i class="fa fa-star" aria-hidden="true" style="color: #FCB016;"></i>
+            </div>
+            <p class="pt-2" style="font-size: 1rem; font-weight: 600; color: #8d8585;"><span>It very owsame
+                eyes glass. Product are 100% original. I am satisfy i...</span>
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+    <div
+      style="border-top: 4px solid #f1f1f2; background-color: #ffff; margin-top: 1rem; padding: 1.5rem 1rem; margin-bottom: 5rem;">
+      <p class="my-auto" style="font-size: 1.5rem; text-align: center; color: #515151; font-weight: 600;">SIMILAR
+        PRODUCTS</p>
+
+      <div style="position: relative;" class="mt-4">
+        <div class="owl-carousel mobile-bottom-carousel owl-theme">
+          <div class="item">
+            <div class="px-3 py-5" style="border: 1px solid #ECEAEA; border-radius: 5%; overflow: hidden!important;">
+              <img src="images/E15B6386-1.webp" class="img img-fluid" alt="">
+              <h3 class="text-center fav-name ml-4">GRAVIATE
+              </h3>
+              <div class="d-flex justify-content-center">
+                <p class="text-center fav-price">Rs.700</p>
+              </div>
+              <p class="text-center fav-desc">Including basic lenses</p>
+            </div>
+            <div class="discountmeee discount dis_frame">50% OFF</div>
+          </div>
+
+          <div class="item">
+            <div class="px-3 py-5" style="border: 1px solid #ECEAEA; border-radius: 5%; overflow: hidden!important;">
+              <img src="images/E18B7009-1.webp" class="img img-fluid" alt="">
+              <h3 class="text-center fav-name ml-4">GRAVIATE
+              </h3>
+              <div class="d-flex justify-content-center">
+                <p class="text-center fav-price">Rs.700</p>
+              </div>
+              <p class="text-center fav-desc">Including basic lenses</p>
+            </div>
+            <div class="discountmeee discount dis_frame">50% OFF</div>
+          </div>
+
+          <div class="item">
+            <div class="px-3 py-5" style="border: 1px solid #ECEAEA; border-radius: 5%; overflow: hidden!important;">
+              <img src="images/E12A6420-1.webp" class="img img-fluid" alt="">
+              <h3 class="text-center fav-name ml-4">GRAVIATE
+              </h3>
+              <div class="d-flex justify-content-center">
+                <p class="text-center fav-price">Rs.700</p>
+              </div>
+              <p class="text-center fav-desc">Including basic lenses</p>
+            </div>
+            <div class="discountmeee discount dis_frame">50% OFF</div>
+          </div>
+
+          <div class="item">
+            <div class="px-3 py-5" style="border: 1px solid #ECEAEA; border-radius: 5%; overflow: hidden!important;">
+              <img src="images/E15B6287-1.webp" class="img img-fluid" alt="">
+              <h3 class="text-center fav-name ml-4">GRAVIATE
+              </h3>
+              <div class="d-flex justify-content-center">
+                <p class="text-center fav-price">Rs.700</p>
+              </div>
+              <p class="text-center fav-desc">Including basic lenses</p>
+            </div>
+            <div class="discountmeee discount dis_frame">50% OFF</div>
+          </div>
+
+          <div class="item">
+            <div class="px-3 py-5" style="border: 1px solid #ECEAEA; border-radius: 5%; overflow: hidden!important;">
+              <img src="images/E15B6386-1.webp" class="img img-fluid" alt="">
+              <h3 class="text-center fav-name ml-4">GRAVIATE</h3>
+              <div class="d-flex justify-content-center">
+                <p class="text-center fav-price">Rs.700</p>
+              </div>
+              <p class="text-center fav-desc">Including basic lenses</p>
+            </div>
+            <div class="discountmeee discount dis_frame">50% OFF</div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="mobile_single_buy_show my-5 mx-auto"
+        style="display: none; position: fixed; bottom: -37px; left: 0; right: 0; background-color: #fff; z-index: 5000; padding-top: 5rem;">
+        <i class="fa fa-times mr-4 mobile_single_buy_cancel" aria-hidden="true"
+          style="float: right; margin-top: -1.5rem; font-size: 1.7rem;"></i>
+        <h1 class="mx-auto" style="font-weight: 600; text-align: center; font-size: 30px; color: #035391; width: 75%;">
+          Buy On Call</h1>
+        <p class="mx-auto" style="text-align: center; font-size: 13px; font-weight: 400; color: #676767; width: 75%;">
+          Enter your details to request a call back
+          from our eyewear expert</p>
+        <form action="">
+          <div class="form-group" style="padding-left: .7rem; padding-right: .7rem;">
+            <label for="exampleInputEmail1"
+              style="font-size: 13px; margin-bottom: -1rem; color: #707070;">Mobile</label>
+            <input type="number" class="form-control" id="" aria-describedby="emailHelp"
+              style="border: none; border-bottom: 1px solid #E1DCDC; border-radius: 0; font-size: 16px; color: #222222;">
+          </div>
+          <div class="form-group" style="padding-left: .7rem; padding-right: .7rem;">
+            <label for="exampleInputPassword1"
+              style="font-size: 13px; margin-bottom: -1rem; color: #707070;">Name</label>
+            <input type="text" class="form-control" id=""
+              style="border: none; border-bottom: 1px solid #E1DCDC; border-radius: 0; font-size: 16px; color: #222222;">
+          </div>
+
+          <button type="submit" class="btn btn-block mt-4 py-3"
+            style="background-color: #035391; color: #fff; font-size: 18px; font-weight: 600;">SUBMIT</button>
+        </form>
+
+      </div>
+       
+       <div class="show_mobile_bdy_button" style="height: 100vh; background: rgb(38 38 38 / .6); position: absolute; top: 0; left: 0; right: 0; bottom:0; z-index: 4999; display: none;">
+      <div class="my-5 mx-auto"
+        style="position: fixed; bottom: -37px; left: 0; right: 0; background-color: #EDEDED; z-index: 5000; padding-bottom: .7rem;">
+
+        <div class="py-4 px-3 " style="background-color: #232735;">
+          <span class="mx-auto" style="font-weight: 600; text-align: left; font-size: 14px; color: #fff;">
+            SELECT YOUR POWER TYPE</span>
+          <i class="fa fa-times show_mobile_bdy_cancel" aria-hidden="true"
+            style="float: right; font-size: 1.7rem; color: #fff;"></i>
+        </div>
+
+
+        <div class="d-flex align-items-center px-3 mt-3 mx-auto mobile_bdy2_button"
+          style="background-color: #fff; width: 93%; box-shadow: 1px 1px 5px 1px #D3D3D3;">
+          <span>
+            <img src="images/reading-eyeglasses-hamburgericon.png" alt="" style="width: 60px;">
+          </span>
+          <span class="mx-auto"
+            style="text-align: left; font-size: 12px; color: #D3D3D3; margin-left: 2rem!important;">
+            <p class="mt-3" style="font-size: 14px; font-weight: 700; margin-bottom: 0; color: #000000;">POWERED
+              EYEGLASSES</p>
+            <P style="font-size: 12px; font-weight: 500;">For Distance Or Near Vision</P>
+          </span>
+          <i class="fa fa-chevron-right mr-3" aria-hidden="true"
+            style="float: right; font-size: 1.7rem; color: #EDEDED;"></i>
+        </div>
+
+        <div class="d-flex align-items-center px-3 mt-3 mx-auto mobile_bdy2_button"
+          style="background-color: #fff; width: 93%; box-shadow: 1px 1px 5px 1px #D3D3D3;">
+          <span>
+            <img src="images/reading-eyeglasses-hamburgericon.png" alt="" style="width: 60px;">
+          </span>
+          <span class="mx-auto"
+            style="text-align: left; font-size: 12px; color: #262626; margin-left: 2rem!important;">
+            <p class="mt-3" style="font-size: 14px; font-weight: 700; margin-bottom: 0; color: #000000;">POWERED
+              EYEGLASSES</p>
+            <P style="font-size: 12px; font-weight: 500;">For Distance Or Near Vision</P>
+          </span>
+          <i class="fa fa-chevron-right mobile_single_buy_cancel mr-3" aria-hidden="true"
+            style="float: right; font-size: 1.7rem; color: #EDEDED;"></i>
+        </div>
+
+        <div class="d-flex align-items-center px-3 mx-auto mt-3 mobile_bdy2_button"
+          style="background-color: #fff; width: 93%; box-shadow: 1px 1px 5px 1px #D3D3D3;">
+          <span>
+            <img src="images/reading-eyeglasses-hamburgericon.png" alt="" style="width: 60px;">
+          </span>
+          <span class="mx-auto"
+            style="text-align: left; font-size: 12px; color: #262626; margin-left: 2rem!important;">
+            <p class="mt-3" style="font-size: 14px; font-weight: 700; margin-bottom: 0; color: #000000;">POWERED
+              EYEGLASSES</p>
+            <P style="font-size: 12px; font-weight: 500;">For Distance Or Near Vision</P>
+          </span>
+          <i class="fa fa-chevron-right mr-3" aria-hidden="true"
+            style="float: right; font-size: 1.7rem; color: #EDEDED;"></i>
+        </div>
+
+        <div class="d-flex align-items-center px-3 mt-3 mx-auto mobile_bdy2_button"
+          style="background-color: #fff; width: 93%; box-shadow: 1px 1px 5px 1px #D3D3D3;">
+          <span>
+            <img src="images/reading-eyeglasses-hamburgericon.png" alt="" style="width: 60px;">
+          </span>
+          <span class="mx-auto"
+            style="text-align: left; font-size: 14px; color: #262626; margin-left: 2rem!important;">
+            <p class="mt-3" style="font-size: 14px; font-weight: 700; margin-bottom: 0; color: #000000;">POWERED
+              EYEGLASSES</p>
+            <P style="font-size: 12px; font-weight: 500;">For Distance Or Near Vision</P>
+          </span>
+          <i class="fa fa-chevron-right mr-3" aria-hidden="true"
+            style="float: right; font-size: 1.7rem; color: #EDEDED;"></i>
+        </div>
+      </div>
+    </div>
+
+
+     
+     
+      <div class="show_mobile_bdy2_button mx-auto"
+        style="display: none; position: fixed; bottom: 0; left: 0; right: 0; top: 0; height: 100vh; background-color: #fff; z-index: 5000;">
+
+        <div class="py-4 px-3 " style="background-color: #232735;">
+          <i class=" fa fa-long-arrow-left show_mobile_bdy2_cancel mt-3" aria-hidden=" true"
+            style="font-weight: 600; float: left; text-align: left; font-size: 16px; color: #fff;"></i>
+          <span>
+            <p style=" font-size: 14px; font-weight: 600; color: #fff; text-align:center; margin-bottom: 0;">SELECT YOUR
+              LENSES</p>
+            <p style="font-size: 12px; text-align: center; margin-bottom: 0; font-weight: 600; color: #fff;">Zero Power
+              Eyeglasses</p>
+          </span>
+        </div>
+
+        <div class="owl-carousel mob-owl-bdy2 owl-theme">
+          <div class="item">
+        <table class="table table-bordered">
+
+          <tbody style="width: 75%;">
+            <tr>
+              <td style="font-weight: 600; text-align: center; color: #262626; background: linear-gradient(
+            180deg ,#39c7cf -7.18%,#035391 106.9%); box-shadow: 10px 10px 24px rgb(0 0 0 / 10%);">
+                <div>
+                  <div style="font-size: 14px; color: #fff;">
+                    Premium Anti Glare With Uv Protection
+                  </div>
+                  <div style="font-size: 20px; margin-top:.5rem; color: #fff;">
+                    ₹ 1790 <br>
+                    <p style="font-size: 12px; font-weight: 400; color: #fff;">Frame + Lens</p>
+                  </div>
+                  <div class="px-3">
+                    <input type="button" class="btn" value="SELECT THIS LENS" data-toggle="modal"
+                      data-target="#myModal2"
+                      style="font-size: 14px; font-weight: 600; background: #fc8044; box-shadow: 1px 1px 9px rgb(0 0 0 / 10%); border-radius: 4px; color: #fff; width: 100%;">
+                  </div>
+                  <div class="px-3 mt-2" style="font-size: 12px; color: #fff;">
+                    Use COOLCASH & Get upto 60% Off
+                  </div>
+                </div>
+              </td>
+
+              <td style="font-weight: 600; text-align: center; color: #262626; background-color: #EDEDED;">
+                <div>
+                  <div style="font-size: 14px;">
+                    Anti Glare
+                  </div>
+                  <div style="font-size: 20px; margin-top: 2.3rem;">
+                    ₹ 1590 <br>
+                    <p style="font-size: 12px; font-weight: 400; color: #262626;">Frame + Lens</p>
+                  </div>
+                  <div class="px-3">
+                    <input type="button" class="btn" value="SELECT THIS LENS" data-toggle="modal"
+                      data-target="#myModal2"
+                      style="font-size: 14px; font-weight: 600; background: #fc8044; box-shadow: 1px 1px 9px rgb(0 0 0 / 10%); border-radius: 4px; color: #fff; width: 100%;">
+                  </div>
+                  <div class="px-3 mt-2" style="font-size: 12px; color: #1276e2;">
+                    Use COOLCASH & Get upto 60% Off
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td
+                style="font-weight: 600; color: #212529; font-size: .75rem; box-shadow: 10px 10px 24px rgb(0 0 0 / 10%); background-color: #fff;">
+                <span class="ml-2">Warranty Period</span>
+              </td>
+
+              <td
+                style="font-weight: 500; color: #212529; font-size: .75rem; text-align: center; vertical-align: middle;">
+                1 Year</td>
+            </tr>
+
+            <tr>
+              <td
+                style="font-weight: 600; color: #212529; font-size: .75rem; box-shadow: 10px 10px 24px rgb(0 0 0 / 10%); background-color: #fff;">
+                <span class="ml-2">Index/Thickness</span>
+              </td>
+              <td
+                style="font-weight: 500; color: #212529; font-size: .75rem; text-align: center; vertical-align: middle;">
+                1.56</td>
+            </tr>
+
+            <tr>
+              <td
+                style="font-weight: 600; color: #212529; font-size: .75rem; box-shadow: 10px 10px 24px rgb(0 0 0 / 10%); background-color: #fff;">
+                <span class="ml-2">Power Range</span>
+              </td>
+              <td
+                style="font-weight: 500; color: #212529; font-size: .75rem; text-align: center; vertical-align: middle;">
+                upto +/-8</td>
+
+            </tr>
+
+            <tr>
+              <td
+                style="font-weight: 600; color: #212529; font-size: .75rem; box-shadow: 10px 10px 24px rgb(0 0 0 / 10%); background-color: #fff;">
+                <span class="ml-2">Anti Scratch Coating</span> <i class="fa fa-info-circle" aria-hidden="true"
+                  style="color: grey;"></i>
+              </td>
+              <td
+                style="font-weight: 500; color: #212529; font-size: .75rem; text-align: center; vertical-align: middle;">
+                <img src="images/tick-icon.svg" class="img-fluid" alt="" style="height: 10px;">
+              </td>
+            </tr>
+
+            <tr>
+              <td
+                style="font-weight: 600; color: #212529; font-size: .75rem; box-shadow: 10px 10px 24px rgb(0 0 0 / 10%); background-color: #fff;">
+                <span class="ml-2">Both Side Anti Glare Coating</span> <i class="fa fa-info-circle" aria-hidden="true"
+                  style="color: grey;"></i>
+              </td>
+              <td
+                style="font-weight: 500; color: #212529; font-size: .75rem; text-align: center; vertical-align: middle;">
+                <img src="images/tick-icon.svg" class="img-fluid" alt="" style="height: 10px;">
+              </td>
+            </tr>
+
+            <tr>
+              <td
+                style="font-weight: 600; color: #212529; font-size: .75rem; box-shadow: 10px 10px 24px rgb(0 0 0 / 10%); background-color: #fff;">
+                <span class="ml-2">Both Side Anti Reflective Coating</span> <i class="fa fa-info-circle"
+                  aria-hidden="true" style="color: grey; margin-left: 2rem;"></i>
+              </td>
+              <td
+                style="font-weight: 500; color: #212529; font-size: .75rem; text-align: center; vertical-align: middle;">
+                <img src="images/tick-icon.svg" class="img-fluid" alt="" style="height: 10px;">
+              </td>
+
+
+            </tr>
+
+            <tr>
+              <td
+                style="font-weight: 600; color: #212529; font-size: .75rem; box-shadow: 10px 10px 24px rgb(0 0 0 / 10%); background-color: #fff;">
+                <span class="ml-2">UV Protection</span> <i class="fa fa-info-circle" aria-hidden="true"
+                  style="color: grey;"></i>
+              </td>
+              <td
+                style="font-weight: 500; color: #212529; font-size: .75rem; text-align: center; vertical-align: middle;">
+                <img src="images/cross-icon.svg" class="img-fluid" alt="" style="height: 10px;">
+              </td>
+
+
+            </tr>
+
+            <tr>
+              <td
+                style="font-weight: 600; color: #212529; font-size: .75rem; box-shadow: 10px 10px 24px rgb(0 0 0 / 10%); background-color: #fff;">
+                <span class="ml-2">Water and Dust Repellent</span> <i class="fa fa-info-circle" aria-hidden="true"
+                  style="color: grey;"></i>
+              </td>
+              <td
+                style="font-weight: 500; color: #212529; font-size: .75rem; text-align: center; vertical-align: middle;">
+                <img src="images/cross-icon.svg" class="img-fluid" alt="" style="height: 10px;">
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="item">
+        <table class="table table-bordered">
+
+          <tbody style="width: 75%;">
+            <tr>
+              <td style="font-weight: 600; text-align: center; color: #262626; background: linear-gradient(
+            180deg ,#39c7cf -7.18%,#035391 106.9%); box-shadow: 10px 10px 24px rgb(0 0 0 / 10%);">
+                <div>
+                  <div style="font-size: 14px; color: #fff;">
+                    Premium Anti Glare With Uv Protection
+                  </div>
+                  <div style="font-size: 20px; margin-top:.5rem; color: #fff;">
+                    ₹ 1790 <br>
+                    <p style="font-size: 12px; font-weight: 400; color: #fff;">Frame + Lens</p>
+                  </div>
+                  <div class="px-3">
+                    <input type="button" class="btn" value="SELECT THIS LENS" data-toggle="modal"
+                      data-target="#myModal2"
+                      style="font-size: 14px; font-weight: 600; background: #fc8044; box-shadow: 1px 1px 9px rgb(0 0 0 / 10%); border-radius: 4px; color: #fff; width: 100%;">
+                  </div>
+                  <div class="px-3 mt-2" style="font-size: 12px; color: #fff;">
+                    Use COOLCASH & Get upto 60% Off
+                  </div>
+                </div>
+              </td>
+
+              <td style="font-weight: 600; text-align: center; color: #262626; background-color: #EDEDED;">
+                <div>
+                  <div style="font-size: 14px;">
+                    Anti Glare
+                  </div>
+                  <div style="font-size: 20px; margin-top: 2.3rem;">
+                    ₹ 1590 <br>
+                    <p style="font-size: 12px; font-weight: 400; color: #262626;">Frame + Lens</p>
+                  </div>
+                  <div class="px-3">
+                    <input type="button" class="btn" value="SELECT THIS LENS" data-toggle="modal"
+                      data-target="#myModal2"
+                      style="font-size: 14px; font-weight: 600; background: #fc8044; box-shadow: 1px 1px 9px rgb(0 0 0 / 10%); border-radius: 4px; color: #fff; width: 100%;">
+                  </div>
+                  <div class="px-3 mt-2" style="font-size: 12px; color: #1276e2;">
+                    Use COOLCASH & Get upto 60% Off
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td
+                style="font-weight: 600; color: #212529; font-size: .75rem; box-shadow: 10px 10px 24px rgb(0 0 0 / 10%); background-color: #fff;">
+                <span class="ml-2">Warranty Period</span>
+              </td>
+
+              <td
+                style="font-weight: 500; color: #212529; font-size: .75rem; text-align: center; vertical-align: middle;">
+                1 Year</td>
+            </tr>
+
+            <tr>
+              <td
+                style="font-weight: 600; color: #212529; font-size: .75rem; box-shadow: 10px 10px 24px rgb(0 0 0 / 10%); background-color: #fff;">
+                <span class="ml-2">Index/Thickness</span>
+              </td>
+              <td
+                style="font-weight: 500; color: #212529; font-size: .75rem; text-align: center; vertical-align: middle;">
+                1.56</td>
+            </tr>
+
+            <tr>
+              <td
+                style="font-weight: 600; color: #212529; font-size: .75rem; box-shadow: 10px 10px 24px rgb(0 0 0 / 10%); background-color: #fff;">
+                <span class="ml-2">Power Range</span>
+              </td>
+              <td
+                style="font-weight: 500; color: #212529; font-size: .75rem; text-align: center; vertical-align: middle;">
+                upto +/-8</td>
+
+            </tr>
+
+            <tr>
+              <td
+                style="font-weight: 600; color: #212529; font-size: .75rem; box-shadow: 10px 10px 24px rgb(0 0 0 / 10%); background-color: #fff;">
+                <span class="ml-2">Anti Scratch Coating</span> <i class="fa fa-info-circle" aria-hidden="true"
+                  style="color: grey;"></i>
+              </td>
+              <td
+                style="font-weight: 500; color: #212529; font-size: .75rem; text-align: center; vertical-align: middle;">
+                <img src="images/tick-icon.svg" class="img-fluid" alt="" style="height: 10px;">
+              </td>
+            </tr>
+
+            <tr>
+              <td
+                style="font-weight: 600; color: #212529; font-size: .75rem; box-shadow: 10px 10px 24px rgb(0 0 0 / 10%); background-color: #fff;">
+                <span class="ml-2">Both Side Anti Glare Coating</span> <i class="fa fa-info-circle" aria-hidden="true"
+                  style="color: grey;"></i>
+              </td>
+              <td
+                style="font-weight: 500; color: #212529; font-size: .75rem; text-align: center; vertical-align: middle;">
+                <img src="images/tick-icon.svg" class="img-fluid" alt="" style="height: 10px;">
+              </td>
+            </tr>
+
+            <tr>
+              <td
+                style="font-weight: 600; color: #212529; font-size: .75rem; box-shadow: 10px 10px 24px rgb(0 0 0 / 10%); background-color: #fff;">
+                <span class="ml-2">Both Side Anti Reflective Coating</span> <i class="fa fa-info-circle"
+                  aria-hidden="true" style="color: grey; margin-left: 2rem;"></i>
+              </td>
+              <td
+                style="font-weight: 500; color: #212529; font-size: .75rem; text-align: center; vertical-align: middle;">
+                <img src="images/tick-icon.svg" class="img-fluid" alt="" style="height: 10px;">
+              </td>
+             </tr>
+
+            <tr>
+              <td
+                style="font-weight: 600; color: #212529; font-size: .75rem; box-shadow: 10px 10px 24px rgb(0 0 0 / 10%); background-color: #fff;">
+                <span class="ml-2">UV Protection</span> <i class="fa fa-info-circle" aria-hidden="true"
+                  style="color: grey;"></i>
+              </td>
+              <td
+                style="font-weight: 500; color: #212529; font-size: .75rem; text-align: center; vertical-align: middle;">
+                <img src="images/cross-icon.svg" class="img-fluid" alt="" style="height: 10px;">
+              </td>
+            </tr>
+
+            <tr>
+              <td
+                style="font-weight: 600; color: #212529; font-size: .75rem; box-shadow: 10px 10px 24px rgb(0 0 0 / 10%); background-color: #fff;">
+                <span class="ml-2">Water and Dust Repellent</span> <i class="fa fa-info-circle" aria-hidden="true"
+                  style="color: grey;"></i>
+              </td>
+              <td
+                style="font-weight: 500; color: #212529; font-size: .75rem; text-align: center; vertical-align: middle;">
+                <img src="images/cross-icon.svg" class="img-fluid" alt="" style="height: 10px;">
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="item">
+        <table class="table table-bordered">
+
+          <tbody style="width: 75%;">
+            <tr>
+              <td style="font-weight: 600; text-align: center; color: #262626; background: linear-gradient(
+            180deg ,#39c7cf -7.18%,#035391 106.9%); box-shadow: 10px 10px 24px rgb(0 0 0 / 10%);">
+                <div>
+                  <div style="font-size: 14px; color: #fff;">
+                    Premium Anti Glare With Uv Protection
+                  </div>
+                  <div style="font-size: 20px; margin-top:.5rem; color: #fff;">
+                    ₹ 1790 <br>
+                    <p style="font-size: 12px; font-weight: 400; color: #fff;">Frame + Lens</p>
+                  </div>
+                  <div class="px-3">
+                    <input type="button" class="btn" value="SELECT THIS LENS" data-toggle="modal"
+                      data-target="#myModal2"
+                      style="font-size: 14px; font-weight: 600; background: #fc8044; box-shadow: 1px 1px 9px rgb(0 0 0 / 10%); border-radius: 4px; color: #fff; width: 100%;">
+                  </div>
+                  <div class="px-3 mt-2" style="font-size: 12px; color: #fff;">
+                    Use COOLCASH & Get upto 60% Off
+                  </div>
+                </div>
+              </td>
+
+              <td style="font-weight: 600; text-align: center; color: #262626; background-color: #EDEDED;">
+                <div>
+                  <div style="font-size: 14px;">
+                    Anti Glare
+                  </div>
+                  <div style="font-size: 20px; margin-top: 2.3rem;">
+                    ₹ 1590 <br>
+                    <p style="font-size: 12px; font-weight: 400; color: #262626;">Frame + Lens</p>
+                  </div>
+                  <div class="px-3">
+                    <input type="button" class="btn" value="SELECT THIS LENS" data-toggle="modal"
+                      data-target="#myModal2"
+                      style="font-size: 14px; font-weight: 600; background: #fc8044; box-shadow: 1px 1px 9px rgb(0 0 0 / 10%); border-radius: 4px; color: #fff; width: 100%;">
+                  </div>
+                  <div class="px-3 mt-2" style="font-size: 12px; color: #1276e2;">
+                    Use COOLCASH & Get upto 60% Off
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td
+                style="font-weight: 600; color: #212529; font-size: .75rem; box-shadow: 10px 10px 24px rgb(0 0 0 / 10%); background-color: #fff;">
+                <span class="ml-2">Warranty Period</span>
+              </td>
+
+              <td
+                style="font-weight: 500; color: #212529; font-size: .75rem; text-align: center; vertical-align: middle;">
+                1 Year</td>
+            </tr>
+
+            <tr>
+              <td
+                style="font-weight: 600; color: #212529; font-size: .75rem; box-shadow: 10px 10px 24px rgb(0 0 0 / 10%); background-color: #fff;">
+                <span class="ml-2">Index/Thickness</span>
+              </td>
+              <td
+                style="font-weight: 500; color: #212529; font-size: .75rem; text-align: center; vertical-align: middle;">
+                1.56</td>
+            </tr>
+
+            <tr>
+              <td
+                style="font-weight: 600; color: #212529; font-size: .75rem; box-shadow: 10px 10px 24px rgb(0 0 0 / 10%); background-color: #fff;">
+                <span class="ml-2">Power Range</span>
+              </td>
+              <td
+                style="font-weight: 500; color: #212529; font-size: .75rem; text-align: center; vertical-align: middle;">
+                upto +/-8</td>
+
+            </tr>
+
+            <tr>
+              <td
+                style="font-weight: 600; color: #212529; font-size: .75rem; box-shadow: 10px 10px 24px rgb(0 0 0 / 10%); background-color: #fff;">
+                <span class="ml-2">Anti Scratch Coating</span> <i class="fa fa-info-circle" aria-hidden="true"
+                  style="color: grey;"></i>
+              </td>
+              <td
+                style="font-weight: 500; color: #212529; font-size: .75rem; text-align: center; vertical-align: middle;">
+                <img src="images/tick-icon.svg" class="img-fluid" alt="" style="height: 10px;">
+              </td>
+            </tr>
+
+            <tr>
+              <td
+                style="font-weight: 600; color: #212529; font-size: .75rem; box-shadow: 10px 10px 24px rgb(0 0 0 / 10%); background-color: #fff;">
+                <span class="ml-2">Both Side Anti Glare Coating</span> <i class="fa fa-info-circle" aria-hidden="true"
+                  style="color: grey;"></i>
+              </td>
+              <td
+                style="font-weight: 500; color: #212529; font-size: .75rem; text-align: center; vertical-align: middle;">
+                <img src="images/tick-icon.svg" class="img-fluid" alt="" style="height: 10px;">
+              </td>
+            </tr>
+
+            <tr>
+              <td
+                style="font-weight: 600; color: #212529; font-size: .75rem; box-shadow: 10px 10px 24px rgb(0 0 0 / 10%); background-color: #fff;">
+                <span class="ml-2">Both Side Anti Reflective Coating</span> <i class="fa fa-info-circle"
+                  aria-hidden="true" style="color: grey; margin-left: 2rem;"></i>
+              </td>
+              <td
+                style="font-weight: 500; color: #212529; font-size: .75rem; text-align: center; vertical-align: middle;">
+                <img src="images/tick-icon.svg" class="img-fluid" alt="" style="height: 10px;">
+              </td>
+
+
+            </tr>
+
+            <tr>
+              <td
+                style="font-weight: 600; color: #212529; font-size: .75rem; box-shadow: 10px 10px 24px rgb(0 0 0 / 10%); background-color: #fff;">
+                <span class="ml-2">UV Protection</span> <i class="fa fa-info-circle" aria-hidden="true"
+                  style="color: grey;"></i>
+              </td>
+              <td
+                style="font-weight: 500; color: #212529; font-size: .75rem; text-align: center; vertical-align: middle;">
+                <img src="images/cross-icon.svg" class="img-fluid" alt="" style="height: 10px;">
+              </td>
+
+
+            </tr>
+
+            <tr>
+              <td
+                style="font-weight: 600; color: #212529; font-size: .75rem; box-shadow: 10px 10px 24px rgb(0 0 0 / 10%); background-color: #fff;">
+                <span class="ml-2">Water and Dust Repellent</span> <i class="fa fa-info-circle" aria-hidden="true"
+                  style="color: grey;"></i>
+              </td>
+              <td
+                style="font-weight: 500; color: #212529; font-size: .75rem; text-align: center; vertical-align: middle;">
+                <img src="images/cross-icon.svg" class="img-fluid" alt="" style="height: 10px;">
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      </div>
+     </div>
+    </div>
+  </div>
+
+
+
+  <!----------------------- MOBILE SECTIONS END ------------------------>
+
+  <!---------------------------------- DESKTOP FOOTER START------------------------------------->
+  <div class="desktop">
+    <footer id="footer">
+      <div class="container">
+        <div class="row" style="margin-top: -4rem">
+          <div class="col-md-3 font-weight-bolder">
+            <p> <img src="images/footer1.svg" alt="" class="footer-logo"> 100% Genuine Product</p>
+            <p> <img src="images/footer2.svg" alt="" class="footer-logo"> Easy Delivery & Returns</p>
+            <p> <img src="images/footer3.svg" alt="" class="footer-logo"> Cash On Delivery</p>
+            <p> <img src="images/footer4.svg" alt="" class="footer-logo"> 100% Secure Payments</p>
+
+          </div>
+          <div class="col-md-3 foot_two">
+            <h1 class="font-weight-bolder">USEFUL LINKS</h1>
+            <a href="">
+              <p>About Us</p>
+            </a>
+            <a href="contact.html">
+              <p>Contact Us</p>
+            </a>
+            <a href="">
+              <p>Help</p>
+            </a>
+            <a href="">
+              <p>Gift Of Vision</p>
+            </a>
+            <a href="">
+              <p>Offers</p>
+            </a>
+            <a href="">
+              <p>Blog</p>
+            </a>
+            <a href="">
+              <p>CoolCash</p>
+            </a>
+            <a href="">
+              <p>Knowledge Center</p>
+            </a>
+            <a href="">
+              <p>Customer Reviews</p>
+            </a>
+            <a href="">
+              <p>Sitemap</p>
+            </a>
+            <a href="">
+              <p>Free Eye Test Camp</p>
+            </a>
+            <a href="">
+              <p>Collections</p>
+            </a>
+          </div>
+          <div class="col-md-3 foot_three">
+            <h1 class="font-weight-bolder">POLICIES</h1>
+            <a href="">
+              <p> Cancellation & Refund Policy</p>
+            </a>
+            <a href="">
+              <p> Terms Of Use</p>
+            </a>
+            <a href="">
+              <p> Privacy Policy</p>
+            </a>
+            <a href="">
+              <p> Delivery & Shipping Terms</p>
+            </a>
+
+          </div>
+          <div class="col-md-3">
+            <h1 class="font-weight-bolder" style="line-height: 1.3rem">EXPERIENCE COOLWINKS APP ON MOBILE</h1>
+            <div class="">
+              <a href=""><img src="images/google_play.png" class="img-fluid" width="100px"></a>
+              <a href=""><img src="images/apple_store.png" class="img-fluid" width="100px"></a>
+            </div>
+            <p class="pt-3" style="font-size: 0.8rem;">KEEP IN TOUCH</p>
+            <div class="d-flex foot_icon">
+              <a href=""><i class="fa fa-youtube-play"></i></a>
+              <a href=""><i class="fa fa-facebook-official"></i></a>
+              <a href=""><i class="fa fa-google"></i></a>
+              <a href=""><i class="fa fa-twitter"></i></a>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <p class="copyright">Copyright © 2021. All Rights Reserved</p>
+        <div class="scrolltop float-right">
+          <i class="fa fa-chevron-up" onclick="topFunction()" id="myBtn" style="background-color: #232F3E"></i>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <!--------------------DESKTOP Footer End ------------------------>
+
+
+  <!-------------- MOBILE FOOTER ----------------------->
+  <!-- <div class="mobile" style="display: none;">
+    <div class="main_filt_con">
+      <div class="main_filt_con">
+        <footer id="mob_foot">
+          <div class="container-fluid pt-4">
+            <h5 class="text-white font-weight-bolder foot_fir">Need Help ?</h5>
+            <div class="foot_main_icon">
+
+
+              <div class="foot_lf_icon d-flex">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+              </div>
+              <div class="lf_con">
+                <p>Email</p>
+                <p>support@coolwink.com</p>
+              </div>
+
+              <div class="foot_rg_icon d-flex">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+              </div>
+              <div class="rg_con">
+                <p>Call us at</p>
+                <p>24122-66563</p>
+              </div>
+            </div>
+
+            <hr>
+            <div class="foot_about">
+              <p>More About Coolwinks</p>
+            </div>
+            <hr>
+            <div class="foot_social">
+              <p>FOLLOW US ON</p>
+              <div class="d-flex foot_icn">
+                <div class="foot_rnd"><a href=""><i class="fa fa-youtube-play text-white px-2"></i></a></div>
+                <div class="foot_rnd"><a href=""><i class="fa fa-facebook-official text-white px-2"></i></a></div>
+                <div class="foot_rnd"><a href=""><i class="fa fa-google text-white px-2"></i></a></div>
+                <div class="foot_rnd"><a href=""><i class="fa fa-twitter text-white px-2"></i></a></div>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </div> -->
+
+  <!-------------- MOBILE FOOTER SECTION END -------------------->
+
+
+  <!------------COMMON LOGIN POP-UP FORM START FOR DESKTOP AND MOBILE  ---------------->
+  <div id="show_reg" style="width: 100%; height: 100vh; position: absolute; top: 0;
+  z-index: 2001;  display: none;">
+    <div style="background-color: white; position: absolute; left: 32%; top: 5%;" class="fir_frm">
+      <div style="position: absolute;" class="container-fluid text-center">
+        <div id="reg_can"><i class="fa fa-times ml-auto mt-2" aria-hidden="true"
+            style="position: absolute; left: 95%; cursor: pointer;"></i> </div>
+        <div class="reg_con">
+          <h4 class="mt-4 text-primary" style="font-weight: 800">SIGN IN / SIGN UP</h4>
+          <pre><p class="pt-1" style="font-size: 1rem;">We do not share your personal
+        details with anyone</p></pre>
+        </div>
+        <form action="/action_page.php" class="reg_form">
+          <div class="form-group">
+
+            <input type="email" class="form-control" placeholder="Phone No" id="email">
+          </div>
+          <button type="button" id="reg_btn" class="btn btn-primary btn-block mt-3 btn-block" style="padding: 0.7rem 0;
+        font-weight: 800;">Proceed</button>
+          <div class="reg_or">
+            <p style="border-radius: 50%; color: black; margin-top: 2rem;">OR</p>
+
+            <a href="#"><button class="btn btn-primary mr-1 mt-1 btn_f" style="padding: 0.5rem 2rem;"><i
+                  class="fa fa-facebook-official f_btn" aria-hidden="true" style="font-size: 1.5rem;"></i>
+                Facebook</button></a>
+
+            <a href="#"><button class="btn btn-danger mr-1 mt-1 btn_g" style="padding: 0.5rem 2.8rem;"><i
+                  class="fa fa-google g_btn" aria-hidden="true" style="font-size: 1.5rem;"></i> Google</button></a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- 2 -->
+  <!------------------------- first time registration --------------------->
+
+  <!--   <div id="show_form" style="width: 100%; height: 100vh; position: absolute; top: 0; z-index: 2001;  display: none;">
+        <div style="width: 33%; height: 90%; background-color: white; position: absolute; left: 32%; top: 5%;" class="sec_frm">
+          <div style="position: absolute;" class="container-fluid text-center">
+          <div id="form_can"><i class="fa fa-times ml-auto mt-2" aria-hidden="true" style="position: absolute; left: 95%; cursor: pointer;"></i></div>
+            <div class="form_con">
+            <h4 class="mt-4 text-primary" style="font-weight: 800">Nice to meet you</h4>
+            <pre><p class="pt-1" style="font-size: 1rem;">Create an account for exciting 
+offers and stylish frames</p></pre>
+         </div>
+             <form action="/action_page.php" class="reg_form new_form">
+  <div class="form-group">
+     <input type="text" class="form-control" placeholder="Phone No" id="number" required>
+  </div>
+  <div class="form-group">
+     <input type="text" class="form-control" placeholder="Enter OTP" id="otp" required>
+  </div>
+  <div class="form-group">
+     <input type="email" class="form-control" placeholder="Enter Email Id" id="email" required>
+  </div>
+  <div class="form-group">
+     <input type="Password" class="form-control" placeholder="Set Password" id="pass" required>
+  </div>
+  <div class="row">
+    <div class="col">
+      <input type="text" class="form-control" id="" placeholder="First Name" name="">
+    </div>
+    <div class="col">
+      <input type="text" class="form-control" placeholder="Last Name" name="">
+    </div>
+  </div>
+  <div class="row mt-3">
+    <div class="col-sm-6">
+      <input type="text" class="form-control" id="" placeholder="Referral Code" name="">
+    </div>
+    <div class="col-sm-6">
+      <p style="margin-right: 8rem;">(Optional)</p>
+    </div>
+  </div>
+
+  
+  <a href="index.html"><button type="button" class="btn btn-primary btn-block mt-3 btn-block" style="padding: 0.7rem 0; font-weight: 800;">Register</button></a>
+  
+</form>
+          </div>
+        </div>
+      </div>   
+     -->
+
+  <!-- 3 -->
+  <div id="show_sigin" style="width: 100%; height: 100vh; position: absolute; top: 0;z-index: 2001; display: none;">
+    <div style="background-color: white; position: absolute; left: 32%; top: 5%;" class="sigin_frm">
+      <div style="position: absolute;" class="container-fluid text-center">
+        <div id="sigin_can"><i class="fa fa-times ml-auto mt-2" aria-hidden="true"
+            style="position: absolute; left: 95%; cursor: pointer;"></i></div>
+
+        <h4 class="mt-4 text-primary" style="font-weight: 800">Sign In to Coolwinks </h4>
+        <p class="pt-1" style="font-size: 1rem;">Welcome Back</p>
+
+        <form action="/action_page.php" class="sigin_form">
+          <div class="form-group">
+
+            <input type="email" class="form-control" placeholder="Phone No" id="email">
+          </div>
+          <div class="form-group">
+
+            <input type="password" class="form-control" placeholder="Password" id="psd">
+          </div>
+          <button type="submit" id="reg_btn" class="btn btn-primary btn-block mt-3 btn-block" style="padding: 0.7rem 0;
+            font-weight: 800;">Proceed</button>
+          <p style="border-radius: 50%; color: black; margin-top: 1rem;">OR</p>
+          <button type="button" id="sigin_btn" class="btn btn-dark btn-block mt-1 btn-block" style="padding: 0.7rem 0;
+            font-weight: 800;">Request an OTP</button>
+          <div class="sigin_bdr d-flex">
+            <p id="sigin_email">Use Email Id?</p>
+            <p id="sigin_frgtpass" class="ml-auto">Forget Password?</p>
+          </div>
+
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- 4  -->
+
+  <div id="show_otp" style="width: 100%; height: 100vh; position: absolute; top: 0;
+   z-index: 2001; display: none;">
+    <div style="width: 33%; height: 53%; background-color: white; position: absolute; left: 32%; top: 5%;"
+      class="otp_frm">
+      <div style="position: absolute;" class="container-fluid text-center">
+        <div id="otp_can"><i class="fa fa-times ml-auto mt-2" aria-hidden="true"
+            style="position: absolute; left: 95%; cursor: pointer;"></i></div>
+
+        <h4 class="mt-4 text-primary" style="font-weight: 800">OTP Sent</h4>
+
+        <p class="pt-1 text-center mx-auto" style="font-size: 1rem;">OTP sent to 9451654532
+          <span style="border-bottom: 1px solid #0B5ED7; cursor: pointer;" id="otp_change">Changes?</span>
+        </p>
+
+
+
+        <form action="/action_page.php" class="otp_form">
+          <div class="form-group container">
+            <input type="text" class="form-control" id="oTp">
+          </div>
+
+          <button type="button" id="reg_btn" class="btn btn-primary btn-block mt-3 btn-block" style="padding: 0.7rem 0;
+        font-weight: 800;">Verify</button>
+          <div class="mt-3">
+            <p>Not received your code ? 0:10</p>
+            <p class="text-primary" style="cursor: pointer" id="otp_pass">Use Password?</p>
+          </div>
+
+
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- 5  -->
+  <div id="show_forget" style="width: 100%; height: 100vh; position: absolute; top: 0;
+z-index: 2001; display: none;">
+    <div style="width: 33%; height: 55%; background-color: white; position: absolute; left: 32%; top: 5%;"
+      class="forget_frm">
+      <div style="position: absolute;" class="container-fluid text-center">
+        <div id="forget_can"><i class="fa fa-times ml-auto mt-2" aria-hidden="true"
+            style="position: absolute; left: 95%; cursor: pointer;"></i></div>
+
+        <h4 class="mt-4 text-primary" style="font-weight: 800">Forget Password</h4>
+        <form action="/action_page.php" class="forget_form">
+          <div class="form-group">
+
+            <input type="text" class="form-control" placeholder="Phone No" id="num"
+              style="border-bottom: 0.1rem solid black;">
+          </div>
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="OTP" id="Otp">
+          </div>
+          <div class="form-group">
+            <input type="password" class="form-control" placeholder="Set Password" id="pas">
+          </div>
+          <button type="button" id="reg_btn" class="btn btn-primary btn-block mt-3 btn-block" style="padding: 0.7rem 0;
+      font-weight: 800;">Update</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-------------- LOGIN POPUP FORM END --------------------------->
+
+
+  <!-- swiped-events -->
+  <script src="js/swiped-events.js"></script>
+
+  <!--Main javascript External -->
+  <script src="js/script.js"></script>
+
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
+    crossorigin="anonymous"></script>
+
+
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <!-- jQuery External -->
+  <script src="js/my.js"></script>
+
+  <!-- Popper JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+
+  <script>
+
+
+    $(document).ready(function () {
+      $('[data-toggle="tooltip"]').tooltip();
+    });
+
+
+    $('.desk-owl-car').owlCarousel({
+      loop: true,
+      margin: 10,
+      nav: true,
+      navText: ['<i class="fa fa-angle-left lft" aria-hidden="true"></i>', '<i class="fa fa-angle-right rgt" aria-hidden="true"></i>'],
+      dots: false,
+      autoplay: true,
+      responsive: {
+        0: {
+          items: 1
+        },
+        600: {
+          items: 1
+        },
+        1000: {
+          items: 3
+        }
+      }
+    })
+
+    $('.mob-owl-carousel').owlCarousel({
+      loop: true,
+      margin: 10,
+      nav: false,
+      navText: false,
+      dots: true,
+      autoplay: true,
+      responsive: {
+        0: {
+          items: 1
+        },
+        600: {
+          items: 1
+        },
+        1000: {
+          items: 3
+        }
+      }
+    })
+
+
+    $('.desk-top-carousel').owlCarousel({
+      loop: true,
+      margin: 10,
+      nav: true,
+      navText: ['<span class="carousel-control-prev-icon" style="position: absolute; left: 0; top:50%"></span>', '<span class="carousel-control-next-icon" style="position: absolute; right: 0; top:50%;"></span> '],
+      dots: true,
+      autoplay: true,
+      responsive: {
+        0: {
+          items: 1
+        },
+        600: {
+          items: 1
+        },
+        1000: {
+          items: 1
+        }
+      }
+    })
+
+    $('.mobile-bottom-carousel').owlCarousel({
+      loop: true,
+      margin: 10,
+      nav: true,
+      navText: ['<span class="mobile-bottom-carousel-icon_prev" style="position: absolute; left: -3px; top:45%;"></span>', '<span class="mobile-bottom-carousel-icon_nxt" style="position: absolute; right: -3px; top:45%;"></span>'],
+      dots: false,
+      autoplay: true,
+      responsive: {
+        0: {
+          items: 2
+        },
+        600: {
+          items: 2
+        },
+        1000: {
+          items: 3
+        }
+      }
+    })
+
+    $('.mob-owl-bdy2').owlCarousel({
+      loop: true,
+      margin: 10,
+      nav: false,
+      navText: false,
+      dots: true,
+      autoplay: true,
+      responsive: {
+        0: {
+          items: 1
+        },
+        600: {
+          items: 1
+        },
+        1000: {
+          items: 3
+        }
+      }
+    })
+
+  </script>
+</body>
+
+</html>

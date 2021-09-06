@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="en" style="font-family: Muli,sans-serif;">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My profile</title>
+  <link rel="stylesheet" href="css/style.css">
+  <!--Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+  <!--Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+ <!----------------- DESKTOP NAVBAR SECTION START -------------->
+ <div class="desktop">
+  <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top nav_bar_main" style="z-index: 500;">
+    <div class="container-fluid text-uppercase p-2">
+      <a class="navbar-brand font-weight-bold text-capitalize" href="index.html"><span
+          class="text-primary font-weight-bolder">C</span>ool <span
+          class="text-primary font-weight-bolder">W</span>inks</a>
+      <div>
+        <ul class="navbar-nav" style="margin-left: 2rem;">
+          <li class="nav-item px-2">
+            <a class="nav-link" aria-current="page" href="#" id="eyeglassId">EYEGLASSES</a>
+          </li>
+          <li class="nav-item px-2">
+            <a class="nav-link" href="#service_div" id="sunglassId">SUNGLASSES</a>
+          </li>
+          <li class="nav-item px-2">
+            <a class="nav-link" href="#pricing_div" id="lensId">CONTACT LENSES</a>
+          </li>
+          <li class="nav-item px-2">
+            <a class="nav-link" href="#projects_div" id="discoverId">DISCOVER</a>
+          </li>
+        </ul>
+      </div>
+
+      <form class="form-inline nav_form" action="/action_page.php" style="margin-right: 0.5rem;">
+        <div class="input-group search_main">
+          <i class="fa fa-search" aria-hidden="true"></i>
+          <input type="text" class="form-control search_input" placeholder="What are you looking for?"
+            class="bg-dark">
+        </div>
+      </form>
+
+      <ul class="ml-auto navbar-nav third_icon" style="margin-top: -0.5rem;">
+        <li class="nav-item px-4 text-center">
+          <span id="click_reg" class="nav-link text-dark" href=""><i class="fa fa-user-o" aria-hidden="true"></i>
+            <p class="font-weight-bolder" style="cursor: pointer;">Admin</p>
+          </span>
+        </li>
+
+        <li class="nav-item px-4 text-center">
+          <a class="nav-link text-dark" href=""><i class="fa fa-suitcase" aria-hidden="true"></i>
+            <p class="font-weight-bolder">Cart</p>
+          </a>
+        </li>
+      </ul>
+
+    </div>
+  </nav>
+
+  <!-------------- DROP DOWN MENU CODE STARTS ---------------->
+  <div style="position: relative; height: 100%" id="par_drop">
+    <div class="fir_nav_drop" style="visibility: hidden;" id="showOne">
+      <div class="row per_one_drop">
+        <div class="col-xl-3 col-md-3 col-3">
+          <div class="drop_con">
+            <h6 class="text-left pt-3 pl-1 font-weight-bolder">Select Gender</h6>
+            <ul class="pt-4" style="margin-left: -2rem;">
+              <li>
+                <a href=""><img src="images/men_cat.png" alt="" style="height: 35px;"><span
+                    style="padding-left: 3rem; font-size: 0.8rem;">MEN</a></span>
+              </li>
+              <li class="py-4">
+                <a href=""><img src="images/women_cat.jpg" alt="" style="height: 35px;"><span
+                    style="padding-left: 2.8rem; font-size: 0.8rem;">WOMEN</a></span>
+              </li>
+              <li>
+                <a href=""><img src="images/kids_cat.jpg" alt="" style="height: 35px;"><span
+                    style="padding-left: 1.6rem; font-size: 0.8rem;">KIDS</a></span>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-xl-3 col-md-3 col-3" style="background-color: #fafafa;">
+          <div class="drop_con">
+            <h6 class="text-left pt-3 pl-2 font-weight-bolder">Select Collection</h6>
+            <ul class="pt-4">
+              <li class="" style="font-size: 0.8rem;">
+                <a href="">XSTYL</a>
+              </li>
+              <li class="pt-3" style="font-size: 0.8rem;">
+                <a href="">GRAVIATE</a>
+              </li>
+              <li class="pt-3" style="font-size: 0.8rem;">
+                <a href="">GRAVIATE FIRST</a>
+              </li>
+              <li class="pt-3" style="font-size: 0.8rem;">
+                <a href="">XSTYLE FIRST</a>
+              </li>
+              <li class="pt-3" style="font-size: 0.8rem;">
+                <a href="">COMPUTER GLASSES</a>
+              </li>
+              <li class="pt-3" style="font-size: 0.8rem;">
+                <a href="">READING GLASSES</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-xl-3 col-md-3 col-3">
+          <div class="drop_con">
+            <h6 class="text-left pt-3 pl-2 font-weight-bolder">Select Shape</h6>
+            <ul class="pt-4">
+              <li style="font-size: 0.8rem;">
+                <a href="">HEXAGON</a>
+              </li>
+              <li style="font-size: 0.8rem; padding-top: 0.6rem;">
+                <a href="">RETEROSQUARE</a>
+              </li>
+              <li style="font-size: 0.8rem; padding-top: 0.6rem;">
+                <a href="">ROUND</a>
+              </li>
+              <li style="font-size: 0.8rem; padding-top: 0.6rem;">
+                <a href="">CLUBMASTER</a>
+              </li>
+              <li style="font-size: 0.8rem; padding-top: 0.6rem;">
+                <a href="">OVAL</a>
+              </li>
+              <li style="font-size: 0.8rem; padding-top: 0.6rem;">
+                <a href="">RECTANGLE</a>
+              </li>
+              <li style="font-size: 0.8rem; padding-top: 0.6rem;">
+                <a href="">CATEYE</a>
+              </li>
+              <li style="font-size: 0.8rem; padding-top: 0.6rem;">
+                <a href="">PILOT</a>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+        <div class="col-xl-3 col-md-3 col-3" style="background-color: #fafafa;">
+          <div class="drop_con">
+            <h6 class="text-left pt-3 pl-2 font-weight-bolder">Select Style</h6>
+            <ul class="pt-4">
+              <li class="pt-3" style="font-size: 0.8rem;">
+                <a href="">FULL FRAME</a>
+              </li>
+              <li class="pt-3" style="font-size: 0.8rem;">
+                <a href="">HALF FRAME</a>
+              </li>
+              <li class="pt-3" style="font-size: 0.8rem;">
+                <a href="">RIMLESS</a>
+              </li>
+
+            </ul>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+
+    <div class="sec_nav_drop mx-auto" style="visibility: hidden;" id="showTwo">
+      <div class="row per_two_drop">
+        <div class="col-xl-3 col-md-3 col-3">
+          <div class="drop_con">
+            <h6 class="text-left pt-3 pl-2 font-weight-bolder">Select Gender</h6>
+            <ul class="pt-4" style="margin-left: -2rem;">
+              <li>
+                <a href=""><img src="images/men_cat.png" alt="" style="height: 35px;"><span
+                    style="padding-left: 3rem; font-size: 0.8rem;">MEN</a></span>
+              </li>
+              <li class="py-4">
+                <a href=""><img src="images/women_cat.jpg" alt="" style="height: 35px;"><span
+                    style="padding-left: 2.8rem; font-size: 0.8rem;">WOMEN</a></span>
+              </li>
+              <li>
+                <a href=""><img src="images/kids_cat.jpg" alt="" style="height: 35px;"><span
+                    style="padding-left: 1.6rem; font-size: 0.8rem;">KIDS</a></span>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+        <div class="col-xl-3 col-md-3 col-3" style="background-color: #fafafa;">
+          <div class="drop_con">
+            <h6 class="text-left pt-3 pl-2 font-weight-bolder">Select Collection</h6>
+            <ul class="pt-2 pl-2">
+              <li class="pt-3" style="font-size: 0.8rem;">
+                <a href="">FULL FRAME</a>
+              </li>
+              <li class="pt-3" style="font-size: 0.8rem;">
+                <a href="">HALF FRAME</a>
+              </li>
+              <li class="pt-3" style="font-size: 0.8rem;">
+                <a href="">RIMLESS</a>
+              </li>
+
+            </ul>
+          </div>
+
+        </div>
+        <div class="col-xl-3 col-md-3 col-3">
+          <div class="drop_con">
+            <h6 class="text-left pt-3 pl-2 font-weight-bolder">Select Shape</h6>
+            <ul class="pt-4 pl-2">
+              <li style="font-size: 0.8rem;">
+                <a href="">PILOT</a>
+              </li>
+              <li style="font-size: 0.8rem; padding-top: 0.7rem;">
+                <a href="">CATEYE</a>
+              </li>
+              <li style="font-size: 0.8rem; padding-top: 0.7rem;">
+                <a href="">ROUND</a>
+              </li>
+              <li style="font-size: 0.8rem; padding-top: 0.7rem;">
+                <a href="">BUTTERFLY</a>
+              </li>
+              <li style="font-size: 0.8rem; padding-top: 0.7rem;">
+                <a href="">CLUBMASTER</a>
+              </li>
+              <li style="font-size: 0.8rem; padding-top: 0.7rem;">
+                <a href="">WRAPAROUND</a>
+              </li>
+              <li style="font-size: 0.8rem; padding-top: 0.7rem;">
+                <a href="">RETEROSQUARE</a>
+              </li>
+
+            </ul>
+          </div>
+
+        </div>
+        <div class="col-xl-3 col-md-3 col-3" style="background-color: #fafafa;">
+          <div class="drop_con">
+            <h6 class="text-left pt-3 pl-2 font-weight-bolder">Select Style</h6>
+            <ul class="pt-2 pl-2">
+              <li class="pt-3" style="font-size: 0.8rem;">
+                <a href="">MIRROR</a>
+              </li>
+              <li class="pt-3" style="font-size: 0.8rem;">
+                <a href="">GRADIENT</a>
+              </li>
+              <li class="pt-3" style="font-size: 0.8rem;">
+                <a href="">TINTED</a>
+              </li>
+              <li class="pt-3" style="font-size: 0.8rem;">
+                <a href="">FLASH</a>
+              </li>
+              <li class="pt-3" style="font-size: 0.8rem;">
+                <a href="">POLARIZED</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="thr_nav_drop mx-auto" style="visibility: hidden;" id="showThree">
+      <div class="row per_thr_drop">
+        <div class="col-xl-4 col-md-4 col-4">
+          <div class="drop_con">
+            <h6 class="text-left pt-3 pl-2 font-weight-bolder">Select Usage</h6>
+            <ul class="pt-2 pl-2">
+              <li class="pt-3" style="font-size: 0.8rem;">
+                <a href="">DAILY</a>
+              </li>
+              <li class="pt-3" style="font-size: 0.8rem;">
+                <a href="">MONTHLY</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-xl-4 col-md-4 col-4" style="background-color: #fafafa;">
+          <div class="drop_con">
+            <h6 class="text-left pt-3 pl-2 font-weight-bolder">Select Color</h6>
+            <ul class="pt-2 pl-2">
+              <li class="pt-3" style="font-size: 0.8rem;">
+                <a href="">TRANSAPARENT</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-xl-4 col-md-4 col-4">
+          <div class="drop_con">
+            <h6 class="text-left pt-3 pl-2 font-weight-bolder">Select Color</h6>
+            <ul class="pt-2 pl-2">
+              <li class="pt-3" style="font-size: 0.8rem;"> <a href="">COOLWINKS COOL CONTACT</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="four_nav_drop mx-auto" style="visibility: hidden;" id="showFour">
+      <div class="row per_four_drop">
+        <div class="col-xl-4 col-md-4 col-4">
+          <div class="drop_con">
+            <h6 class="text-left pt-3 pl-2 font-weight-bolder">More Collections</h6>
+            <ul class="pt-4" style="margin-left: -2rem;">
+              <li>
+                <a href=""><img src="images/power-sunglasses.png" alt="" style="height: 25px;"><span
+                    style="padding-left: 3rem; font-size: 0.8rem;">MEN</a></span>
+              </li>
+              <li class="py-2">
+                <a href=""><img src="images/reading-eyeglasses-hamburgericon.png" alt="" style="height: 65px;"><span
+                    style="padding-left: 2.8rem; font-size: 0.8rem;">WOMEN</a></span>
+              </li>
+              <li>
+                <a href=""><img src="images/icon-wipes2.png" alt="" style="height: 25px;"><span
+                    style="padding-left: 2.5rem; font-size: 0.8rem;">KIDS</a></span>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+        <div class="col-xl-3 col-md-3 col-3" style="background-color: #fafafa;">
+          <div class="drop_con">
+            <h6 class="text-left pt-3 pl-2 font-weight-bolder">More Links</h6>
+            <ul class="pt-2 pl-2">
+              <li class="pt-3" style="font-size: 0.8rem;">
+                <a href="">OFFERS</a>
+              </li>
+              <li class="pt-3" style="font-size: 0.8rem;">
+                <a href="">COOLCASH</a>
+              </li>
+              <li class="pt-3" style="font-size: 0.8rem;">
+                <a href="">COLLECTIONS</a>
+              </li>
+              <li class="pt-3" style="font-size: 0.8rem;">
+                <a href="">FREE EYE TEST CAMP</a>
+              </li>
+              <li class="pt-3" style="font-size: 0.8rem;">
+                <a href="">KNOWLEDGE CENTER</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-xl-5 col-md-5 col-5">
+          <div class="drop_con">
+            <h6 class="text-left pt-3 pl-2 font-weight-bolder">Stay Connected On The Go</h6>
+            <ul class="pt-2 pl-2">
+              <li class="pt-3" style="font-size: 0.8rem;">
+                <a href=""><img src="images/download-app-menu2-8aug19.jpg" alt="" class="img-fluid"
+                    style="height: 200px;"></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!----------------- DESKTOP NAVBAR SECTION END -------------->
+
+
+
+        <!---------------------------DESKTOP MY PROFILE CONTENT SECTION STARTS ------------------------------>
+        <div class="desktop">
+        <section class="mypr_hero"></section>
+        <div class="mypr_title_con">
+          <h4>MY DASHBOARD</h4>
+        </div>
+        <div class="pr_shape">
+
+        </div>
+        <div>
+          <div class="mypr_grand_con container">
+
+            <div class="row  no-gutters  pr_row_main">
+              <div class="col-xl-3 col-md-3 col-3">
+                <div class="row left_pr">
+                  <a href="my-profile.html" class="child_left_pr">
+                    <div class="col-xl-12 col-md-12 col-12 ">
+                      <i class="fa fa-user" aria-hidden="true"></i><span>PROFILE</span>
+                    </div>
+                  </a>
+
+                  <a href="my-order.html" class="child_left_pr">
+                    <div class="col-xl-12 col-md-12 col-12">
+                      <i class="fa fa-bar-chart" aria-hidden="true" style="transform: rotate(90deg);"></i>
+                      <span> ORDERS</span>
+                    </div>
+                  </a>
+
+                  <a href="my-favourite.html" class="child_left_pr">
+                    <div class="col-xl-12 col-md-12 col-12">
+                      <i class="fa fa-heart" aria-hidden="true"></i><span>MY
+                        FAVOURITES</span>
+                    </div>
+                  </a>
+
+                  <a href="my-prescription.html" class="child_left_pr">
+                    <div class="col-xl-12 col-md-12 col-12">
+                      <i class="fa fa-hand-o-right" aria-hidden="true"></i><span>MY
+                        PRESCRIPRION</span>
+                    </div>
+                  </a>
+
+                  <a href="recently-viewed.html" class="child_left_pr">
+                    <div class="col-xl-12 col-md-12 col-12">
+                      <i class="fa fa-eye" aria-hidden="true"></i><span>RECENTLY
+                        VIEWED</span>
+                    </div>
+                  </a>
+
+                  <a href="offers.html" class="child_left_pr">
+                    <div class="col-xl-12 col-md-12 col-12">
+                      <i class="fa fa-percent" aria-hidden="true"></i><span>MY OFFERS</span>
+                    </div>
+                  </a>
+
+                  <a href="cash-wallet.html" class="child_left_pr">
+                    <div class="col-xl-12 col-md-12 col-12">
+                      <i class="fa fa-money cash" aria-hidden="true"></i><span>COOLCASH
+                        WALLET</span>
+                    </div>
+                  </a>
+
+                  <a href="#" class="child_left_pr">
+                    <div class="col-xl-12 col-md-12 col-12">
+                      <i class="fa fa-lock" aria-hidden="true"></i> <span>LOGOUT</span>
+                    </div>
+                  </a>
+
+                </div>
+              </div>
+              <div class="col-xl-9 col-md-9 col-9 right_Pr" style="margin-left: -.7rem;">
+                <div class="row_tex pl-3">
+                  <p style="color: #2e2e2e;">Hello, lalit!</p>
+                </div>
+                <p class="pl-3" style="color: #2e2e2e;"> Update your personal details here. Select a link below to edit information.</p>
+
+                <div class="row pr_row_child pl-3">
+                  <div class="col-xl-6 col-md-6 col-sm-12">
+
+                    <div class="card pro_card" style="box-shadow: 0 0 2px grey;">
+                      <div class="pr_title_one">
+                        <div class="pr_head_one"> <img src="images/icon_myprofile.png" class="img-fluid" style="width: 27px" height="25px" alt=""> <span
+                            class="card-title">MY PROFILE</span>
+                          <a href="#"><span><i class="fa fa-pencil" aria-hidden="true"></i>Edit</span></a>
+                        </div>
+                      </div>
+
+
+                      <div class="card-body pr_body_one">
+                        <pre><p class="card-text" style="color: #545454;">
+Personal Information
+Name     :  <span> Lalit</span>
+Email      :  <span> xyz@gmail.com</span>
+Contact  :  <span> 9316549875</span>
+DOB        :  <span></span>
+Gender   :  <span></span> </p>
+<a href="#" style="color: #065392;"><i class="fa fa-key" aria-hidden="true"></i> <span>Change Password</span></a></pre>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-6 col-md-6 col-sm-12 news_col">
+
+                    <div class="card pro_card" style="box-shadow: 0 0 2px grey;">
+                      <div class="pr_title_two">
+                        <div class="pr_head_sec"><i class="fa fa-envelope" aria-hidden="true"></i> <span
+                            class="card-title">NEWS LETTER</span></div>
+                      </div>
+                      <div class="card-body pr_body_lig mt-4">
+                        <p class="card-text" style="color: #545454;">You are not subscribed to any newsletter</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row pr_row_child pr_row_sec pl-3">
+                  <div class="col-xl-6 col-md-6 col-sm-12 bill_col">
+
+                    <div class="card pro_card pro_card_sec" style="box-shadow: 0 0 2px grey;">
+                      <div class="pr_title_three">
+                        <div class="pr_head_third"><i class="fa fa-home" aria-hidden="true"></i> <span
+                            class="card-title">BILLING ADDRESS</span></div>
+                      </div>
+
+                      <div class="card-body pr_body_lig mt-4">
+                        <p class="card-text" style="color: #545454;">Some example text some example text. Jane Doe is an architect and engineer
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-6 col-md-6 col-sm-12 ship_col">
+
+                    <div class="card pro_card pro_card_sec" style="box-shadow: 0 0 2px grey;">
+                      <div class="pr_title_four">
+                        <div class="pr_head_fourth"><i class="fa fa-truck" aria-hidden="true"></i><span
+                            class="card-title">SHIPPING ADDRESS</span></div>
+                      </div>
+                      <div class="card-body pr_body_lig mt-4">
+                        <p class="card-text" style="color: #545454;">Some example text some example text. Jane Doe is an architect and engineer
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+
+
+      
+     <!----------------- MOBILE CONTENT SECTION START -------------->
+       <div class="mobile" style="display: none;">
+         <div style="position: relative;">
+          <div style="width: 100%; height: 28vh; background-color: #232f3e;">
+          <a href="index.html" style="position: absolute; top: 8%; left: 3%; z-index: 100;"><i class="fa fa-long-arrow-left text-white" aria-hidden=" true" style="font-size: 16px;"></i></a> 
+            <div style="width: 100%; position: absolute; top: 8%;">
+              <h3 class="text-white text-center">
+                MY ACCOUNT
+              </h3>
+              </div>
+            </div>
+        </div> 
+          <div class="container-fluid">
+             <div class="d-flex justify-content-center"> 
+            <div style="margin-top:-12%; height: 95px; width: 95px; border-radius: 50%; z-index: 100000; overflow: hidden;">
+              <img src="images/dash_profile_img.png" class="img-fluid">
+            </div>
+          </div>
+            <div class="row_tex">
+              <p class="text-center mt-5" style="font-size: 1.4rem; color: #000000; font-weight: 900;">Hello, Admin!</p>
+            </div>
+          <p class="text-center" style="font-size: 1.1rem; color: #000000;">View your account details here. Select the link below to change your password.</p>
+                
+      
+      
+                <div class="card-body pr_body_one" style="border-bottom: 1px solid grey; position: relative;">
+              
+      <div style="font-size: 16px; color: #000000; font-weight: 700;">Personal Information</div> 
+      <div class="mt-4 mob_pr_con pt-2" style="line-height: 2rem;"><span class="font-weight-bold" style="font-size: 14px;">Name</span> :  <span style="color: grey;  font-size: 14px;  font-size: 14px; position: absolute; left: 30%;"> Lalit</span> </div>
+     <div class="pt-2"> <span class="font-weight-bold" style="font-size: 14px;">Email</span> :  <span style="color: grey;  font-size: 14px; position: absolute; left: 30%;"> xyz@gmail.com</span> </div>
+     <div class="pt-2"> <span class="font-weight-bold" style="font-size: 14px;">Contact</span> :  <span style="color: grey;  font-size: 14px; position: absolute; left: 30%;"> 9316549875</span> </div>
+     <!-- <div class="pt-2"> <span class="font-weight-bold" style="font-size: 14px;">DOB</span> :  <span style="color: grey;  font-size: 14px; position: absolute; left: 30%;"> None</span> </div>
+     <div class="pt-2"> <span class="font-weight-bold" style="font-size: 14px;">Gender</span> :  <span style="color: grey;  font-size: 14px; position: absolute; left: 30%;"> None</span> </div> -->
+     <div class="py-4"> <a href="#"><span style="border-bottom: 1px solid #59B8EC; font-size: 14px;">Change Password</span></a> </div>
+    </div>
+                
+              
+    
+                
+                <div class="card-body pr_body_lig pb-5 mob_pr_con" style="border-bottom: 1px solid grey;">
+                  <span class="card-text" style="font-size: 16px; color: #000000; font-weight: 700;">Billing Address</span>
+                  <a href="#" style="text-decoration: none; float: right;"><span style="border-bottom: 1px solid #59b8ec;"><i class="fa fa-pencil" aria-hidden="true"></i>
+                  </span>
+                  </a>
+                </div>
+
+                <div class="card-body pr_body_lig pb-5 mob_pr_con" style="border-bottom: 1px solid grey;">
+                  <span class="card-text" style="font-size: 16px; color: #000000; font-weight: 700;">Newsletter</span>
+                  <p>You are not subscribed to any newsletter. Click below to subscribe</p>
+                  <button class="btn px-3 py-2 text-white" style="border-radius: 0; font-size: 1.2rem; background-color: #232f3e;">subscribe</button>
+                </div>
+      
+  
+          </div>
+        </div>
+
+        <!----------------- MOBILE CONTENT SECTION END -------------->
+
+        <!----------------- DESKTOP FOOTER SECTION START -------------->
+        <div class="desktop">
+          <section id="footer" style="margin-top: 4rem;">
+            <div class="container">
+              <div class="row" style="margin-top: -4rem">
+                <div class="col-md-3 font-weight-bolder">
+                  <p> <img src="images/footer1.svg" alt="" class="footer-logo"> 100% Genuine Product</p>
+                  <p> <img src="images/footer2.svg" alt="" class="footer-logo"> Easy Delivery & Returns</p>
+                  <p> <img src="images/footer3.svg" alt="" class="footer-logo"> Cash On Delivery</p>
+                  <p> <img src="images/footer4.svg" alt="" class="footer-logo"> 100% Secure Payments</p>
+
+                </div>
+                <div class="col-md-3 foot_two">
+                  <h1 class="font-weight-bolder">USEFUL LINKS</h1>
+                  <a href="">
+                    <p>About Us</p>
+                  </a>
+                  <a href="contact.html">
+                    <p>Contact Us</p>
+                  </a>
+                  <a href="">
+                    <p>Help</p>
+                  </a>
+                  <a href="">
+                    <p>Gift Of Vision</p>
+                  </a>
+                  <a href="">
+                    <p>Offers</p>
+                  </a>
+                  <a href="">
+                    <p>Blog</p>
+                  </a>
+                  <a href="">
+                    <p>CoolCash</p>
+                  </a>
+                  <a href="">
+                    <p>Knowledge Center</p>
+                  </a>
+                  <a href="">
+                    <p>Customer Reviews</p>
+                  </a>
+                  <a href="">
+                    <p>Sitemap</p>
+                  </a>
+                  <a href="">
+                    <p>Free Eye Test Camp</p>
+                  </a>
+                  <a href="">
+                    <p>Collections</p>
+                  </a>
+                </div>
+                <div class="col-md-3 foot_three">
+                  <h1 class="font-weight-bolder">POLICIES</h1>
+                  <a href="">
+                    <p> Cancellation & Refund Policy</p>
+                  </a>
+                  <a href="">
+                    <p> Terms Of Use</p>
+                  </a>
+                  <a href="">
+                    <p> Privacy Policy</p>
+                  </a>
+                  <a href="">
+                    <p> Delivery & Shipping Terms</p>
+                  </a>
+
+                </div>
+                <div class="col-md-3">
+                  <h1 class="font-weight-bolder" style="line-height: 1.3rem">EXPERIENCE COOLWINKS APP ON MOBILE</h1>
+                  <div class="">
+                    <a href=""><img src="images/google_play.png" class="img-fluid" width="100px"></a>
+                    <a href=""><img src="images/apple_store.png" class="img-fluid" width="100px"></a>
+                  </div>
+                  <p class="pt-3" style="font-size: 0.8rem;">KEEP IN TOUCH</p>
+                  <div class="d-flex foot_icon">
+                    <a href=""><i class="fa fa-youtube-play"></i></a>
+                    <a href=""><i class="fa fa-facebook-official"></i></a>
+                    <a href=""><i class="fa fa-google"></i></a>
+                    <a href=""><i class="fa fa-twitter"></i></a>
+                  </div>
+                </div>
+              </div>
+              <hr>
+              <p class="copyright">Copyright © 2021. All Rights Reserved</p>
+            </div>
+          </section>
+        </div>
+        <!----------------- DESKTOP FOOTER SECTION END -------------->
+
+
+       <!----------------- POPUP MY ACCOUNT PAGES STARTS -------------->
+   <div class="my_account" style="width: 15%; height: 58%; position: absolute; top: 7%; left: 79.4%;
+  z-index: 2001; background-color: white; visibility: hidden;">
+      <div class="row main_myaccount mx-auto pt-4">
+  
+        <a href="my-profile.html" class="child_myaccount">
+        <div class="col-xl-12 col-md-12 col-12">
+         <i class="fa fa-user" aria-hidden="true"></i><span>PROFILE</span>
+        </div></a>
+        
+        <a href="my-order.html" class="child_myaccount">
+        <div class="col-xl-12 col-md-12 col-12">
+            <i class="fa fa-bar-chart" aria-hidden="true" style="transform: rotate(90deg);"></i>
+            <span> ORDERS</span>
+        </div></a>
+          
+        <a href="my-favourite.html" class="child_myaccount">
+        <div class="col-xl-12 col-md-12 col-12">
+          <i class="fa fa-heart" aria-hidden="true"></i><span>MY FAVOURITES</span>
+        </div></a>
+  
+        <a href="my-favourite.html" class="child_myaccount">
+        <div class="col-xl-12 col-md-12 col-12">
+          <i class="fa fa-hand-o-right" aria-hidden="true"></i><span>MY
+              PRESCRIPRION</span>
+        </div></a>
+  
+        <a href="my-favourite.html" class="child_myaccount">
+        <div class="col-xl-12 col-md-12 col-12">
+          <i class="fa fa-eye" aria-hidden="true"></i><span>RECENTLY
+              VIEWED</span>
+        </div></a>
+  
+        <a href="my-favourite.html" class="child_myaccount">
+        <div class="col-xl-12 col-md-12 col-12">
+          <i class="fa fa-percent" aria-hidden="true"></i><span>MY OFFERS</span>
+        </div></a>
+  
+        <a href="my-favourite.html" class="child_myaccount">
+        <div class="col-xl-12 col-md-12 col-12">
+          <i class="fa fa-money cash" aria-hidden="true"></i><span>COOLCASH
+              WALLET</span>
+        </div></a>
+  
+        <a href="#" class="child_myaccount">
+        <div class="col-xl-12 col-md-12 col-12">
+          <i class="fa fa-lock" aria-hidden="true"></i> <span>LOGOUT</span>
+        </div></a>
+      </div>
+    </div>
+  
+    <!----------------- POPUP MY ACCOUNT PAGES END -------------->
+
+ 
+
+  <script src="js/swiped-events.js"></script>
+  <script src="js/script.js"></script>
+
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
+    crossorigin="anonymous"></script>
+
+
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!-- jQuery External -->
+<script src="js/my.js"></script>
+
+  <!-- Popper JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

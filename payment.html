@@ -1,0 +1,1477 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payment-Page</title>
+  <link rel="stylesheet" href="css/style.css">
+
+  <!--Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+  <!--Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="js/jquery.nice-number.css">
+  <link rel="stylesheet" href="js/sweet-alert/node_modules/sweetalert2/dist/sweetalert2.css">
+
+</head>
+
+<body>
+
+
+  <!----------------- DESKTOP NAVBAR SECTION START -------------->
+  <div class="desktop">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top nav_bar_main pt-0 pb-0" style="z-index: 1000;">
+      <div class="container-fluid text-uppercase p-1">
+        <a class="navbar-brand font-weight-bold text-capitalize ml-5" href="index.html"><span
+            class="text-primary font-weight-bolder">C</span>ool <span
+            class="text-primary font-weight-bolder">W</span>inks</a>
+
+        <ul class=" navbar-nav mx-auto nav_step">
+          <li class="active nav_step_1">
+            <span class="font-weight-normal">
+              <span>Your Cart</span>
+            </span>
+          </li>
+          <li class="active active2 nav_step_2">
+            <span class="font-weight-normal">
+              <span>Address</span>
+            </span>
+          </li>
+          <li class="nav_step_3">
+            <span class="font-weight-normal">
+              <span>Payment</span>
+            </span>
+          </li>
+        </ul>
+
+
+
+        <ul class="ml-auto navbar-nav third_icon" style="margin-top: -0.5rem;">
+          <li class="nav-item px-4 text-center">
+            <span id="click_reg" class="nav-link text-dark" href=""><i class="fa fa-user-o" aria-hidden="true"></i>
+              <p class="font-weight-bolder" style="cursor: auto;">Admin</p>
+            </span>
+          </li>
+        </ul>
+
+      </div>
+    </nav>
+  </div>
+
+  <!----------------- DESKTOP NAVBAR SECTION END -------------->
+
+  <!----------------- MOBILE NAVBAR SECTION START -------------->
+  <div class="mobile" style="display: none;">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top main-navigation">
+      <div class="container-fluid">
+
+        <a class="navbar-brand font-weight-bold order-2 mx-auto" href="#"><span class="text-primary"
+            style="font-size: 2rem;">C</span>ool <span class="text-primary" style="font-size: 2rem;">W</span>inks</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="icons order-3 pr-3">
+          <ul class="ml-auto navbar-nav third_icon">
+            <li class="nav-item  text-center">
+              <span class="nav-link text-dark"><i class="fa fa-user-o" aria-hidden="true"
+                  style="font-size: 2rem;"></i></span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="icons order-4" style="margin-right: 20px;">
+          <ul class="ml-auto navbar-nav third_icon">
+            <li class="nav-item  text-center">
+              <a class="nav-link text-dark" href=""><i class="fa fa-suitcase" aria-hidden="true"
+                  style="font-size: 2rem;"></i></a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="overlay d-flex d-lg-none"></div>
+
+        <div class="order-lg-2 bg-light d-lg-flex w-100 sidebar pb-3 pb-lg-0">
+
+          <ul class="navbar-nav mr-lg-auto mb-2 mb-lg-0">
+            <li class="nav-item welcome d-flex" style="background-color: #7f53ac;
+background-image: linear-gradient(315deg, #7f53ac 0%, #647dee 74%);">
+              <div class="left"><i class="fa fa-user-o" aria-hidden="true"
+                  style="border-radius: 50%; margin-top: 12px; color: white; font-size: 3rem;"></i></div>
+              <!-- <img src="images/men_cat.png " style="border-radius: 50%; margin-top: 12px; color: white;" alt="" width="40px" height="50px" class="mx-4 text-center"> -->
+              <div class="right" id="clk_reg">
+                <span class="nav-link px-3 px-lg-2 text-white">Welcome!
+                  <p class="my-1 text-white" style="font-size: .8rem;">Sign In/Sign Up</p>
+                </span>
+              </div>
+
+            </li>
+            <li class="nav-item mobilenav">
+              <a class="nav-link  px-lg-2 " href="#"><img
+                  src="https://cwcdn.coolwinks.com/mobile/mobile-site-content/menu-icon-home.svg" alt="">Home</a>
+            </li>
+
+            <li class="nav-item dropdown mobilenav">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                <img src="https://djgn3cwvdf3zo.cloudfront.net/appimages/app-menu-eyeglasses.png" alt=""> Eyeglasses
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="my-profile.html">Pilot Eyeglasses</a></li>
+                <li><a class="dropdown-item" href="#">Cateye Eyeglasses</a></li>
+                <li><a class="dropdown-item" href="#">Retrosquare Eyeglasses</a></li>
+                <li><a class="dropdown-item" href="#">Clubmaster Eyeglasses</a></li>
+                <li><a class="dropdown-item" href="#">Round Eyeglasses</a></li>
+                <li><a class="dropdown-item" href="#">Full Eyeglasses</a></li>
+                <li><a class="dropdown-item" href="#">Half Eyeglasses</a></li>
+                <li><a class="dropdown-item" href="#">Men Eyeglasses</a></li>
+                <li><a class="dropdown-item" href="#">Women Eyeglasses</a></li>
+
+
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown mobilenav">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                <img src="https://djgn3cwvdf3zo.cloudfront.net/appimages/app-menu-sunglasses.png" alt=""> Sunglasses
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Mirror Sunglasses</a></li>
+                <li><a class="dropdown-item" href="#">Tinted Sunglasses</a></li>
+                <li><a class="dropdown-item" href="#">Polarized Sunglasses</a></li>
+                <li><a class="dropdown-item" href="#">Flash Sunglasses</a></li>
+                <li><a class="dropdown-item" href="#">Gradient Sunglasses</a></li>
+                <li><a class="dropdown-item" href="#">Men Sunglasses</a></li>
+                <li><a class="dropdown-item" href="#">Women Sunglasses</a></li>
+
+
+
+              </ul>
+            </li>
+
+            <li class="nav-item mobilenav">
+              <a class="nav-link  px-lg-2 " href="#">
+                <img src="https://cwcdn.coolwinks.com/mobile/mobile-site-content/contact-lense/cl-hamburger.png"
+                  alt="">Contact lens</a>
+            </li>
+
+
+            <li class="nav-item dropdown mobilenav">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                <img src="https://djgn3cwvdf3zo.cloudfront.net/appimages/app-menu-powersunglasses.png" alt="">
+                Precription Sunglasses
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Men Power Sunglasses</a></li>
+                <li><a class="dropdown-item" href="#">Women Power Sunglasses</a></li>
+
+
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown mobilenav">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                <img src="https://djgn3cwvdf3zo.cloudfront.net/appimages/kids-eyeglasses.png" alt=""> Kids Glasses
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Kids Eyeglasses</a></li>
+                <li><a class="dropdown-item" href="#">Kids Sunglasses</a></li>
+
+
+              </ul>
+            </li>
+
+            <li class="nav-item mobilenav">
+              <a class="nav-link  px-lg-2 " href="#">
+                <img src="https://cwcdn.coolwinks.com/mobile/mobile-site-content/menu-icon-computer.svg" alt="">Computer
+                Glasses</a>
+            </li>
+
+            <li class="nav-item mobilenav">
+              <a class="nav-link  px-lg-2 " href="#">
+                <img src="https://cwcdn.coolwinks.com/mobile/site-images/reading-eyeglasses-hamburgericon.png"
+                  alt="">Rreading Glasses</a>
+            </li>
+
+            <li class="nav-item mobilenav">
+              <a class="nav-link  px-lg-2 " href="#">
+                <img src="https://cwcdn.coolwinks.com/mobile/site-images/icon-wipes.svg" alt="">Lens Clearing
+                Wipes</a>
+            </li>
+
+
+            <li class="nav-item mobilenav">
+              <a class="nav-link  px-lg-2 " href="#">
+                <img src="https://cwcdn.coolwinks.com/mobile/mobile-site-content/menu-icon-color-blindness.svg"
+                  alt="">Color Blind Glasses</a>
+            </li>
+
+
+            <li class="nav-item mobilenav">
+              <a class="nav-link  px-lg-2 " href="#">
+                <img src="https://cwcdn.coolwinks.com/mobile/mobile-site-content/menu-color-changable-frames.png"
+                  alt="">Color Changing Frame</a>
+            </li>
+
+
+            <li class="nav-item mobilenav">
+              <a class="nav-link  px-lg-2 " href="#">
+                <img src="https://cwcdn.coolwinks.com/mobile/mobile-site-content/menu-icon-offers.svg" alt="">Offers</a>
+            </li>
+
+
+            <li class="nav-item mobilenav">
+              <a class="nav-link  px-lg-2 " href="#">
+                <img src="https://cwcdn.coolwinks.com/mobile/mobile-site-content/eyetesticon.svg" alt="">Free Eye
+                Testing Camp</a>
+            </li>
+
+
+            <li class="nav-item mobilenav">
+              <a class="nav-link  px-lg-2 " href="#">
+                <img src="https://cwcdn.coolwinks.com/mobile/mobile-site-content/menu-icon-recentlyViewed.svg"
+                  alt="">Recent Viewed</a>
+            </li>
+
+
+            <li class="nav-item mobilenav">
+              <a class="nav-link  px-lg-2 " href="#">
+                <img src="https://cwcdn.coolwinks.com/mobile/mobile-site-content/menu-icon-help.svg" alt="">Help</a>
+            </li>
+
+
+            <li class="nav-item mobilenav">
+              <a class="nav-link  px-lg-2 " href="#">
+                <img src="https://cwcdn.coolwinks.com/mobile/mobile-site-content/menu-icon-chat-with-us.svg" alt="">Chat
+                With Us</a>
+            </li>
+
+
+            <li class="nav-item mobilenav">
+              <a class="nav-link  px-lg-2 " href="#">
+                <img src="https://cwcdn.coolwinks.com/mobile/mobile-site-content/menu-icon-help.svg" alt="">Contact
+                Us</a>
+            </li>
+
+          </ul>
+
+        </div>
+
+      </div>
+    </nav>
+  </div>
+  <!----------------- MOBILE NAVBAR SECTION END -------------->
+
+
+  <!----------------- DESKTOP CONTENT SECTION START -------------->
+  <div class="desktop">
+    <section class="" style="min-height:100vh; background-color: #E5E5E5; padding-top: 6rem; position: relative;">
+      <div class="container-fluid d-flex justify-content-between mx-auto mt-2" style="width: 91%;">
+        <div class="address_left" style="width: 66%; margin-top: -.2rem;">
+          <h4 class="mb-2" style="font-weight: 600;">Shipping Details</h4>
+
+          <div class="px-3 py-4 shipping_address1" style="height: auto; background-color: #ffffff;">
+            <div class="d-flex justify-content-between container">
+              <p style="font-size: 16px; font-weight: 600; color: #262626;">You have 1 saved address</p>
+              <button class="btn btn-outline-primary address_top_btn"><img src="images/icon-plus.svg" class="img-fluid" alt=""
+                  style="width: 20px; height: 20px;"> <span class="ml-2"
+                  style="font-size:13px; font-weight: 500; color: #035391;">Add a new address</span> </button>
+            </div>
+
+            <div class="shipping_body container mt-5">
+              <div class="d-flex align-items-stretch">
+                <div class="px-3 py-4 mr-3" style="border: 1px solid green; width:50%; position: relative;">
+                  <div class="d-flex">
+                    <input type="radio" checked>
+                    <label for="" class="ml-2">
+                      <span style="font-size: 16px; font-weight: 600; color: #333333;">Admin</span>
+                      <p style="font-size: 14px; font-weight: 400; color: #505565;" class="mb-0">Ph no. - 9811552515,
+                      <p style="font-size: 14px; font-weight: 400; color: #505565; line-height: 21px;" class="mb-0">wz
+                        870 gali no9, nangal raya bharat ghr, NEW DELHI 110049, DELHI,India</p>
+                      </p>
+                    </label>
+                    <img src="images/icon-edit.svg" class="img-fluid" style="width: 16px; height: 16px;" alt="">
+                  </div>
+
+                  <div class="add_icon">
+
+                  </div>
+                </div>
+
+                <div class=" px-3 py-4 ml-3 shipping_address_child1" style="border:1px solid blue; width: 50%;">
+                  <div style="display: flex; align-items: center; justify-content: center; align-items: stretch;">
+                     <img src="images/icon-add-address.svg" class="img-fluid" alt="">
+                  </div>
+                  <h6 style="font-weight: 600; color: #262626; text-align: center;">Add a new address</h6>
+                  
+
+                </div>
+              </div>
+          </div>
+      </div>
+
+      <div class="px-3 py-4 shipping_address2" style="height: auto; background-color: #ffffff;">
+
+        <div class="d-flex justify-content-between container">
+          <p style="font-size: 16px; font-weight: 600; color: #262626;">Add Address</p>
+          <button class="btn btn-outline-primary address_top_btn2"><img src="images/cw-icon-save-address.svg" class="img-fluid" alt=""
+              style="width: 16px; height: 16px;"> <span class="ml-2"
+              style="font-size:13px; font-weight: 500; color: #035391;">View saved address</span> </button>
+        </div>
+
+        <div class="shipping_body container mt-5">
+          
+      </div>
+  </div>
+</div>
+
+        <div style="width: 34%;" class="ml-3">
+          <h5 style="font-weight: 600;">Price Summary</h5>
+
+          <div class=" px-3 py-3 checkout_rg_1" style="height: auto; background-color: #ffffff;" data-toggle="modal"
+            data-target="#myModal">
+            <div class="d-flex">
+              <img src="images/cw-icon-offer.svg" class="img-fluid" alt="">
+              <p class="d-inline-block mb-0" for="defaultCheck1"
+                style="font-size: 14px; font-weight: 600; color: #262626; margin-left: .7rem;">
+                Apply Coupon Code
+              </p>
+              <img src="images/cw-icon-arrow-right.svg" class="img-fluid ml-auto mt-2" alt="" style="cursor: pointer;">
+            </div>
+            <p
+              style=" margin-left: 2.3rem; margin-bottom: 0; font-size: 12px; font-weight: 400; color: #262626; margin-top: -.4rem;">
+              You
+              Have 5 Coupons to Apply <span class="text-danger">*</span></p>
+          </div>
+
+          <div class="mt-2 px-2 py-2"
+            style="height: auto; background-color: #ffffff; cursor: pointer; position: relative;">
+            <div class="address_product_click d-flex align-items-center py-3 px-2" style="background-color:#E5E5E5">
+
+              <p class="d-inline-block mb-0" for="defaultCheck1"
+                style="font-size: 13px; font-weight: 600; color: #000000; margin-left: .2rem; width: 50%!important;">
+                Your Cart <span class="ml-1" style="color: #1276e2;">( 3 Items) </span>
+              </p>
+              <span
+                style="font-size: 12px; font-weight: 600; color: #1276e2; text-decoration: underline; width: 40%!important;position: absolute; right: 1px;">View
+                Details</span>
+              <img src="images/cw-icon-arrow-right.svg" class="img-fluid ml-auto" alt="">
+            </div>
+
+            <div class="address_product_show">
+
+              <div class="row my-4 pr-3">
+                <div class="col-xl-3 col-md-3 col-3">
+                  <div style="border: 1.5px solid #DADADA;">
+                    <img src="images/S66C6624-2.webp" alt="" class="img-fluid py-2 ml-2" style="width: 60px;">
+                  </div>
+                </div>
+
+                <div class="col-xl-9 col-md-9 col-9">
+                  <div class="d-flex justify-content-between" style="width: 100%;">
+                    <div>
+                      <h6 style="font-weight: 600; margin-bottom: 0; font-size: 13px;">JRS</h6>
+                      <p style="color: #262626; font-size: 14px; font-weight: 500; cursor: auto; margin-bottom: 0;">
+                        <span style="color: #035391;">Frame:
+                        </span>Smoke Gradient Sunglasses
+                      </p>
+                    </div>
+                  </div>
+
+                  <span class="qtn_row d-flex align-items-center justify-content-between mt-1">
+                    <span style="font-size: 14px; font-weight: 600; color: #262626;">Qty <span
+                        style="font-weight: 500;">1</span></span>
+                    <span style="font-size: 14px; font-weight: 600; color: #262626;">₹1250</span>
+                  </span>
+                </div>
+              </div>
+
+              <hr>
+
+              <div class="row my-4 pr-3">
+                <div class="col-xl-3 col-md-3 col-3">
+                  <div style="border: 1.5px solid #DADADA;">
+                    <img src="images/E18A6693-2.webp" alt="" class="img-fluid py-2 ml-2" style="width: 60px;">
+                  </div>
+                </div>
+
+                <div class="col-xl-9 col-md-9 col-9">
+                  <div class="d-flex justify-content-between" style="width: 100%;">
+                    <div>
+                      <h6 style="font-weight: 600; margin-bottom: 0; font-size: 13px;">GRAVIATE</h6>
+                      <p style="color: #262626; font-size: 14px; font-weight: 500; cursor: auto; margin-bottom: 0;">
+                        <span style="color: #035391;">Frame:
+                        </span>Smoke Gradient Sunglasses
+                      </p>
+                      <p class="mb-0" style="color: #262626; font-size: 14px; font-weight: 500; cursor: auto;">
+                        <span style="color: #035391;">Lens:
+                        </span>Single Vision - Premium Anti Glare with UV
+                      </p>
+                    </div>
+                  </div>
+
+                  <span class="qtn_row d-flex align-items-center justify-content-between mt-2">
+                    <span style="font-size: 14px; font-weight: 600; color: #262626;">Qty <span
+                        style="font-weight: 500;">1</span> </span>
+                    <span style="font-size: 14px; font-weight: 600; color: #262626;">₹1250</span>
+                  </span>
+                </div>
+              </div>
+
+              <hr>
+
+              <div class="row my-4 pr-3">
+                <div class="col-xl-3 col-md-3 col-3">
+                  <div style="border: 1.5px solid #DADADA;">
+                    <img src="images/E_DSC_4577_1.webp" alt="" class="img-fluid py-2 ml-2" style="width: 60px;">
+                  </div>
+                </div>
+
+                <div class="col-xl-9 col-md-9 col-9">
+                  <div class="d-flex justify-content-between" style="width: 100%;">
+                    <div>
+                      <h6 style="font-weight: 600; margin-bottom: 0; font-size: 13px;">GRAVIATE</h6>
+                      <p style="color: #262626; font-size: 14px; font-weight: 500; cursor: auto; margin-bottom: 0;">
+                        <span style="color: #035391; font-weight: 500;">Frame:
+                        </span>Smoke Gradient Sunglasses
+                      </p>
+                      <p class="mb-0" style="color: #262626; font-size: 14px; font-weight: 500; cursor: auto;">
+                        <span style="color: #035391;">Lens:
+                        </span>Single Vision - Premium Anti Glare with UV
+                      </p>
+                    </div>
+                  </div>
+
+                  <span class="qtn_row d-flex align-items-center justify-content-between mt-1">
+                    <span style="font-size: 14px; font-weight: 600; color: #262626;">Qty <span
+                        style="font-weight: 500;">2</span> </span>
+                    <span style="font-size: 14px; font-weight: 600; color: #262626;">₹1250</span>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+          <div class="mt-2 px-3 pt-3 pb-1 checkout_rg_1" style="height: auto; background-color: #ffffff;">
+            <div class="d-flex justify-content-between">
+              <p class="mb-2" style="font-size: 14px; font-weight: 400; color: #262626;">MRP
+              </p>
+              <p class="mb-2" style="font-size: 15px; font-weight: 400; color: #262626;">
+                ₹ 1730
+              </p>
+            </div>
+            <div class="d-flex justify-content-between">
+              <p class=" mb-0" style="font-size: 14px; font-weight: 400; color: #262626;">Discount
+              </p>
+              <p class=" mb-0" style="font-size: 15px; font-weight: 400; color: #262626;">
+                -₹ 1031
+              </p>
+            </div>
+
+            <hr class="mt-2 mb-2">
+
+            <div class="d-flex justify-content-between">
+              <p class="mb-2" style="font-size: 14px; font-weight: 600; color: #262626;">Net Price
+
+              </p>
+              <p class="mb-2" style="font-size: 15px; font-weight: 600; color: #262626;">
+                ₹ 699
+              </p>
+            </div>
+            <div class="d-flex justify-content-between py-2">
+              <p class=" mb-2" style="font-size: 14px; font-weight: 400; color: #262626;">Tax (GST)
+              </p>
+              <p class=" mb-2" style="font-size: 15px; font-weight: 400; color: #262626;">
+                -₹ 126
+              </p>
+            </div>
+            <div class="d-flex justify-content-between">
+              <p class=" mb-0" style="font-size: 14px; font-weight: 400; color: #262626;">Shipping Charges
+
+              </p>
+              <p class=" mb-0" style="font-size: 15px; font-weight: 400; color: #262626;">
+                ₹ 0
+              </p>
+            </div>
+
+            <hr class="mt-2 mb-2">
+
+            <div class="d-flex justify-content-between">
+              <p class=" mb-0" style="font-size: 16px; font-weight: 600; color: #262626;">You Pay
+
+              </p>
+              <p class=" mb-0" style="font-size: 15px; font-weight: 600; color: #262626;">
+                ₹ 825
+              </p>
+            </div>
+          </div>
+
+          <div class="px-3 py-2 checkout_rg_1" style="height: auto; background-color: #F3FDEE;">
+            <div class="d-flex">
+              <p class=" mb-0" style="font-size: 13px; font-weight: 600; color: #262626;">Total Saving
+
+              </p>
+              <p class="mb-0 ml-3" style="font-size: 13px; font-weight: 600; color: #388e3c">
+                ₹ 1031
+              </p>
+            </div>
+          </div>
+
+          <div class="px-3 py-2" style="background-color: #EBF8FF;">
+            <p class="mb-0" style="font-size: 12px; font-weight: 400; color: #262626;"><span
+                style="font-weight: 700;">Note:</span>
+              You can submit your power after Checkout</p>
+          </div>
+
+
+          <div class="px-3 py-1 checkout_rg_1" style="height: auto; background-color: #ffffff;">
+            <button type="button" class="btn btn-block mt-2 mb-3" style="font-size: 16px; font-weight: 500; padding-top: 1rem; padding-bottom:
+      1rem; background-color: #044271; color: #fff;">Proceed to Checkout</button>
+          </div>
+
+          <div class="px-3 py-2 d-flex mt-4" style="border-bottom: 1px solid #232735;">
+            <img src="images/cw-icon-genuine.svg" alt="" class="img-fluid">
+            <div>
+              <p class="ml-4 mb-0 mt-3" style="font-size: 14px; font-weight: 600; color: #262626;"> 100% Genuine Product
+              </p>
+              <p class="ml-4" style="font-size: 12px; font-weight: 400; color: #262626;">Best Price Guaranteed</p>
+            </div>
+          </div>
+
+
+          <div class="px-3 py-2 d-flex">
+            <img src="images/cw-icon-easy-returns.svg" alt="" class="img-fluid">
+            <div>
+              <p class="ml-4 mb-0 mt-3" style="font-size: 14px; font-weight: 600; color: #262626;"> 14-Days Easy Returns
+              </p>
+              <p class="ml-4" style="font-size: 12px; font-weight: 400; color: #262626;">14 days no questions asked
+                return policy</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- The Modal -->
+      <div class="modal pr-0" id="myModal" style="z-index: 50000;">
+        <div class="modal-dialog my-0">
+          <div class="modal-content px-3 pb-4">
+
+            <!-- Modal Header -->
+            <div class="modal-header mt-2" style="position: relative;">
+              <h4 class="modal-title">Promo Offers</h4>
+              <button type="button" class="close" data-dismiss="modal">×</button>
+            </div>
+
+            <form class="form-inline px-3 pb-3" action="">
+              <input type="text" class="form-control" placeholder="Enter Coupon Code" id=""
+                style="border-radius:0; color: #8B90A0; font-size: 0.875rem; border: 1px dashed #A1A4B1; width: 75%; padding: 1.5rem 1.5rem!important;">
+              <button type="submit" class="btn w-25"
+                style="padding: .766rem 0; border-radius: 0; background-color: #035391; border-color: #035391; color: #fff;">Apply</button>
+            </form>
+
+            <!-- Modal body -->
+            <div class="modal-body">
+              <div class="main_cart_coupn">
+                <div class="senior_cart_coupn" style="background-color: #F0F1F3; border: 1px dashed #D3D4D8;">
+                  <div class="senior_con_cart_coupn p-4">
+                    <div class="row">
+                      <div class="col-xl-4 col-md-4">
+                        <div class="bg-white py-4 px-2 d-flex align-items-center justify-content-center">
+                          <img src="images/cp-cw2.svg" class="img-fluid" alt="" style="width: 105px; height: 63px;">
+                        </div>
+
+                      </div>
+
+                      <div class="col-xl-8 col-md-8">
+                        <div class="d-flex justify-content-between">
+                          <div class="ml-2 px-4 d-flex align-items-center"
+                            style="border: 1px solid #D3D4D8; background-color: #dbf4ed; font-weight: 600; border-radius: 50rem;font-size: 14px;">
+                            FLAT350
+                          </div>
+
+                          <button class="btn btn-outline-primary"
+                            style="font-size: 14px; font-weight: 600;">APPLY</button>
+                        </div>
+
+                        <p class="ml-3 mt-2 mb-1" style="font-weight: 600; color: #262626;">Flat 350 Off</p>
+                        <p class="ml-3 mb-2" style="font-weight: 400; color: #262626; font-size: 12px;">Flat Rs 350 Off
+                          on Eyewear</p>
+                        <p class="" style="font-weight: 400; color: #BDC0C9; font-size: 10px; float: right;">Valid till
+                          31 Jul 2021 23:59</p>
+                        <span class="ml-3 desk_plus_clk_cpn"
+                          style="font-size: 12px; font-weight: 400; color: #1276e2; cursor: pointer;"><u>+
+                            Terms & Conditions</u> </span>
+
+                        <div class="show_cart_coup_list cart_coup_list">
+                          <span class="ml-3 desk_minus_clk_cpn"
+                            style="font-size: 12px; font-weight: 400; color: #1276e2; cursor: pointer;"><u>-
+                              Terms & Conditions</u> </span>
+                          <ul>
+                            <li>No minimum order value.</li>
+                            <li>Not valid on Reading Glasses, Wipes, Xstyl Lite, Contact Lenses and Ray Ban Products
+                            </li>
+                            <li>Valid till 31st July 2021.</li>
+                            <li>Additional T&Cs apply, please read full T&Cs at offer details page</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="senior_cart_coupn mt-3" style="background-color: #F0F1F3; border: 1px dashed #D3D4D8;">
+                  <div class="senior_con_cart_coupn p-4">
+                    <div class="row">
+                      <div class="col-xl-4 col-md-4">
+                        <div class="bg-white py-4 px-2 d-flex align-items-center justify-content-center">
+                          <img src="images/cp-cw2.svg" class="img-fluid" alt="" style="width: 105px; height: 63px;">
+                        </div>
+
+                      </div>
+
+                      <div class="col-xl-8 col-md-8">
+                        <div class="d-flex justify-content-between">
+                          <div class="ml-2 px-4 d-flex align-items-center"
+                            style="border: 1px solid #D3D4D8; background-color: #dbf4ed; font-weight: 600; border-radius: 50rem;font-size: 14px;">
+                            FLAT350
+                          </div>
+
+                          <button class="btn btn-outline-primary"
+                            style="font-size: 14px; font-weight: 600;">APPLY</button>
+                        </div>
+
+                        <p class="ml-3 mt-2 mb-1" style="font-weight: 600; color: #262626;">Flat 350 Off</p>
+                        <p class="ml-3 mb-2" style="font-weight: 400; color: #262626; font-size: 12px;">Flat Rs 350 Off
+                          on Eyewear</p>
+                        <p class="" style="font-weight: 400; color: #BDC0C9; font-size: 10px; float: right;">Valid till
+                          31 Jul 2021 23:59</p>
+                        <span class="ml-3 desk_plus_clk_cpn"
+                          style="font-size: 12px; font-weight: 400; color: #1276e2; cursor: pointer;"><u>+
+                            Terms & Conditions</u> </span>
+
+                        <div class="show_cart_coup_list cart_coup_list">
+                          <span class="ml-3 desk_minus_clk_cpn"
+                            style="font-size: 12px; font-weight: 400; color: #1276e2; cursor: pointer;"><u>-
+                              Terms & Conditions</u> </span>
+                          <ul>
+                            <li>No minimum order value.</li>
+                            <li>Not valid on Reading Glasses, Wipes, Xstyl Lite, Contact Lenses and Ray Ban Products
+                            </li>
+                            <li>Valid till 31st July 2021.</li>
+                            <li>Additional T&Cs apply, please read full T&Cs at offer details page</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="senior_cart_coupn mt-3" style="background-color: #F0F1F3; border: 1px dashed #D3D4D8;">
+                  <div class="senior_con_cart_coupn p-4">
+                    <div class="row">
+                      <div class="col-xl-4 col-md-4">
+                        <div class="bg-white py-4 px-2 d-flex align-items-center justify-content-center">
+                          <img src="images/cp-cw2.svg" class="img-fluid" alt="" style="width: 105px; height: 63px;">
+                        </div>
+
+                      </div>
+
+                      <div class="col-xl-8 col-md-8">
+                        <div class="d-flex justify-content-between">
+                          <div class="ml-2 px-4 d-flex align-items-center"
+                            style="border: 1px solid #D3D4D8; background-color: #dbf4ed; font-weight: 600; border-radius: 50rem;font-size: 14px;">
+                            FLAT350
+                          </div>
+
+                          <button class="btn btn-outline-primary"
+                            style="font-size: 14px; font-weight: 600;">APPLY</button>
+                        </div>
+
+                        <p class="ml-3 mt-2 mb-1" style="font-weight: 600; color: #262626;">Flat 350 Off</p>
+                        <p class="ml-3 mb-2" style="font-weight: 400; color: #262626; font-size: 12px;">Flat Rs 350 Off
+                          on Eyewear</p>
+                        <p class="" style="font-weight: 400; color: #BDC0C9; font-size: 10px; float: right;">Valid till
+                          31 Jul 2021 23:59</p>
+                        <span class="ml-3 desk_plus_clk_cpn"
+                          style="font-size: 12px; font-weight: 400; color: #1276e2; cursor: pointer;"><u>+
+                            Terms & Conditions</u> </span>
+
+                        <div class="show_cart_coup_list cart_coup_list">
+                          <span class="ml-3 desk_minus_clk_cpn"
+                            style="font-size: 12px; font-weight: 400; color: #1276e2; cursor: pointer;"><u>-
+                              Terms & Conditions</u> </span>
+                          <ul>
+                            <li>No minimum order value.</li>
+                            <li>Not valid on Reading Glasses, Wipes, Xstyl Lite, Contact Lenses and Ray Ban Products
+                            </li>
+                            <li>Valid till 31st July 2021.</li>
+                            <li>Additional T&Cs apply, please read full T&Cs at offer details page</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="senior_cart_coupn mt-3" style="background-color: #F0F1F3; border: 1px dashed #D3D4D8;">
+                  <div class="senior_con_cart_coupn p-4">
+                    <div class="row">
+                      <div class="col-xl-4 col-md-4">
+                        <div class="bg-white py-4 px-2 d-flex align-items-center justify-content-center">
+                          <img src="images/cp-cw2.svg" class="img-fluid" alt="" style="width: 105px; height: 63px;">
+                        </div>
+
+                      </div>
+
+                      <div class="col-xl-8 col-md-8">
+                        <div class="d-flex justify-content-between">
+                          <div class="ml-2 px-4 d-flex align-items-center"
+                            style="border: 1px solid #D3D4D8; background-color: #dbf4ed; font-weight: 600; border-radius: 50rem;font-size: 14px;">
+                            FLAT350
+                          </div>
+
+                          <button class="btn btn-outline-primary"
+                            style="font-size: 14px; font-weight: 600;">APPLY</button>
+                        </div>
+
+                        <p class="ml-3 mt-2 mb-1" style="font-weight: 600; color: #262626;">Flat 350 Off</p>
+                        <p class="ml-3 mb-2" style="font-weight: 400; color: #262626; font-size: 12px;">Flat Rs 350 Off
+                          on Eyewear</p>
+                        <p class="" style="font-weight: 400; color: #BDC0C9; font-size: 10px; float: right;">Valid till
+                          31 Jul 2021 23:59</p>
+                        <span class="ml-3 desk_plus_clk_cpn"
+                          style="font-size: 12px; font-weight: 400; color: #1276e2; cursor: pointer;"><u>+
+                            Terms & Conditions</u> </span>
+
+                        <div class="show_cart_coup_list cart_coup_list">
+                          <span class="ml-3 desk_minus_clk_cpn"
+                            style="font-size: 12px; font-weight: 400; color: #1276e2; cursor: pointer;"><u>-
+                              Terms & Conditions</u> </span>
+                          <ul>
+                            <li>No minimum order value.</li>
+                            <li>Not valid on Reading Glasses, Wipes, Xstyl Lite, Contact Lenses and Ray Ban Products
+                            </li>
+                            <li>Valid till 31st July 2021.</li>
+                            <li>Additional T&Cs apply, please read full T&Cs at offer details page</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="senior_cart_coupn mt-3" style="background-color: #F0F1F3; border: 1px dashed #D3D4D8;">
+                  <div class="senior_con_cart_coupn p-4">
+                    <div class="row">
+                      <div class="col-xl-4 col-md-4">
+                        <div class="bg-white py-4 px-2 d-flex align-items-center justify-content-center">
+                          <img src="images/cp-cw2.svg" class="img-fluid" alt="" style="width: 105px; height: 63px;">
+                        </div>
+
+                      </div>
+
+                      <div class="col-xl-8 col-md-8">
+                        <div class="d-flex justify-content-between">
+                          <div class="ml-2 px-4 d-flex align-items-center"
+                            style="border: 1px solid #D3D4D8; background-color: #dbf4ed; font-weight: 600; border-radius: 50rem;font-size: 14px;">
+                            FLAT350
+                          </div>
+
+                          <button class="btn btn-outline-primary"
+                            style="font-size: 14px; font-weight: 600;">APPLY</button>
+                        </div>
+
+                        <p class="ml-3 mt-2 mb-1" style="font-weight: 600; color: #262626;">Flat 350 Off</p>
+                        <p class="ml-3 mb-2" style="font-weight: 400; color: #262626; font-size: 12px;">Flat Rs 350 Off
+                          on Eyewear</p>
+                        <p class="" style="font-weight: 400; color: #BDC0C9; font-size: 10px; float: right;">Valid till
+                          31 Jul 2021 23:59</p>
+                        <span class="ml-3 desk_plus_clk_cpn"
+                          style="font-size: 12px; font-weight: 400; color: #1276e2; cursor: pointer;"><u>+
+                            Terms & Conditions</u> </span>
+
+                        <div class="show_cart_coup_list cart_coup_list">
+                          <span class="ml-3 desk_minus_clk_cpn"
+                            style="font-size: 12px; font-weight: 400; color: #1276e2; cursor: pointer;"><u>-
+                              Terms & Conditions</u> </span>
+                          <ul>
+                            <li>No minimum order value.</li>
+                            <li>Not valid on Reading Glasses, Wipes, Xstyl Lite, Contact Lenses and Ray Ban Products
+                            </li>
+                            <li>Valid till 31st July 2021.</li>
+                            <li>Additional T&Cs apply, please read full T&Cs at offer details page</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+  </div>
+
+  <!----------------- DESKTOP CONTENT SECTION END -------------->
+
+
+
+
+
+
+
+  <!--------------------------- MOBILE CART CONTENT SECTION STARTS ------------------------------>
+  <div class="mobile" style="display: none;">
+    <div style="background-color: #EDEDED; width: 100%;">
+
+
+      <div class="p-5"></div>
+      <div style="position: relative; overflow-y: scroll;">
+
+        <div id="product_delete" class="grand_prt">
+          <div class="container p-2" style="width: 97%; background-color: #fff; ">
+            <div class="row p-2">
+              <div class="col-md-11 col-11">
+
+                <div>
+                  <h6 style="font-weight: 600; font-size: 13px; color: #333333; line-height: 10px;">JRS</h6>
+                  <p style="color: #4a444a; font-size: 12px !important; font-weight: 400; line-height: 20px;">Smoke
+                    Gradient
+                    Sunglasses
+                  </p>
+                </div>
+              </div>
+              <div class="col-1 delete">
+                <i class="fa fa-trash-o" aria-hidden="true"
+                  style="font-size: 1.4rem; size: 16px; font-weight: 400; color: #909090; cursor: pointer;"></i>
+              </div>
+            </div>
+
+
+            <div class="row mx-0">
+              <div class="col-6">
+                <img src="images/S66C6624-2.webp" alt="" class="img-fluid">
+              </div>
+
+              <div class="col-6">
+                <div class="cart_box">
+                  <input type="number" value="1" step="1" max="2" min="1"
+                    style="width: 20px!important; text-align: center; vertical-align: middle; border: 1px solid #ccc; background-color: #fff;font-size: 14px; padding: 4px;">
+                </div>
+
+                <div class="mt-3">
+                  <p style="font-size: 12px;  line-height: 20px;"> <span
+                      style="font-size: 13px; line-height:22px; font-weight: 700; color: #4a4a4a; "
+                      class="mr-2">Size:</span>
+                    Medium</p>
+                </div>
+
+                <div class="" style="margin-top: -12px; ">
+                  <p style="font-size: 12px; font-weight: 700;  line-height: 20px; color: #035391;"> <span
+                      style="font-size: 13px; line-height:22px; font-weight: 700; color: #035391; "
+                      class="mr-2">Rs:</span>
+                    990</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="remove container  d-flex align-items-center justify-content-center flex-column ">
+            <h3 class=" text-center" style="font-size: 12px; line-height: 150%; color: #333333; width: 80%;">Do you want
+              to
+              remove your product from your cart?</h3>
+            <ul style="list-style: none;" class="text-center">
+
+              <li><a href="#" class="text-capitalize btn btn-outline-danger m-2"
+                  style="border-radius: 30px; text-align: center;  padding: 4px 19px;" onclick="cartAlert()">Yes,
+                  remove</a>
+              </li>
+              <li><a href="#" class="text-capitalize btn btn-outline-primary m-1"
+                  style="border-radius: 30px; text-align: center; ">add to wishlist</a></li>
+            </ul>
+          </div>
+        </div>
+
+
+
+
+        <div class="pt-2"></div>
+
+        <div id="product_delete" class="grand_prt">
+          <div class="container p-2" style="width: 97%; background-color: #fff; height: auto;">
+            <div class="row p-2">
+              <div class="col-md-11 col-11">
+
+                <div>
+                  <h6 style="font-weight: 600; font-size: 13px; color: #333333; line-height: 10px;">GRAVIATE</h6>
+                  <p style="color: #4a444a; font-size: 12px !important; font-weight: 400; line-height: 20px;">Brown
+                    Rimless Eyeglasses
+                  </p>
+                </div>
+              </div>
+              <div class="col-1 delete">
+                <i class="fa fa-trash-o" aria-hidden="true"
+                  style="font-size: 1.3rem; size: 16px; font-weight: 400; color: #909090; cursor: pointer;"></i>
+              </div>
+            </div>
+
+
+            <div class="row mx-0">
+              <div class="col-6">
+                <img src="images/E18A6693-2.webp" alt="" class="img-fluid">
+              </div>
+
+              <div class="col-6">
+
+
+                <div class="mt-3">
+                  <p style="font-size: 12px;  line-height: 20px;"> <span
+                      style="font-size: 13px; line-height:22px; font-weight: 700; color: #4a4a4a; "
+                      class="mr-2">Size:</span>
+                    Medium</p>
+                </div>
+
+                <div class="" style="margin-top: -12px; ">
+                  <p style="font-size: 12px; font-weight: 700;  line-height: 20px; color: #035391;"> <span
+                      style="font-size: 13px; line-height:22px; font-weight: 700; color: #035391; "
+                      class="mr-2">Rs:</span>
+                    990</p>
+                </div>
+              </div>
+            </div>
+
+            <ul style="list-style: none; font-size: 12px; line-height: 150%; padding-left: 9px;">
+              <li class="d-flex justify-content-between" style="padding: 8px; border-top:  1px solid #eee;">
+                <div style="margin-left: -12px;">Frame</div>
+                <div>Rs 1290</div>
+              </li>
+              <li class="d-flex justify-content-between" style="padding: 8px; border-top:  1px solid #eee;">
+                <div style="margin-left: -12px;">Premium Anti Glare with UV Protection</div>
+                <div>Rs 500</div>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <div class="remove container  d-flex align-items-center justify-content-center flex-column ">
+            <h3 class=" text-center" style="font-size: 12px; line-height: 150%; color: #333333; width: 80%;">Do you want
+              to
+              remove your product from your cart?</h3>
+            <ul style="list-style: none;" class="text-center">
+
+              <li><a href="#" class="text-capitalize btn btn-outline-danger m-2"
+                  style="border-radius: 30px; text-align: center;  padding: 4px 19px;" onclick="cartAlert()">Yes,
+                  remove</a>
+              </li>
+              <li><a href="#" class="text-capitalize btn btn-outline-primary m-1"
+                  style="border-radius: 30px; text-align: center; ">add to wishlist</a></li>
+            </ul>
+          </div>
+
+        </div>
+
+        <div class="pt-2"></div>
+
+        <div id="product_delete" class="grand_prt">
+          <div class="container p-2" style="width: 97%; background-color: #fff; height: auto;">
+            <div class="row p-2">
+              <div class="col-md-11 col-11">
+
+                <div>
+                  <h6 style="font-weight: 600; font-size: 13px; color: #333333; line-height: 10px;">GRAVIATE</h6>
+                  <p style="color: #4a444a; font-size: 12px !important; font-weight: 400; line-height: 20px;">Brown
+                    Rimless Eyeglasses
+                  </p>
+                </div>
+              </div>
+              <div class="col-1 delete">
+                <i class="fa fa-trash-o" aria-hidden="true"
+                  style="font-size: 1.3rem; size: 16px; font-weight: 400; color: #909090; cursor: pointer;"></i>
+              </div>
+            </div>
+
+
+            <div class="row mx-0">
+              <div class="col-6">
+                <img src="images/E_DSC_4577_1.webp" alt="" class="img-fluid">
+              </div>
+
+              <div class="col-6">
+
+                <div class="mt-3">
+                  <p style="font-size: 12px;  line-height: 20px;"> <span
+                      style="font-size: 13px; line-height:22px; font-weight: 700; color: #4a4a4a; "
+                      class="mr-2">Size:</span>
+                    Medium</p>
+                </div>
+
+                <div class="" style="margin-top: -12px; ">
+                  <p style="font-size: 12px; font-weight: 700;  line-height: 20px; color: #035391;"> <span
+                      style="font-size: 13px; line-height:22px; font-weight: 700; color: #035391; "
+                      class="mr-2">Rs:</span>
+                    990</p>
+                </div>
+              </div>
+            </div>
+
+            <ul style="list-style: none; font-size: 12px;  line-height: 150%; padding-left: 9px;">
+              <li class="d-flex justify-content-between" style="padding: 8px; border-top:  1px solid #eee;">
+                <div style="margin-left: -12px;">Frame</div>
+                <div>Rs 1290</div>
+              </li>
+              <li class="d-flex justify-content-between" style="padding: 8px; border-top:  1px solid #eee;">
+                <div style="margin-left: -12px;">Premium Anti Glare with UV Protection</div>
+                <div>Rs 500</div>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <div class="remove container  d-flex align-items-center justify-content-center flex-column ">
+            <h3 class=" text-center" style="font-size: 12px; line-height: 150%; color: #333333; width: 80%;">Do you want
+              to
+              remove your product from your cart?</h3>
+            <ul style="list-style: none;" class="text-center">
+
+              <li><a href="#" class="text-capitalize btn btn-outline-danger m-2"
+                  style="border-radius: 30px; text-align: center;  padding: 4px 19px;" onclick="cartAlert()">Yes,
+                  remove</a>
+              </li>
+              <li><a href="#" class="text-capitalize btn btn-outline-primary m-1"
+                  style="border-radius: 30px; text-align: center; ">add to wishlist</a></li>
+            </ul>
+          </div>
+
+        </div>
+
+        <div class="container check_row"
+          style="width: 97%; position: relative;  background-color: #fff; border: 1px solid #1276E2; border-radius: 0px;">
+
+          <div class="row">
+            <div class="col-5">
+              <img src="images/cw-add-pair.png" alt="" class="img-fluid">
+            </div>
+            <div class="col-3 text-center " style="display: flex; align-items: center;">
+              <h2 style="color: #333333; font-weight: 900; font-size: 9px; " class="">GET ANOTHER PAIR FOR ₹291</h2>
+            </div>
+            <div class="col-4 d-flex align-items-center">
+              <a href="#" class="btn btn-primary btn-block " style="font-size:1rem;  font-weight: 900;  ">ADD NOW</a>
+            </div>
+          </div>
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+        <div class="container p-3" id="wrapperopen" style="width: 97%; background-color: #fff; ">
+          <div class="d-flex align-items-center">
+            <img src="images/cw-icon-offer.svg" class="img-fluid" alt="">
+            <p class="d-inline-block mb-0" for="defaultCheck1"
+              style="font-size: 13px; font-weight: 700; color: #484848; margin-left: .7rem;">
+              Use Coupon
+            </p>
+            <img src="images/cw-icon-arrow-right.svg" class="img-fluid ml-auto mt-2" alt=""
+              style="size: 11px !important;">
+          </div>
+
+        </div>
+
+
+        <div class="pt-2"></div>
+
+        <div class="container py-2" style="width: 97%; background-color: #fff; margin-bottom: 10rem;">
+
+          <div class="row pt-3">
+            <div class="col-10">
+              <p class="mb-2" style="font-size: 12px; font-weight: 400; color: #4a4a4a; line-height: 16px;">MRP
+              </p>
+
+            </div>
+            <div class="col-2 text-right">
+              <p class="mb-2" style="font-size: 12px; font-weight: 400; color: #4a4a4a; line-height: 16px;">
+                ₹ 1800</p>
+            </div>
+            <div class="col-10">
+              <p class=" mb-2" style="font-size: 12px; font-weight: 400; color: #4a4a4a; line-height: 16px;">Discount
+                <span class="ml-auto" id="popup"><i class="fa fa-info-circle" aria-hidden="true"
+                    style="font-size: .9rem; color: #a1a4b1;"></i></span>
+              </p>
+
+            </div>
+            <div class="col-2 text-right">
+              <p class=" mb-2" style="font-size: 12px; font-weight: 400; color: #2ca01c; line-height: 16px;">
+                -₹ 1031
+              </p>
+            </div>
+            <div class="col-10">
+              <p class="mb-2" style="font-size: 12px; font-weight: 400; color: #4a4a4a; line-height: 16px;">COUPON
+                DISCOUNT
+              </p>
+
+            </div>
+            <div class="col-2 text-right">
+              <p class=" mb-2" style="font-size: 12px; font-weight: 400; color: #2ca01c; line-height: 16px;">
+                -₹ 0
+              </p>
+            </div>
+            <div class="col-10">
+              <p class="mb-2" style="font-size: 12px; font-weight: 400; color: #4a4a4a; line-height: 16px;">NET PRICE
+              </p>
+
+            </div>
+            <div class="col-2 text-right">
+              <p class="mb-2" style="font-size: 12px; font-weight: 400; color: #4a4a4a; line-height: 16px;">
+                ₹ 990</p>
+            </div>
+            <div class="col-10">
+              <p class="mb-2" style="font-size: 12px; font-weight: 400; color: #4a4a4a; line-height: 16px;">GST
+              </p>
+
+            </div>
+            <div class="col-2 text-right">
+              <p class="mb-2" style="font-size: 12px; font-weight: 400; color: #4a4a4a; line-height: 16px;">
+                ₹ 178</p>
+            </div>
+            <div class="col-10">
+              <p class="mb-2" style="font-size: 12px; font-weight: 400; color: #4a4a4a; line-height: 16px;">SHIPPING
+                CHARGES
+              </p>
+
+            </div>
+            <div class="col-2 text-right">
+              <p class="mb-2" style="font-size: 12px; font-weight: 400; color: #4a4a4a; line-height: 16px;">
+                ₹ 0</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="pt-2"></div>
+
+        <div class="below" style="position: fixed; width: 100%; bottom: 0;">
+          <div class="row d-flex align-items-center" style="background-color: #ffffff;">
+            <div class="col-10 px-4 pt-3">
+              <p class=" mb-0" style="font-size: 12px; font-weight: 400; color: #4a4a4a; line-height: 16px;">Final
+                Amount
+
+              </p>
+              <p style="font-size: 12px; font-weight: 400; color: #2ca01c !important; line-height: 16px;">Your total
+                savings
+                on this order is 810</p>
+
+            </div>
+            <div class="col-2">
+              <p class=" mb-0 ml-auto" style="font-size: 12px; font-weight: 400; color: #2ca01c; line-height: 16px;">
+                ₹ 1168
+              </p>
+            </div>
+          </div>
+
+          <div class="carti ">
+            <button type="button" class="btn btn-lg  btn-block " style="font-size: 1.5rem; font-weight: 500; padding-top: 1.5rem; padding-bottom:
+    1.5rem; background-color: #044271; color: #fff;">PROCEED</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- ---------------------------------Wrapper open------------------- -->
+  <div id="wrapper">
+    <div class="cu">
+
+      <div class="row top p-3 d-flex align-items-center ">
+        <div class="col-1 wrapperof"> <i class=" fa fa-long-arrow-left " aria-hidden=" true "></i></div>
+        <div class=" col-11">
+          <div class="top " style="width: 100%;">
+            <h3 class="text-center">
+              COUPONS
+            </h3>
+          </div>
+        </div>
+      </div>
+
+      <div class="row px-3 py-3" style="background-color: #ffffff;">
+        <div class=" col-12 wrapper_form">
+          <form action="">
+            <div class="input-group input-group-lg" style="border-radius: 0 !important; box-shadow: none;">
+              <input type="text" class="form-control" placeholder="Enter Coupon Code" aria-label="Recipient's username"
+                aria-describedby="basic-addon2">
+              <span class="input-group-text px-4" id="basic-addon2"
+                style="color: white; background-color: #035391;">APPLY</span>
+            </div>
+          </form>
+
+
+        </div>
+      </div>
+
+      <div style="width: 100%; background-color: #fff; padding-left: 9px;" class="mt-2 py-2">
+        <h3
+          style="font-size: 13px; font-weight: 700; color: #222222;line-height: 150%; margin-top: 6px; padding-left: 13px;">
+          Available Coupons</h3>
+      </div>
+
+
+      <div style="width: 98%; background-color: #fff; " class="mt-2 container">
+        <div class="container">
+          <div class="row d-flex align-items-center">
+            <div class="col-9 pt-3">
+              <span class=""
+                style=" margin-left: -3px; border-radius: 30px;background-color: #ffefd3; color:#000000; font-weight: 700; padding: 5px 12px;">
+                FLAT350
+              </span>
+              <p class="mb-1 mt-2" style="font-size: 14px; line-height: 150%; color: #000000;">Flat RS 350 Off on
+                Eyewear</p>
+              <p style="font-size: 12px; line-height: 150%; color: #035391;" class="mob_cart_clkpopup">View Details</p>
+            </div>
+            <div class="col-3">
+              <a href="#" class="btn"
+                style="border-radius: 25px; padding: 5px 15px; background-color: #035391; color: #fff;"> Apply</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div style="width: 98%; background-color: #fff; " class="mt-2 container">
+        <div class="container">
+          <div class="row d-flex align-items-center">
+            <div class="col-9 pt-3">
+              <span class=""
+                style=" margin-left: -3px; border-radius: 30px;background-color: #ffefd3; color:#000000; font-weight: 700; padding: 5px 12px;">
+                CL20
+              </span>
+              <p class="mb-1 mt-2" style="font-size: 14px; line-height: 150%; color: #000000;">Flat RS 350 Off on
+                Eyewear</p>
+              <p style="font-size: 12px; line-height: 150%; color: #035391;" class="mob_cart_clkpopup">View Details</p>
+            </div>
+            <div class="col-3">
+              <a href="#" class="btn"
+                style="border-radius: 25px; padding: 5px 15px; background-color: #035391; color: #fff;"> Apply</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div style="width: 98%; background-color: #fff; " class="mt-2 container">
+        <div class="container">
+          <div class="row d-flex align-items-center">
+            <div class="col-9 pt-3">
+              <span class=""
+                style=" margin-left: -3px; border-radius: 30px;background-color: #ffefd3; color:#000000; font-weight: 700; padding: 5px 12px;">
+                COOL50
+              </span>
+              <p class="mb-1 mt-2" style="font-size: 14px; line-height: 150%; color: #000000;">Flat RS 350 Off on
+                Eyewear</p>
+              <p style="font-size: 12px; line-height: 150%; color: #035391;" class="mob_cart_clkpopup">View Details</p>
+            </div>
+            <div class="col-3">
+              <a href="#" class="btn"
+                style="border-radius: 25px; padding: 5px 15px; background-color: #035391; color: #fff;"> Apply</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div style="width: 98%; background-color: #fff; " class="mt-2 container">
+        <div class="container">
+          <div class="row d-flex align-items-center">
+            <div class="col-9 pt-3">
+              <span class=""
+                style=" margin-left: -3px; border-radius: 30px;background-color: #ffefd3; color:#000000; font-weight: 700; padding: 5px 12px;">
+                COOL0
+              </span>
+              <p class="mb-1 mt-2" style="font-size: 14px; line-height: 150%; color: #000000;">Flat RS 350 Off on
+                Eyewear</p>
+              <p style="font-size: 12px; line-height: 150%; color: #035391;" class="mob_cart_clkpopup">View Details</p>
+            </div>
+            <div class="col-3">
+              <a href="#" class="btn"
+                style="border-radius: 25px; padding: 5px 15px; background-color: #035391; color: #fff;"> Apply</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div style="width: 98%; background-color: #fff; " class="mt-2 container">
+        <div class="container">
+          <div class="row d-flex align-items-center">
+            <div class="col-9 pt-3">
+              <span class=""
+                style=" margin-left: -3px; border-radius: 30px;background-color: #ffefd3; color:#000000; font-weight: 700; padding: 5px 12px;">
+                EARNCOOLCASH
+              </span>
+              <p class="mb-1 mt-2" style="font-size: 14px; line-height: 150%; color: #000000;">Flat RS 350 Off on
+                Eyewear</p>
+              <p style="font-size: 12px; line-height: 150%; color: #035391;" class="mob_cart_clkpopup">View Details</p>
+            </div>
+            <div class="col-3">
+              <a href="#" class="btn"
+                style="border-radius: 25px; padding: 5px 15px; background-color: #035391; color: #fff;"> Apply</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+
+
+  <!-- popup box for mobile coupons -->
+
+  <div class="popuop_box2" style="display: none;">
+    <div class="popup2">
+      <div class="container">
+        <div class="popup_header2 pt-1">
+          <div class="row">
+            <h3 class="text-uppercase pt-3 mb-1"
+              style="font-size: 14px; line-height: 150%; color: #333333; font-weight: 700;">
+              Coolcash <span class="float-right mob_cart_popupclose2"><i class="fa fa-times"></i></span></h3>
+            <p class="mb-3" style="font-size: 12px; line-height: 150%; color: #5b5b5b;">Huge saving with every
+              order</p>
+          </div>
+        </div>
+        <div class="popup_content2 p-1">
+          <ul class="mt-3">
+            <li style="font-size: 11px; line-height: 150%; color: #333333; ">No minimum order value.</li>
+            <li style="font-size: 11px; line-height: 150%; color: #333333; ">Not valid on Reading Glasses,wipes,Xstyl
+              Lite.</li>
+            <li style="font-size: 11px; line-height: 150%; color: #333333; ">Valid till 31st July 2021.</li>
+            <li style="font-size: 11px; line-height: 150%; color: #333333; ">Additional T&C apply,please read full T&C
+              at offer details page.</li>
+          </ul>
+        </div>
+
+
+
+      </div>
+      <div class="popup_footer2 " style="width: 100%;">
+        <a href="" class="btn btn-primary btn-block btn-lg text-uppercase">apply</a>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- popupbox -->
+
+
+  <div class="popuop_box" style="display: none;">
+    <div class="popup">
+      <div class="container">
+        <div class="popup_header pt-3">
+          <div class="row">
+            <h3 class="text-uppercase text-center"
+              style="font-size: 14px; line-height: 150%; color: #333333; font-weight: 700;">Discount breakup <span
+                class="float-right"><i class="fa fa-times " id="popupclose"></i></span></h3>
+
+          </div>
+        </div>
+        <div class="popup_content p-3">
+          <div class="row">
+            <div class="col-11">
+              <p style="font-size: 12px; line-height: 150%; color: #5b5b5b;">Lens Discount</p>
+            </div>
+            <div class="col-1">
+              <p style="font-size: 12px; line-height: 150%; color: #5b5b5b;">0</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-11">
+              <p style="font-size: 12px; line-height: 150%; color: #5b5b5b;">Lens Discount</p>
+            </div>
+            <div class="col-1">
+              <p style="font-size: 12px; line-height: 150%; color: #5b5b5b;">0</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <!--------------------------- MOBILE CART CONTENT SECTION END ------------------------------>
+
+
+
+
+
+
+
+
+  <!-- swiped-events -->
+  <script src="js/swiped-events.js"></script>
+
+  <!--Main javascript External -->
+  <script src="js/script.js"></script>
+
+
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
+    crossorigin="anonymous"></script>
+
+
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <!--Main jQuery External -->
+  <script src="js/my.js"></script>
+
+  <!-- Plugin for increment decrement number -->
+  <script src="js/jquery.nice-number.js"></script>
+
+  <!-- plugin for sweet-alert -->
+  <script src="js/sweet-alert/node_modules/sweetalert2/dist/sweetalert2.all.min.js"></script>
+
+  <!-- Popper JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+</body>
+
+</html>
