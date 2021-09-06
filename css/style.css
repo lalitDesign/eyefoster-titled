@@ -2639,7 +2639,7 @@ input .form-control .desk_coupon{
 .fil_close {
   position: absolute;
   top: 0;
-  left: 0;
+  left: .5rem;
   width: 1.5rem;
   height: 1.5rem;
 }

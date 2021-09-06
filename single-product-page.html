@@ -33,13 +33,13 @@
   <!---------------- DESKTOP NAVBAR START ---------------------------------->
 
   <div class="desktop">
-    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top nav_bar_main" style="z-index: 75">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top nav_bar_main" style="z-index: 75;">
       <div class="container-fluid text-uppercase p-2">
         <a class="navbar-brand font-weight-bold text-capitalize" href="index.html"><span
             class="text-primary font-weight-bolder">C</span>ool <span
             class="text-primary font-weight-bolder">W</span>inks</a>
-        <div>
-          <ul class="navbar-nav" style="margin-left: 2rem;">
+        <div class="navbar_nav_link" style="margin-left: 4rem;">
+          <ul class="navbar-nav">
             <li class="nav-item px-2">
               <a class="nav-link" aria-current="page" href="#" id="eyeglassId">EYEGLASSES</a>
             </li>
@@ -54,25 +54,46 @@
             </li>
           </ul>
         </div>
+      
+        
+        <div class="dropdown">
+          <form action="">
+            <div class=" form-inline nav_form pl-2" data-toggle="dropdown"  style="margin-left: 1.3rem; background-color: #F5F5F6; border-radius: 3px; border: none; width: 100%;">
+              <i class="fa fa-search nav_form_icon" aria-hidden="true" style="color: #838692;"></i>
+            <div class="input-group search_main">
+              <input type="text" class="form-control search_input" placeholder="What are you looking for?"
+                style="border: none;">
+            </div>
+          </div>
 
-        <form class="form-inline nav_form" action="/action_page.php" style="margin-right: 0.5rem;">
-          <div class="input-group search_main">
-            <i class="fa fa-search" aria-hidden="true"></i>
-            <input type="text" class="form-control search_input" placeholder="What are you looking for?"
-              class="bg-dark">
+
+
+          <div class="dropdown-menu nav_form_drp pb-0" style="margin-left: 1.3rem; border-radius: 0; width: 100%; background: #f9f9f9; overflow: hidden;">
+            <span class="pl-3 py-1" style="font-size: .75rem; margin-top: -4rem!important; font-weight: 700; color: grey;">TRENDING</span>
+            <ul class="pl-0 mb-0" style="list-style:none;">
+              <li class="dropdown-item py-2 mt-1" style="font-size: .7rem;"> <img src="images/trending.svg" class="img-fluid" style="width: 1rem; height: 1rem;" alt=""> Eyeglasses</li>
+              <li class="dropdown-item py-2 mt-1" style="font-size: .7rem;"> <img src="images/trending.svg" class="img-fluid" style="width: 1rem; height: 1rem;" alt=""> Sunglasses</li>
+              <li class="dropdown-item py-2 mt-1" style="font-size: .7rem;"> <img src="images/trending.svg" class="img-fluid" style="width: 1rem; height: 1rem;" alt=""> Contact Lenses</li>
+              <li class="dropdown-item py-2 mt-1" style="font-size: .7rem;"> <img src="images/trending.svg" class="img-fluid" style="width: 1rem; height: 1rem;" alt=""> Computer Glasses</li>
+              <li class="dropdown-item py-2 mt-1" style="font-size: .7rem;"> <img src="images/trending.svg" class="img-fluid" style="width: 1rem; height: 1rem;" alt=""> Frame</li>
+            </ul>
+            
           </div>
         </form>
+        </div>
+    
+       
 
         <ul class="ml-auto navbar-nav third_icon" style="margin-top: -0.5rem;">
-          <li class="nav-item px-4 text-center">
+          <li class="nav-item text-center">
             <span id="click_reg" class="nav-link text-dark" href=""><i class="fa fa-user-o" aria-hidden="true"></i>
               <p class="font-weight-bolder" style="cursor: pointer;">SIGN IN/SIGN UP</p>
             </span>
           </li>
 
-          <li class="nav-item px-4 text-center">
-            <a class="nav-link text-dark" href=""><i class="fa fa-suitcase" aria-hidden="true"></i>
-              <p class="font-weight-bolder">Cart</p>
+          <li class="nav-item pr-4 pl-2 text-center">
+            <a class="nav-link text-dark" href="cart-page.html"><i class="fa fa-suitcase" aria-hidden="true"></i>
+              <p class="font-weight-bolder" style="margin-top: .2rem;">BAG</p>
             </a>
           </li>
         </ul>
@@ -88,15 +109,15 @@
               <ul class="pt-4" style="margin-left: -2rem;">
                 <li>
                   <a href="my-profile.html"><img src="images/men_cat.png" alt="" style="height: 35px;"><span
-                      style="padding-left: 3rem; font-size: 0.8rem;">MEN</a></span>
+                      style="padding-left: 3rem; font-size: 0.8rem;">MEN</span></a>
                 </li>
                 <li class="py-4">
                   <a href="my-favourite.html"><img src="images/women_cat.jpg" alt="" style="height: 35px;"><span
-                      style="padding-left: 2.8rem; font-size: 0.8rem;">WOMEN</a></span>
+                      style="padding-left: 2.8rem; font-size: 0.8rem;">WOMEN</span></a>
                 </li>
                 <li>
                   <a href="offers.html"><img src="images/kids_cat.jpg" alt="" style="height: 35px;"><span
-                      style="padding-left: 1.6rem; font-size: 0.8rem;">KIDS</a></span>
+                      style="padding-left: 1.6rem; font-size: 0.8rem;">KIDS</span></a>
                 </li>
 
               </ul>
@@ -123,7 +144,7 @@
                   <a href="filter-page.html">COMPUTER GLASSES</a>
                 </li>
                 <li class="pt-3" style="font-size: 0.8rem;">
-                  <a href="">READING GLASSES</a>
+                  <a href="single-product-page.html">READING GLASSES</a>
                 </li>
               </ul>
             </div>
@@ -133,13 +154,13 @@
               <h6 class="text-left pt-3 pl-2 font-weight-bolder">Select Shape</h6>
               <ul class="pt-4">
                 <li style="font-size: 0.8rem;">
-                  <a href="">HEXAGON</a>
+                  <a href="cart-page.html">HEXAGON</a>
                 </li>
                 <li style="font-size: 0.8rem; padding-top: 0.6rem;">
-                  <a href="">RETEROSQUARE</a>
+                  <a href="address.html">RETEROSQUARE</a>
                 </li>
                 <li style="font-size: 0.8rem; padding-top: 0.6rem;">
-                  <a href="">ROUND</a>
+                  <a href="mob_dashboard.html">ROUND</a>
                 </li>
                 <li style="font-size: 0.8rem; padding-top: 0.6rem;">
                   <a href="">CLUBMASTER</a>
@@ -191,15 +212,15 @@
               <ul class="pt-4" style="margin-left: -2rem;">
                 <li>
                   <a href=""><img src="images/men_cat.png" alt="" style="height: 35px;"><span
-                      style="padding-left: 3rem; font-size: 0.8rem;">MEN</a></span>
+                      style="padding-left: 3rem; font-size: 0.8rem;">MEN</span></a>
                 </li>
                 <li class="py-4">
                   <a href=""><img src="images/women_cat.jpg" alt="" style="height: 35px;"><span
-                      style="padding-left: 2.8rem; font-size: 0.8rem;">WOMEN</a></span>
+                      style="padding-left: 2.8rem; font-size: 0.8rem;">WOMEN</span></a>
                 </li>
                 <li>
                   <a href=""><img src="images/kids_cat.jpg" alt="" style="height: 35px;"><span
-                      style="padding-left: 1.6rem; font-size: 0.8rem;">KIDS</a></span>
+                      style="padding-left: 1.6rem; font-size: 0.8rem;">KIDS</span></a>
                 </li>
 
               </ul>
@@ -323,15 +344,15 @@
               <ul class="pt-4" style="margin-left: -2rem;">
                 <li>
                   <a href=""><img src="images/power-sunglasses.png" alt="" style="height: 25px;"><span
-                      style="padding-left: 3rem; font-size: 0.8rem;">MEN</a></span>
+                      style="padding-left: 3rem; font-size: 0.8rem;">MEN</span></a>
                 </li>
                 <li class="py-2">
                   <a href=""><img src="images/reading-eyeglasses-hamburgericon.png" alt="" style="height: 65px;"><span
-                      style="padding-left: 2.8rem; font-size: 0.8rem;">WOMEN</a></span>
+                      style="padding-left: 2.8rem; font-size: 0.8rem;">WOMEN</span></a>
                 </li>
                 <li>
                   <a href=""><img src="images/icon-wipes2.png" alt="" style="height: 25px;"><span
-                      style="padding-left: 2.5rem; font-size: 0.8rem;">KIDS</a></span>
+                      style="padding-left: 2.5rem; font-size: 0.8rem;">KIDS</span></a>
                 </li>
 
               </ul>
@@ -372,267 +393,651 @@
           </div>
         </div>
       </div>
-
     </div>
-
-
   </div>
+  <!----------- DESKTOP NAVBAR END ---------------------------------->
+
+
+   <!------------COMMON LOGIN POP-UP FORM START FOR DESKTOP ---------------->
+   <div class="desktop">
+    <div id="show_reg" style="width: 100%; height: 100vh; position: fixed; top: -100%; background: rgba(103,103,103,.9);
+    z-index: 2001;">
+      <div style="background-color: white; position: absolute; left: 50%; transform: translateX(-50%); top: -100%;" class="fir_frm">
+        <div style="position: absolute;" class="container-fluid text-center px-4">
+          <div id="reg_can"><i class="fa fa-times ml-auto mt-2" aria-hidden="true"
+              style="position: absolute; left: 95%; cursor: pointer;"></i> </div>
+          <div class="reg_con">
+            <h4 class="mt-4" style="font-weight: 800; color: #035391;">SIGN IN / SIGN UP</h4>
+            <pre><p class="pt-1" style="font-size: 1rem; color: #676767;">We do not share your personal
+          details with anyone</p></pre>
+          </div>
+          <form action="/action_page.php" class="reg_form">
+            <div class="form-group">
+  
+              <input type="email" class="form-control" placeholder="Email / Phone No" id="email" style="border-radius: 0;">
+            </div>
+            <button type="button" id="reg_btn" class="btn btn-block mt-3 btn-block" style="padding: 0.7rem 0;
+          font-weight: 800; background-color: #035391; color: #fff;">Proceed</button>
+            <div class="reg_or">
+              <p style="border-radius: 50%; color: black; margin-top: 2rem;">OR</p>
+               
+              <div class="d-flex mx-auto" style="width: 100%;">
+              <a href="#" style="width: 90%;" class="mr-2"><button class="btn mr-1 mt-1 btn-block" style="padding: 0.5rem 2rem; background-color: #3C589C; color: #fff;"><i
+                    class="fa fa-facebook-official f_btn" aria-hidden="true" style="font-size: 1.5rem;"></i>
+                  Facebook</button></a>
+  
+              <a href="#" style="width: 90%;" class="ml-2"><button class="btn mr-1 mt-1 btn-block" style="padding: 0.5rem 2.8rem; background-color: #DD4B39; color: #fff;"><i
+                    class="fa fa-google g_btn" aria-hidden="true" style="font-size: 1.5rem;"></i> Google</button></a>
+                  </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  
+  
+  
+    <!-- 2 -->
+    <!------------------------- first time registration --------------------->
+  
+    <!--   <div id="show_form" style="width: 100%; height: 100vh; position: absolute; top: 0; z-index: 2001;  display: none;">
+          <div style="width: 33%; height: 90%; background-color: white; position: absolute; left: 32%; top: 5%;" class="sec_frm">
+            <div style="position: absolute;" class="container-fluid text-center">
+            <div id="form_can"><i class="fa fa-times ml-auto mt-2" aria-hidden="true" style="position: absolute; left: 95%; cursor: pointer;"></i></div>
+              <div class="form_con">
+              <h4 class="mt-4 text-primary" style="font-weight: 800">Nice to meet you</h4>
+              <pre><p class="pt-1" style="font-size: 1rem;">Create an account for exciting 
+  offers and stylish frames</p></pre>
+           </div>
+               <form action="/action_page.php" class="reg_form new_form">
+    <div class="form-group">
+       <input type="text" class="form-control" placeholder="Phone No" id="number" required>
+    </div>
+    <div class="form-group">
+       <input type="text" class="form-control" placeholder="Enter OTP" id="otp" required>
+    </div>
+    <div class="form-group">
+       <input type="email" class="form-control" placeholder="Enter Email Id" id="email" required>
+    </div>
+    <div class="form-group">
+       <input type="Password" class="form-control" placeholder="Set Password" id="pass" required>
+    </div>
+    <div class="row">
+      <div class="col">
+        <input type="text" class="form-control" id="" placeholder="First Name" name="">
+      </div>
+      <div class="col">
+        <input type="text" class="form-control" placeholder="Last Name" name="">
+      </div>
+    </div>
+    <div class="row mt-3">
+      <div class="col-sm-6">
+        <input type="text" class="form-control" id="" placeholder="Referral Code" name="">
+      </div>
+      <div class="col-sm-6">
+        <p style="margin-right: 8rem;">(Optional)</p>
+      </div>
+    </div>
+  
+    
+    <a href="index.html"><button type="button" class="btn btn-primary btn-block mt-3 btn-block" style="padding: 0.7rem 0; font-weight: 800;">Register</button></a>
+    
+  </form>
+            </div>
+          </div>
+        </div>   
+       -->
+  
+    <!-- 3 -->
+    <div id="show_sigin" style="width: 100%; height: 100vh; position: fixed; top: -100%; background: rgba(103,103,103,.9); z-index: 2001;">
+      <div style="background-color: white; position: absolute; left: 50%; transform: translateX(-50%); top: -100%;" class="sigin_frm">
+        <div style="position: absolute;" class="container-fluid text-center px-4">
+          <div id="sigin_can"><i class="fa fa-times ml-auto mt-2" aria-hidden="true"
+              style="position: absolute; left: 95%; cursor: pointer;"></i></div>
+  
+          <h4 class="mt-4" style="font-weight: 800; color: #035391;">Sign In to Coolwinks </h4>
+          <p class="pt-1" style="font-size: 1rem; color: #676767;">Welcome Back</p>
+  
+          <form action="/action_page.php" class="sigin_form">
+            <div class="form-group" style="position: relative;">
+  
+              <input type="email" class="form-control" placeholder="Phone No" id="email" style="border-radius: 0;">
+              <span class="sigin_change" style="position: absolute; right: 0; bottom: 0; text-decoration: underline; color: #025392; font-size: .9rem; font-weight: 700; cursor: pointer;">Change?</span>
+            </div>
+            <div class="form-group" style="position: relative;">
+  
+              <input type="password" class="form-control" placeholder="Password" id="psd" style="border-radius: 0;">
+              <i class="fa fa-eye" aria-hidden="true" style="position: absolute; right: 0; top: 30%; transform: translatY(-30%); color: #025392; font-size: 1rem;"></i>
+  
+            </div>
+            <button type="submit" id="reg_btn" class="btn btn-block mt-3 btn-block" style="padding: 0.7rem 0;
+              font-weight: 800; background-color: #3C589C; color: #fff;">Proceed</button>
+            <p class="my-4" style="border-radius: 50%; color: black; margin-top: 1rem;">OR</p>
+            <button type="button" id="sigin_btn" class="btn btn-dark btn-block mt-1 btn-block" style="padding: 0.7rem 0;
+              font-weight: 800;">Request an OTP</button>
+            <div class="sigin_bdr d-flex mt-3">
+              <p id="sigin_email" style="color: #025392;">Use Email Id?</p>
+              <p id="sigin_frgtpass" class="ml-auto" style="color: #025392;">Forget Password?</p>
+            </div>
+  
+          </form>
+        </div>
+      </div>
+    </div>
+  
+    <!-- 4  -->
+  
+    <div id="show_otp" style="width: 100%; height: 100vh; position: fixed; top: -100%; background: rgba(103,103,103,.9);
+     z-index: 2001;">
+      <div style="background-color: white; position: absolute; left: 50%; transform: translateX(-50%); top: -100%;" class="otp_frm">
+        <div style="position: absolute;" class="container-fluid text-center px-4">
+          <div id="otp_can"><i class="fa fa-times ml-auto mt-2" aria-hidden="true"
+              style="position: absolute; left: 95%; cursor: pointer;"></i></div>
+  
+          <h4 class="mt-4" style="font-weight: 800; color: 035391;">OTP Sent</h4>
+  
+          <p class="pt-1 text-center mx-auto" style="font-size: 1rem; color: #676767;">OTP sent to 9451654532
+            <span style="color: #025392; font-size: .9rem; font-weight: 700; text-decoration: underline; cursor: pointer;" id="otp_change">Changes?</span>
+          </p>
+  
+  
+  
+          <form action="/action_page.php" class="otp_form">
+            <div class="form-group container">
+              <input type="text" class="form-control mx-auto" id="oTp" style="border-radius: 0; width: 60%;">
+            </div>
+  
+            <button type="button" id="reg_btn" class="btn btn-block mt-3 btn-block" style="padding: 0.7rem 0;
+          font-weight: 800; background: #3C589C; color: #fff;">Verify</button>
+            <div class="mt-3">
+              <p style="color: #212529;">Not received your code ? 0:10</p>
+              <p style="cursor: pointer; color: #0000; font-weight: 700; color: #035391; text-decoration: underline;" id="otp_pass">Use Password?</p>
+            </div>
+  
+  
+          </form>
+        </div>
+      </div>
+    </div>
+  
+    <!-- 5  -->
+    <div id="show_forget" style="width: 100%; height: 100vh; position: fixed; top: -100%; background: rgba(103,103,103,.9); 
+  z-index: 2001;">
+      <div style="background-color: white; position: absolute; left: 50%; transform: translateX(-50%); top: -100%;"
+        class="forget_frm">
+        <div style="position: absolute;" class="container-fluid text-center px-4">
+          <div id="forget_can"><i class="fa fa-times ml-auto mt-2" aria-hidden="true"
+              style="position: absolute; left: 95%; cursor: pointer;"></i></div>
+  
+          <h4 class="mt-4" style="font-weight: 800; color: #025392;">Forget Password</h4>
+          <form action="/action_page.php" class="forget_form">
+            <div class="form-group" style="position: relative;">
+  
+              <input type="text" class="form-control" placeholder="Phone No" id="num"
+                style="border-bottom: 0.1rem solid black; border-radius: 0;">
+                <span class="forget_change" style="position: absolute; right: 0; bottom: 0; text-decoration: underline; color: #025392; font-size: .9rem; font-weight: 700; cursor: pointer;">Change?</span>
+            </div>
+            <div class="form-group" style="position: relative;">
+              <input type="text" class="form-control" placeholder="OTP" id="Otp" style="border-radius: 0;">
+              <span class="" style="position: absolute; right: 0; bottom: 0; text-decoration: underline; color: #025392; font-size: .9rem; font-weight: 700; cursor: pointer;">0:10</span>
+            </div>
+            <div class="form-group" style="position: relative;">
+              <input type="password" class="form-control" placeholder="Set Password" id="pas" style="border-radius: 0;">
+              <i class="fa fa-eye" aria-hidden="true" style="position: absolute; right: 0; top: 30%; transform: translatY(-30%); color: #025392; font-size: 1rem;"></i>
+            </div>
+            <button type="button" id="reg_btn" class="btn btn-primary btn-block mt-3 btn-block" style="padding: 0.7rem 0;
+        font-weight: 800; background: #3C589C; color: #fff;">Update</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+    <!-------------- LOGIN POPUP FORM END --------------------------->
   <!----------- DESKTOP NAVBAR END ---------------------------------->
 
 
   <!---------------------- MOBILE NAVBAR START --------------------------->
 
-  <div class="mobile" style="display: none; z-index: 5000;">
-    <div class="main_filt_con">
-      <div class="mobilecontent">
+  <div class="mobile" style="display: none;">
+    <div class="mobilecontent">
 
-        <div id="main_menu">
-
-
-          <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top main-navigation mob_nav">
-            <div class="container-fluid">
-
-              <a class="navbar-brand font-weight-bold order-2 mx-auto" href="#"><span class="text-primary"
-                  style="font-size: 2.3rem;">C</span><span style="font-size: 1.9rem;">ool</span> <span
-                  class="text-primary" style="font-size: 2.3rem;">W</span> <span
-                  style="font-size: 1.9rem;">inks</span></a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-
-              <div class="icons order-3 mr-5">
-                <ul class="ml-auto navbar-nav third_icon">
-                  <li class="nav-item  text-center">
-                    <span class="nav-link text-dark" id="clk_reg"><i class="fa fa-search" aria-hidden="true"
-                        style="font-size: 2rem;"></i></span>
-                  </li>
-                </ul>
-              </div>
-
-              <div class="icons order-4" style="margin-right: 20px;">
-                <ul class="ml-auto navbar-nav third_icon">
-                  <li class="nav-item  text-center">
-                    <a class="nav-link text-dark" href=""><i class="fa fa-suitcase" aria-hidden="true"
-                        style="font-size: 2rem;"></i></a>
-                  </li>
-                </ul>
-              </div>
-
-              <div class="overlay d-flex d-lg-none"></div>
-
-              <div class="order-lg-2 bg-light d-lg-flex w-100 sidebar pb-3 pb-lg-0">
-
-                <ul class="navbar-nav mr-lg-auto mb-2 mb-lg-0">
-                  <li class="nav-item welcome d-flex" style="background-color: #7f53ac;
-    background-image: linear-gradient(315deg, #7f53ac 0%, #647dee 74%);">
-                    <div class="left"><i class="fa fa-user-o" aria-hidden="true"
-                        style="border-radius: 50%; margin-top: 12px; color: white; font-size: 3rem;"></i></div>
-                    <div class="right" id="clk_reg">
-                      <span class="nav-link px-3 px-lg-2 text-white">Welcome !
-                        <p class="my-1 text-white" style="font-size: 1.3rem;">Sign In / Sign Up</p>
-                      </span>
-                    </div>
-
-                  </li>
-                  <li class="nav-item mobilenav">
-                    <a class="nav-link  px-lg-2 " href="#"><img
-                        src="https://cwcdn.coolwinks.com/mobile/mobile-site-content/menu-icon-home.svg" alt="">Home</a>
-                  </li>
-
-                  <li class="nav-item dropdown mobilenav">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                      data-bs-toggle="dropdown" aria-expanded="false">
-                      <img src="https://djgn3cwvdf3zo.cloudfront.net/appimages/app-menu-eyeglasses.png" alt="">
-                      Eyeglasses
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <li><a class="dropdown-item" href="my-profile.html">Pilot Eyeglasses</a></li>
-                      <li><a class="dropdown-item" href="my-favourite.html">Cateye Eyeglasses</a></li>
-                      <li><a class="dropdown-item" href="offers.html">Retrosquare Eyeglasses</a></li>
-                      <li><a class="dropdown-item" href="recently-viewed.html">Clubmaster Eyeglasses</a></li>
-                      <li><a class="dropdown-item" href="my-favourite.html">Round Eyeglasses</a></li>
-                      <li><a class="dropdown-item" href="my-order.html">Full Eyeglasses</a></li>
-                      <li><a class="dropdown-item" href="my-prescription.html">Half Eyeglasses</a></li>
-                      <li><a class="dropdown-item" href="#">Men Eyeglasses</a></li>
-                      <li><a class="dropdown-item" href="#">Women Eyeglasses</a></li>
+      <div id="main_menu">
 
 
-                    </ul>
-                  </li>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top main-navigation mob_nav">
+          <div class="container-fluid">
+           <span style="position:absolute; left:50%; transform:translateX(-50%);">
+            <a class="navbar-brand font-weight-bold order-2" href="#"><span class="text-primary"
+                style="font-size: 2.3rem;">C</span><span style="font-size: 1.9rem;">ool</span> <span
+                class="text-primary" style="font-size: 2.3rem;">W</span> <span
+                style="font-size: 1.9rem;">inks</span></a></span>
 
-                  <li class="nav-item dropdown mobilenav">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                      data-bs-toggle="dropdown" aria-expanded="false">
-                      <img src="https://djgn3cwvdf3zo.cloudfront.net/appimages/app-menu-sunglasses.png" alt="">
-                      Sunglasses
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <li><a class="dropdown-item" href="#">Mirror Sunglasses</a></li>
-                      <li><a class="dropdown-item" href="#">Tinted Sunglasses</a></li>
-                      <li><a class="dropdown-item" href="#">Polarized Sunglasses</a></li>
-                      <li><a class="dropdown-item" href="#">Flash Sunglasses</a></li>
-                      <li><a class="dropdown-item" href="#">Gradient Sunglasses</a></li>
-                      <li><a class="dropdown-item" href="#">Men Sunglasses</a></li>
-                      <li><a class="dropdown-item" href="#">Women Sunglasses</a></li>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
 
+            <div class="icons order-3 mr-4 clk_mob_seach_pop" style="position:absolute; left:80%;">
+              <ul class="ml-auto navbar-nav third_icon">
+                <li class="nav-item  text-center">
+                  <span class="nav-link text-dark"><i class="fa fa-search" aria-hidden="true"
+                      style="font-size: 2rem;"></i></span>
+                </li>
+              </ul>
+            </div>
 
+            <div class="icons order-4">
+              <ul class="ml-auto navbar-nav third_icon">
+                <li class="nav-item  text-center">
+                  <a href="cart-page.html" class="nav-link text-dark" href=""><i class="fa fa-suitcase" aria-hidden="true"
+                      style="font-size: 2rem;"></i></a>
+                </li>
+              </ul>
+            </div>
 
-                    </ul>
-                  </li>
+            <div class="overlay d-flex d-lg-none"></div>
 
-                  <li class="nav-item mobilenav">
-                    <a class="nav-link  px-lg-2 " href="#">
-                      <img src="https://cwcdn.coolwinks.com/mobile/mobile-site-content/contact-lense/cl-hamburger.png"
-                        alt="">Contact lens</a>
-                  </li>
+            <div class="order-lg-2 bg-light d-lg-flex w-100 sidebar pb-3 pb-lg-0">
 
+              <ul class="navbar-nav mr-lg-auto mb-2 mb-lg-0">
+                <li class="nav-item welcome d-flex" style="background-color: #7f53ac;
+        background-image: linear-gradient(315deg, #7f53ac 0%, #647dee 74%);">
+                  <div class="left"><i class="fa fa-user-o" aria-hidden="true"
+                      style="border-radius: 50%; margin-top: 12px; color: white; font-size: 3rem;"></i></div>
 
-                  <li class="nav-item dropdown mobilenav">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                      data-bs-toggle="dropdown" aria-expanded="false">
-                      <img src="https://djgn3cwvdf3zo.cloudfront.net/appimages/app-menu-powersunglasses.png" alt="">
-                      Precription Sunglasses
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <li><a class="dropdown-item" href="#">Men Power Sunglasses</a></li>
-                      <li><a class="dropdown-item" href="#">Women Power Sunglasses</a></li>
+                  <div class="right">
+                    <span id="mob_click_reg" class="nav-link px-3 px-lg-2 text-white">Welcome !
+                      <p class="my-1 text-white" style="font-size: 1.3rem;">Sign In / Sign Up</p>
+                    </span>
+                  </div>
 
+                </li>
+                <li class="nav-item mobilenav">
+                  <a class="nav-link  px-lg-2 " href="#"><img
+                      src="https://cwcdn.coolwinks.com/mobile/mobile-site-content/menu-icon-home.svg" alt="">Home</a>
+                </li>
 
-                    </ul>
-                  </li>
-
-                  <li class="nav-item dropdown mobilenav">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                      data-bs-toggle="dropdown" aria-expanded="false">
-                      <img src="https://djgn3cwvdf3zo.cloudfront.net/appimages/kids-eyeglasses.png" alt=""> Kids Glasses
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <li><a class="dropdown-item" href="#">Kids Eyeglasses</a></li>
-                      <li><a class="dropdown-item" href="#">Kids Sunglasses</a></li>
-
-
-                    </ul>
-                  </li>
-
-                  <li class="nav-item mobilenav">
-                    <a class="nav-link  px-lg-2 " href="#">
-                      <img src="https://cwcdn.coolwinks.com/mobile/mobile-site-content/menu-icon-computer.svg"
-                        alt="">Computer Glasses</a>
-                  </li>
-
-                  <li class="nav-item mobilenav">
-                    <a class="nav-link  px-lg-2 " href="#">
-                      <img src="https://cwcdn.coolwinks.com/mobile/site-images/reading-eyeglasses-hamburgericon.png"
-                        alt="">Rreading Glasses</a>
-                  </li>
-
-                  <li class="nav-item mobilenav">
-                    <a class="nav-link  px-lg-2 " href="#">
-                      <img src="https://cwcdn.coolwinks.com/mobile/site-images/icon-wipes.svg" alt="">Lens Clearing
-                      Wipes</a>
-                  </li>
+                <li class="nav-item dropdown mobilenav">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="https://djgn3cwvdf3zo.cloudfront.net/appimages/app-menu-eyeglasses.png" alt=""> Eyeglasses
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="margin-left: -1rem; border:none; background:none;">
+                    <li><a class="dropdown-item" href="my-profile.html">Pilot Eyeglasses</a></li>
+                    <li><a class="dropdown-item" href="my-favourite.html">Cateye Eyeglasses</a></li>
+                    <li><a class="dropdown-item" href="offers.html">Retrosquare Eyeglasses</a></li>
+                    <li><a class="dropdown-item" href="recently-viewed.html">Clubmaster Eyeglasses</a></li>
+                    <li><a class="dropdown-item" href="my-favourite.html">Round Eyeglasses</a></li>
+                    <li><a class="dropdown-item" href="my-order.html">Full Eyeglasses</a></li>
+                    <li><a class="dropdown-item" href="my-prescription.html">Half Eyeglasses</a></li>
+                    <li><a class="dropdown-item" href="#">Men Eyeglasses</a></li>
+                    <li><a class="dropdown-item" href="#">Women Eyeglasses</a></li>
 
 
-                  <li class="nav-item mobilenav">
-                    <a class="nav-link  px-lg-2 " href="#">
-                      <img src="https://cwcdn.coolwinks.com/mobile/mobile-site-content/menu-icon-color-blindness.svg"
-                        alt="">Color Blind Glasses</a>
-                  </li>
+                  </ul>
+                </li>
+
+                <li class="nav-item dropdown mobilenav">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="https://djgn3cwvdf3zo.cloudfront.net/appimages/app-menu-sunglasses.png" alt=""> Sunglasses
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="margin-left: -1rem; border:none; background:none;">
+                    <li><a class="dropdown-item" href="#">Mirror Sunglasses</a></li>
+                    <li><a class="dropdown-item" href="#">Tinted Sunglasses</a></li>
+                    <li><a class="dropdown-item" href="#">Polarized Sunglasses</a></li>
+                    <li><a class="dropdown-item" href="#">Flash Sunglasses</a></li>
+                    <li><a class="dropdown-item" href="#">Gradient Sunglasses</a></li>
+                    <li><a class="dropdown-item" href="#">Men Sunglasses</a></li>
+                    <li><a class="dropdown-item" href="#">Women Sunglasses</a></li>
 
 
-                  <li class="nav-item mobilenav">
-                    <a class="nav-link  px-lg-2 " href="#">
-                      <img src="https://cwcdn.coolwinks.com/mobile/mobile-site-content/menu-color-changable-frames.png"
-                        alt="">Color Changing Frame</a>
-                  </li>
+
+                  </ul>
+                </li>
+
+                <li class="nav-item mobilenav">
+                  <a class="nav-link  px-lg-2 " href="#">
+                    <img src="https://cwcdn.coolwinks.com/mobile/mobile-site-content/contact-lense/cl-hamburger.png"
+                      alt="">Contact lens</a>
+                </li>
 
 
-                  <li class="nav-item mobilenav">
-                    <a class="nav-link  px-lg-2 " href="#">
-                      <img src="https://cwcdn.coolwinks.com/mobile/mobile-site-content/menu-icon-offers.svg"
-                        alt="">Offers</a>
-                  </li>
+                <li class="nav-item dropdown mobilenav">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="https://djgn3cwvdf3zo.cloudfront.net/appimages/app-menu-powersunglasses.png" alt="">
+                    Precription Sunglasses
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="margin-left: -1rem; border:none; background:none;">
+                    <li><a class="dropdown-item" href="#">Men Power Sunglasses</a></li>
+                    <li><a class="dropdown-item" href="#">Women Power Sunglasses</a></li>
 
 
-                  <li class="nav-item mobilenav">
-                    <a class="nav-link  px-lg-2 " href="#">
-                      <img src="https://cwcdn.coolwinks.com/mobile/mobile-site-content/eyetesticon.svg" alt="">Free Eye
-                      Testing Camp</a>
-                  </li>
+                  </ul>
+                </li>
 
-                  <li class="nav-item mobilenav">
-                    <a class="nav-link  px-lg-2 " href="#">
-                      <img src="images/menu-icon-dashboard.svg" alt="">My Dashboard</a>
-                  </li>
-
-                  <li class="nav-item mobilenav">
-                    <a class="nav-link  px-lg-2 " href="#">
-                      <img src="images/menu-icon-wallet2.svg" alt="">Cash Walleet</a>
-                  </li>
-
-                  <li class="nav-item mobilenav">
-                    <a class="nav-link  px-lg-2 " href="#">
-                      <img src="images/menu-icon-myorders.svg" alt="">My Orders</a>
-                  </li>
-
-                  <li class="nav-item mobilenav">
-                    <a class="nav-link  px-lg-2 " href="#">
-                      <img src="images/menu-icon-myprescriptions.svg" alt="">My Prescription</a>
-                  </li>
-
-                  <li class="nav-item mobilenav">
-                    <a class="nav-link  px-lg-2 " href="#">
-                      <img src="images/menu-icon-myfavorites.svg" alt="">My Favourites</a>
-                  </li>
+                <li class="nav-item dropdown mobilenav">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="https://djgn3cwvdf3zo.cloudfront.net/appimages/kids-eyeglasses.png" alt=""> Kids Glasses
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="margin-left: -1rem; border:none; background:none;">
+                    <li><a class="dropdown-item" href="#">Kids Eyeglasses</a></li>
+                    <li><a class="dropdown-item" href="#">Kids Sunglasses</a></li>
 
 
-                  <li class="nav-item mobilenav">
-                    <a class="nav-link  px-lg-2 " href="#">
-                      <img src="https://cwcdn.coolwinks.com/mobile/mobile-site-content/menu-icon-recentlyViewed.svg"
-                        alt="">Recent Viewed</a>
-                  </li>
+                  </ul>
+                </li>
+
+                <li class="nav-item mobilenav">
+                  <a class="nav-link  px-lg-2 " href="#">
+                    <img src="https://cwcdn.coolwinks.com/mobile/mobile-site-content/menu-icon-computer.svg"
+                      alt="">Computer Glasses</a>
+                </li>
+
+                <li class="nav-item mobilenav">
+                  <a class="nav-link  px-lg-2 " href="#">
+                    <img src="https://cwcdn.coolwinks.com/mobile/site-images/reading-eyeglasses-hamburgericon.png"
+                      alt="">Rreading Glasses</a>
+                </li>
+
+                <li class="nav-item mobilenav">
+                  <a class="nav-link  px-lg-2 " href="#">
+                    <img src="https://cwcdn.coolwinks.com/mobile/site-images/icon-wipes.svg" alt="">Lens Clearing
+                    Wipes</a>
+                </li>
 
 
-                  <li class="nav-item mobilenav">
-                    <a class="nav-link  px-lg-2 " href="#">
-                      <img src="https://cwcdn.coolwinks.com/mobile/mobile-site-content/menu-icon-help.svg"
-                        alt="">Help</a>
-                  </li>
+                <li class="nav-item mobilenav">
+                  <a class="nav-link  px-lg-2 " href="#">
+                    <img src="https://cwcdn.coolwinks.com/mobile/mobile-site-content/menu-icon-color-blindness.svg"
+                      alt="">Color Blind Glasses</a>
+                </li>
 
 
-                  <li class="nav-item mobilenav">
-                    <a class="nav-link  px-lg-2 " href="#">
-                      <img src="https://cwcdn.coolwinks.com/mobile/mobile-site-content/menu-icon-chat-with-us.svg"
-                        alt="">Chat With Us</a>
-                  </li>
+                <li class="nav-item mobilenav">
+                  <a class="nav-link  px-lg-2 " href="#">
+                    <img src="https://cwcdn.coolwinks.com/mobile/mobile-site-content/menu-color-changable-frames.png"
+                      alt="">Color Changing Frame</a>
+                </li>
 
 
-                  <li class="nav-item mobilenav">
-                    <a class="nav-link  px-lg-2 " href="#">
-                      <img src="https://cwcdn.coolwinks.com/mobile/mobile-site-content/menu-icon-help.svg"
-                        alt="">Contact
-                      Us</a>
-                  </li>
+                <li class="nav-item mobilenav">
+                  <a class="nav-link  px-lg-2 " href="#">
+                    <img src="https://cwcdn.coolwinks.com/mobile/mobile-site-content/menu-icon-offers.svg"
+                      alt="">Offers</a>
+                </li>
 
-                  <li class="nav-item mobilenav">
-                    <a class="nav-link  px-lg-2 " href="#">
-                      <img src="images/menu-icon-logout.svg" alt="">Logout</a>
-                  </li>
 
-                </ul>
+                <li class="nav-item mobilenav">
+                  <a class="nav-link  px-lg-2 " href="#">
+                    <img src="https://cwcdn.coolwinks.com/mobile/mobile-site-content/eyetesticon.svg" alt="">Free Eye
+                    Testing Camp</a>
+                </li>
 
-              </div>
+                <li class="nav-item mobilenav">
+                  <a class="nav-link  px-lg-2 " href="#">
+                    <img src="images/menu-icon-dashboard.svg" alt="">My Dashboard</a>
+                </li>
+
+                <li class="nav-item mobilenav">
+                  <a class="nav-link  px-lg-2 " href="#">
+                    <img src="images/menu-icon-wallet2.svg" alt="">Cash Walleet</a>
+                </li>
+
+                <li class="nav-item mobilenav">
+                  <a class="nav-link  px-lg-2 " href="#">
+                    <img src="images/menu-icon-myorders.svg" alt="">My Orders</a>
+                </li>
+
+                <li class="nav-item mobilenav">
+                  <a class="nav-link  px-lg-2 " href="#">
+                    <img src="images/menu-icon-myprescriptions.svg" alt="">My Prescription</a>
+                </li>
+
+                <li class="nav-item mobilenav">
+                  <a class="nav-link  px-lg-2 " href="#">
+                    <img src="images/menu-icon-myfavorites.svg" alt="">My Favourites</a>
+                </li>
+
+
+                <li class="nav-item mobilenav">
+                  <a class="nav-link  px-lg-2 " href="#">
+                    <img src="https://cwcdn.coolwinks.com/mobile/mobile-site-content/menu-icon-recentlyViewed.svg"
+                      alt="">Recent Viewed</a>
+                </li>
+
+
+                <li class="nav-item mobilenav">
+                  <a class="nav-link  px-lg-2 " href="#">
+                    <img src="https://cwcdn.coolwinks.com/mobile/mobile-site-content/menu-icon-help.svg" alt="">Help</a>
+                </li>
+
+
+                <li class="nav-item mobilenav">
+                  <a class="nav-link  px-lg-2 " href="#">
+                    <img src="https://cwcdn.coolwinks.com/mobile/mobile-site-content/menu-icon-chat-with-us.svg"
+                      alt="">Chat With Us</a>
+                </li>
+
+
+                <li class="nav-item mobilenav">
+                  <a class="nav-link  px-lg-2 " href="#">
+                    <img src="https://cwcdn.coolwinks.com/mobile/mobile-site-content/menu-icon-help.svg" alt="">Contact
+                    Us</a>
+                </li>
+
+                <li class="nav-item mobilenav">
+                  <a class="nav-link  px-lg-2 " href="#">
+                    <img src="images/menu-icon-logout.svg" alt="">Logout</a>
+                </li>
+
+              </ul>
 
             </div>
-          </nav>
 
+          </div>
+        </nav>
+
+      </div>
+    </div> 
+  </div>
+
+  <!------------COMMON LOGIN POP-UP FORM START FOR DESKTOP ---------------->
+  <div class="mobile">
+    <div id="mob_show_reg" style="width: 100%; height: 100vh; position: fixed; bottom: -115%; background: rgba(103,103,103,.9);
+    z-index: 2001;">
+      <div style="background-color: white; position: absolute; bottom: -115%; width: 100%; padding-bottom: 23rem;" class="mob_fir_frm">
+        <div style="position: absolute;" class="container-fluid text-center px-4">
+          <div id="mob_reg_can"><i class="fa fa-times ml-auto mt-2" aria-hidden="true"
+              style="position: absolute; left: 95%; cursor: pointer;"></i> </div>
+          <div class="reg_con">
+            <h4 class="mt-4" style="font-weight: 800; color: #035391;">SIGN IN / SIGN UP</h4>
+            <pre><p class="pt-1" style="font-size: 1rem; color: #676767;">We do not share your personal
+          details with anyone</p></pre>
+          </div>
+          <form action="/action_page.php" class="reg_form">
+            <div class="form-group">
+  
+              <input type="email" class="form-control" placeholder="Email / Phone No" id="email" style="border-radius: 0;">
+            </div>
+            <button type="button" id="mob_reg_btn" class="btn btn-block mt-3 btn-block" style="padding: 0.7rem 0;
+          font-weight: 800; background-color: #035391; color: #fff;">Proceed</button>
+            <div class="reg_or">
+              <p style="border-radius: 50%; color: black; margin-top: 2rem;">OR</p>
+               
+              <div class="d-flex mx-auto" style="width: 100%;">
+              <a href="#" style="width: 90%;" class="mr-2"><button class="btn mr-1 mt-1 btn-block" style="padding: 0.5rem 2rem; background-color: #3C589C; color: #fff;"><i
+                    class="fa fa-facebook-official f_btn" aria-hidden="true" style="font-size: 1.5rem;"></i>
+                  Facebook</button></a>
+  
+              <a href="#" style="width: 90%;" class="ml-2"><button class="btn mr-1 mt-1 btn-block" style="padding: 0.5rem 2.8rem; background-color: #DD4B39; color: #fff;"><i
+                    class="fa fa-google g_btn" aria-hidden="true" style="font-size: 1.5rem;"></i> Google</button></a>
+                  </div>
+            </div>
+          </form>
         </div>
       </div>
     </div>
-  </div>
 
+    <!-- 2 -->
+    <!------------------------- first time registration --------------------->
+  
+    <!--   <div id="show_form" style="width: 100%; height: 100vh; position: absolute; top: 0; z-index: 2001;  display: none;">
+          <div style="width: 33%; height: 90%; background-color: white; position: absolute; left: 32%; top: 5%;" class="sec_frm">
+            <div style="position: absolute;" class="container-fluid text-center">
+            <div id="form_can"><i class="fa fa-times ml-auto mt-2" aria-hidden="true" style="position: absolute; left: 95%; cursor: pointer;"></i></div>
+              <div class="form_con">
+              <h4 class="mt-4 text-primary" style="font-weight: 800">Nice to meet you</h4>
+              <pre><p class="pt-1" style="font-size: 1rem;">Create an account for exciting 
+  offers and stylish frames</p></pre>
+           </div>
+               <form action="/action_page.php" class="reg_form new_form">
+    <div class="form-group">
+       <input type="text" class="form-control" placeholder="Phone No" id="number" required>
+    </div>
+    <div class="form-group">
+       <input type="text" class="form-control" placeholder="Enter OTP" id="otp" required>
+    </div>
+    <div class="form-group">
+       <input type="email" class="form-control" placeholder="Enter Email Id" id="email" required>
+    </div>
+    <div class="form-group">
+       <input type="Password" class="form-control" placeholder="Set Password" id="pass" required>
+    </div>
+    <div class="row">
+      <div class="col">
+        <input type="text" class="form-control" id="" placeholder="First Name" name="">
+      </div>
+      <div class="col">
+        <input type="text" class="form-control" placeholder="Last Name" name="">
+      </div>
+    </div>
+    <div class="row mt-3">
+      <div class="col-sm-6">
+        <input type="text" class="form-control" id="" placeholder="Referral Code" name="">
+      </div>
+      <div class="col-sm-6">
+        <p style="margin-right: 8rem;">(Optional)</p>
+      </div>
+    </div>
+  
+    
+    <a href="index.html"><button type="button" class="btn btn-primary btn-block mt-3 btn-block" style="padding: 0.7rem 0; font-weight: 800;">Register</button></a>
+    
+  </form>
+            </div>
+          </div>
+        </div>   
+       -->
+  
+    <!-- 3 -->
+    <div id="mob_show_sigin" style="width: 100%; height: 100vh; position: fixed; bottom: -115%; background: rgba(103,103,103,.9); z-index: 2001;">
+      <div style="background-color: white; position: absolute; bottom: -115%; width: 100%; padding-bottom: 30rem;" class="mob_sigin_frm">
+        <div style="position: absolute;" class="container-fluid text-center px-4">
+          <div id="mob_sigin_can"><i class="fa fa-times ml-auto mt-2" aria-hidden="true"
+              style="position: absolute; left: 95%; cursor: pointer;"></i></div>
+  
+          <h4 class="mt-4" style="font-weight: 800; color: #035391;">Sign In to Coolwinks </h4>
+          <p class="pt-1" style="font-size: 1rem; color: #676767;">Welcome Back</p>
+  
+          <form action="/action_page.php" class="sigin_form">
+            <div class="form-group" style="position: relative;">
+  
+              <input type="email" class="form-control" placeholder="Phone No" id="email" style="border-radius: 0;">
+              <span class="mob_sigin_change" style="position: absolute; right: 0; bottom: 0; text-decoration: underline; color: #025392; font-size: .9rem; font-weight: 700; cursor: pointer;">Change?</span>
+            </div>
+            <div class="form-group" style="position: relative;">
+  
+              <input type="password" class="form-control" placeholder="Password" id="psd" style="border-radius: 0;">
+              <i class="fa fa-eye" aria-hidden="true" style="position: absolute; right: 0; top: 30%; transform: translatY(-30%); color: #025392; font-size: 1rem;"></i>
+  
+            </div>
+            <button type="submit" id="reg_btn" class="btn btn-block mt-3 btn-block" style="padding: 0.7rem 0;
+              font-weight: 800; background-color: #3C589C; color: #fff;">Proceed</button>
+            <p class="my-4" style="border-radius: 50%; color: black; margin-top: 1rem;">OR</p>
+            <button type="button" id="mob_sigin_btn" class="btn btn-dark btn-block mt-1 btn-block" style="padding: 0.7rem 0;
+              font-weight: 800;">Request an OTP</button>
+            <div class="sigin_bdr d-flex mt-3">
+              <p id="mob_sigin_email" style="color: #025392;">Use Email Id?</p>
+              <p id="mob_sigin_frgtpass" class="ml-auto" style="color: #025392;">Forget Password?</p>
+            </div>
+  
+          </form>
+        </div>
+      </div>
+    </div>
+  
+    <!-- 4  -->
+  
+    <div id="mob_show_otp" style="width: 100%; height: 100vh; position: fixed; bottom: -115%; background: rgba(103,103,103,.9);
+     z-index: 2001;">
+      <div style="background-color: white; position: absolute; bottom: -115%; width: 100%; padding-bottom: 22rem;" class="mob_otp_frm">
+        <div style="position: absolute;" class="container-fluid text-center px-4">
+          <div id="mob_otp_can"><i class="fa fa-times ml-auto mt-2" aria-hidden="true"
+              style="position: absolute; left: 95%; cursor: pointer;"></i></div>
+  
+          <h4 class="mt-4" style="font-weight: 800; color: 035391;">OTP Sent</h4>
+  
+          <p class="pt-1 text-center mx-auto" style="font-size: 1rem; color: #676767;">OTP sent to 9451654532
+            <span style="color: #025392; font-size: .9rem; font-weight: 700; text-decoration: underline; cursor: pointer;" id="mob_otp_change">Changes?</span>
+          </p>
+  
+  
+  
+          <form action="/action_page.php" class="otp_form">
+            <div class="form-group container">
+              <input type="text" class="form-control mx-auto" id="oTp" style="border-radius: 0; width: 60%;">
+            </div>
+  
+            <button type="button" id="reg_btn" class="btn btn-block mt-3 btn-block" style="padding: 0.7rem 0;
+          font-weight: 800; background: #3C589C; color: #fff;">Verify</button>
+            <div class="mt-3">
+              <p style="color: #212529;">Not received your code ? 0:10</p>
+              <p style="cursor: pointer; color: #0000; font-weight: 700; color: #035391; text-decoration: underline;" id="mob_otp_pass">Use Password?</p>
+            </div>
+  
+  
+          </form>
+        </div>
+      </div>
+    </div>
+  
+    <!-- 5  -->
+    <div id="mob_show_forget" style="width: 100%; height: 100vh; position: fixed; bottom: -115%; background: rgba(103,103,103,.9); 
+  z-index: 2001;">
+      <div style="background-color: white; position: absolute; bottom: -115%; width: 100%; padding-bottom: 22rem;" class="mob_forget_frm">
+        <div style="position: absolute;" class="container-fluid text-center px-4">
+          <div id="mob_forget_can"><i class="fa fa-times ml-auto mt-2" aria-hidden="true"
+              style="position: absolute; left: 95%; cursor: pointer;"></i></div>
+  
+          <h4 class="mt-4" style="font-weight: 800; color: #025392;">Forget Password</h4>
+          <form action="/action_page.php" class="forget_form">
+            <div class="form-group" style="position: relative;">
+  
+              <input type="text" class="form-control" placeholder="Phone No" id="num"
+                style="border-bottom: 0.1rem solid black; border-radius: 0;">
+                <span class="mob_forget_change" style="position: absolute; right: 0; bottom: 0; text-decoration: underline; color: #025392; font-size: .9rem; font-weight: 700; cursor: pointer;">Change?</span>
+            </div>
+            <div class="form-group" style="position: relative;">
+              <input type="text" class="form-control" placeholder="OTP" id="Otp" style="border-radius: 0;">
+              <span class="" style="position: absolute; right: 0; bottom: 0; text-decoration: underline; color: #025392; font-size: .9rem; font-weight: 700; cursor: pointer;">0:10</span>
+            </div>
+            <div class="form-group" style="position: relative;">
+              <input type="password" class="form-control" placeholder="Set Password" id="pas" style="border-radius: 0;">
+              <i class="fa fa-eye" aria-hidden="true" style="position: absolute; right: 0; top: 30%; transform: translatY(-30%); color: #025392; font-size: 1rem;"></i>
+            </div>
+            <button type="button" id="reg_btn" class="btn btn-primary btn-block mt-3 btn-block" style="padding: 0.7rem 0;
+        font-weight: 800; background: #3C589C; color: #fff;">Update</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    </div>
+
+  <!---------------------- MOBILE NAVBAR END ---------------------------------------->
 
   <!----------------DESKTOP SECTIONS START ----------------------->
   <div class="desktop">
@@ -665,25 +1070,25 @@
                 <div class="py-3 d-flex justify-content-center">
 
                   <div class="owl-carousel owl-theme desk-top-carousel">
-                    <div class="item">
+                    <div class="item show_caro_single_prd">
                       <img src="images/E208507-5.webp" alt="error" class="img-fluid mx-auto"
-                        style="height: 400px; width: 90%;" id="show_1caro_single_prd">
+                        style="height: 400px; width: 90%;">
                     </div>
-                    <div class="item">
+                    <div class="item show_caro_single_prd">
                       <img src="images/E208507-4.webp" alt="error" class="img-fluid mx-auto"
-                        style="height: 400px; width: 90%;" id="show_2caro_single_prd">
+                        style="height: 400px; width: 90%;">
                     </div>
-                    <div class="item">
+                    <div class="item show_caro_single_prd">
                       <img src="images/E208507-5.webp" alt="error" class="img-fluid mx-auto"
-                        style="height: 400px; width: 90%;" id="show_3caro_single_prd">
+                        style="height: 400px; width: 90%;">
                     </div>
-                    <div class="item">
+                    <div class="item show_caro_single_prd">
                       <img src="images/E208507-4.webp" alt="error" class="img-fluid mx-auto"
-                        style="height: 400px; width: 90%;" id="show_4caro_single_prd">
+                        style="height: 400px; width: 90%;">
                     </div>
-                    <div class="item">
-                      <img src="images/E208507-5.webp" alt="error" class="img-fluid mx-auto"
-                        style="height: 400px; width: 90%;" id="show_5caro_single_prd">
+                    <div class="item how_caro_single_prd">
+                      <img src="images/E208507-5.webp" alt="error" class="img-fluid mx-auto" 
+                        style="height: 400px; width: 90%;">
                     </div>
                   </div>
 
@@ -700,19 +1105,19 @@
           </div>
 
           <div class="d-flex justify-content-between mt-2">
-            <div style="border:1px solid #ECEAEA; cursor: pointer;" class="py-3" id="click_1caro_single_prd">
+            <div style="border:1px solid #ECEAEA; cursor: pointer;" class="py-3 click_1caro_single_prd">
               <img src="images/E208507-5.webp" alt="" class="img-fluid">
             </div>
-            <div style="border:1px solid #ECEAEA; cursor: pointer;" class="py-3 ml-2" id="click_2caro_single_prd">
+            <div style="border:1px solid #ECEAEA; cursor: pointer;" class="py-3 ml-2 click_2caro_single_prd">
               <img src="images/E208507-4.webp" alt="" class="img-fluid">
             </div>
-            <div style="border:1px solid #ECEAEA; cursor: pointer;" class="py-3 ml-2" id="click_3caro_single_prd">
+            <div style="border:1px solid #ECEAEA; cursor: pointer;" class="py-3 ml-2 click_3caro_single_prd">
               <img src="images/E208507-5.webp" alt="" class="img-fluid">
             </div>
-            <div style="border:1px solid #ECEAEA; cursor: pointer;" class="py-3 ml-2" id="click_4caro_single_prd">
+            <div style="border:1px solid #ECEAEA; cursor: pointer;" class="py-3 ml-2 click_4caro_single_prd">
               <img src="images/E208507-4.webp" alt="" class="img-fluid">
             </div>
-            <div style="border:1px solid #ECEAEA; cursor: pointer;" class="py-3 ml-2" id="click_5caro_single_prd">
+            <div style="border:1px solid #ECEAEA; cursor: pointer;" class="py-3 ml-2 click_5caro_single_prd">
               <img src="images/E208507-5.webp" alt="" class="img-fluid">
             </div>
           </div>
@@ -2859,6 +3264,26 @@ z-index: 2001; display: none;">
 
   <!-------------- LOGIN POPUP FORM END --------------------------->
 
+  <!-------------MOBILE SEARCH POPUP --------------------------->
+  <div class="mob-hom-popup_ser" style="width: 100%; height: 100vh; position: fixed; top: 0; background: rgba(103,103,103,.9); z-index: 10000;
+  display: none;">
+  </div>
+
+  <div class="mobile_search" style="position: fixed; top: 5rem; display: none; z-index: 1000000;">
+    <form action="/action_page.php">
+      <div class="bg-white d-flex justify-content-between" style="width: 95%;">
+      <div class="form-group mb-0">
+        <input type="text" placeholder="What Are You Lokking For?" class="form-control ml-4" style="padding: 2rem 0 2rem 0; border: none; border-radius: 0; width: 200%; font-size: 1.4rem;" id="txt"  name="txt">   
+      </div>
+
+      <button style="background: #fff; border: none;  margin-left: 11rem;">
+        <i class="fa fa-long-arrow-right" aria-hidden="true" style="font-size: 1.8rem;"></i>
+      </button>
+    </div>
+    </form>
+
+  </div>
+
 
   <!-- swiped-events -->
   <script src="js/swiped-events.js"></script>
@@ -2906,7 +3331,7 @@ z-index: 2001; display: none;">
       nav: true,
       navText: ['<i class="fa fa-angle-left lft" aria-hidden="true"></i>', '<i class="fa fa-angle-right rgt" aria-hidden="true"></i>'],
       dots: false,
-      autoplay: true,
+      autoplay: false,
       responsive: {
         0: {
           items: 1
@@ -2926,7 +3351,7 @@ z-index: 2001; display: none;">
       nav: false,
       navText: false,
       dots: true,
-      autoplay: true,
+      autoplay: false,
       responsive: {
         0: {
           items: 1
@@ -2947,7 +3372,7 @@ z-index: 2001; display: none;">
       nav: true,
       navText: ['<span class="carousel-control-prev-icon" style="position: absolute; left: 0; top:50%"></span>', '<span class="carousel-control-next-icon" style="position: absolute; right: 0; top:50%;"></span> '],
       dots: true,
-      autoplay: true,
+      autoplay: false,
       responsive: {
         0: {
           items: 1
@@ -2967,7 +3392,7 @@ z-index: 2001; display: none;">
       nav: true,
       navText: ['<span class="mobile-bottom-carousel-icon_prev" style="position: absolute; left: -3px; top:45%;"></span>', '<span class="mobile-bottom-carousel-icon_nxt" style="position: absolute; right: -3px; top:45%;"></span>'],
       dots: false,
-      autoplay: true,
+      autoplay: false,
       responsive: {
         0: {
           items: 2
@@ -2987,7 +3412,7 @@ z-index: 2001; display: none;">
       nav: false,
       navText: false,
       dots: true,
-      autoplay: true,
+      autoplay: false,
       responsive: {
         0: {
           items: 1
