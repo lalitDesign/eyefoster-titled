@@ -147,6 +147,10 @@
      padding-bottom: 27rem;
      
    }
+
+   .mob_fir_inp::placeholder{
+     font-size: 1.2rem;
+   }
   
    #show_form .sec_frm{
      width: 33%!important;
@@ -183,6 +187,7 @@
     height: auto!important;
      padding-bottom: 20rem;
   }
+
   
 
     /*--------------------------------- NEW SECTION------------------------- */
