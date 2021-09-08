@@ -1033,14 +1033,14 @@
               <input type="number" class="form-control mx-auto mob_fir_inp" id="oTp" style="border-radius: 0; width: 60%; font-size: 1.5rem;">
             </div> -->
           <div id="otp" class="inputs d-flex flex-row justify-content-center mt-2 mx-auto" style="width: 70%;">
-            <input class="m-2 text-center form-control rounded" type="text"
+            <input class="m-2 text-center form-control rounded" type="number"
               style="font-size: 1.4rem; border-radius: 0!important;" id="input1" v-on:keyup="inputenter(1)"
               maxlength="1" />
-            <input class="m-2 text-center form-control rounded" v-on:keyup="inputenter(2)" type="text"
+            <input class="m-2 text-center form-control rounded" v-on:keyup="inputenter(2)" type="number"
               style="font-size: 1.4rem; border-radius: 0!important;" id="input2" maxlength="1" />
-            <input class="m-2 text-center form-control rounded" v-on:keyup="inputenter(3)" type="text"
+            <input class="m-2 text-center form-control rounded" v-on:keyup="inputenter(3)" type="number"
               style="font-size: 1.4rem; border-radius: 0!important;" id="input3" maxlength="1" />
-            <input class="m-2 text-center form-control rounded" v-on:keyup="inputenter(4)" type="text"
+            <input class="m-2 text-center form-control rounded" v-on:keyup="inputenter(4)" type="number"
               style="font-size: 1.4rem; border-radius: 0!important;" id="input4" maxlength="1" />
           </div>
 
@@ -2554,34 +2554,34 @@
 
 
     //LOGIN OTP EXTRA CODE
-    var app = new Vue({
-      el: '#app',
-      methods: {
-        inputenter(id) {
+    // var app = new Vue({
+    //   el: '#app',
+    //   methods: {
+    //     inputenter(id) {
 
-          const inputs = document.querySelectorAll('#otp > *[id]');
-          for (let i = 0; i < inputs.length; i++) {
-            inputs[i].addEventListener('keydown', function (event) {
-              if (event.key === "Backspace") {
-                inputs[i].value = '';
-                if (i !== 0) inputs[i - 1].focus();
-              }
-              else {
-                if (i === inputs.length - 1 && inputs[i].value !== '') { return true; }
-                else if (event.keyCode > 47 && event.keyCode < 58) {
-                  inputs[i].value = event.key;
-                  if (i !== inputs.length - 1) inputs[i + 1].focus(); event.preventDefault();
-                }
-                else if (event.keyCode > 64 && event.keyCode < 91) {
-                  inputs[i].value = String.fromCharCode(event.keyCode)
-                    ; if (i !== inputs.length - 1) inputs[i + 1].focus(); event.preventDefault();
-                }
-              }
-            });
-          }
-        }
-      }
-    });
+    //       const inputs = document.querySelectorAll('#otp > *[id]');
+    //       for (let i = 0; i < inputs.length; i++) {
+    //         inputs[i].addEventListener('keydown', function (event) {
+    //           if (event.key === "Backspace") {
+    //             inputs[i].value = '';
+    //             if (i !== 0) inputs[i - 1].focus();
+    //           }
+    //           else {
+    //             if (i === inputs.length - 1 && inputs[i].value !== '') { return true; }
+    //             else if (event.keyCode > 47 && event.keyCode < 58) {
+    //               inputs[i].value = event.key;
+    //               if (i !== inputs.length - 1) inputs[i + 1].focus(); event.preventDefault();
+    //             }
+    //             else if (event.keyCode > 64 && event.keyCode < 91) {
+    //               inputs[i].value = String.fromCharCode(event.keyCode)
+    //                 ; if (i !== inputs.length - 1) inputs[i + 1].focus(); event.preventDefault();
+    //             }
+    //           }
+    //         });
+    //       }
+    //     }
+    //   }
+    // });
 
 
     $('.desk-main_home-owl-car').owlCarousel({
