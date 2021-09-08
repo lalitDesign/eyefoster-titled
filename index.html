@@ -994,7 +994,7 @@
           </div>
           <button type="submit" id="reg_btn" class="btn btn-block mt-3 btn-block" style="padding: 1rem 0;
               font-weight: 800; background-color: #3C589C; color: #fff; font-size: 1.2rem;">Proceed</button>
-          <p class="my-4" style="border-radius: 50%; color: black; margin-top: 1.5rem;">OR</p>
+          <p class="my-4" style="border-radius: 50%; color: black; margin-top: 2rem; font-size: 1.5rem!important;">OR</p>
           <button type="button" id="mob_sigin_btn" class="btn btn-dark btn-block mt-1 btn-block" style="padding: 1rem 0;
               font-weight: 800; font-size: 1.2rem;">Request an OTP</button>
           <div class="sigin_bdr d-flex mt-3">
@@ -2554,34 +2554,34 @@
 
 
     //LOGIN OTP EXTRA CODE
-    // var app = new Vue({
-    //   el: '#app',
-    //   methods: {
-    //     inputenter(id) {
+    var app = new Vue({
+      el: '#app',
+      methods: {
+        inputenter(id) {
 
-    //       const inputs = document.querySelectorAll('#otp > *[id]');
-    //       for (let i = 0; i < inputs.length; i++) {
-    //         inputs[i].addEventListener('keydown', function (event) {
-    //           if (event.key === "Backspace") {
-    //             inputs[i].value = '';
-    //             if (i !== 0) inputs[i - 1].focus();
-    //           }
-    //           else {
-    //             if (i === inputs.length - 1 && inputs[i].value !== '') { return true; }
-    //             else if (event.keyCode > 47 && event.keyCode < 58) {
-    //               inputs[i].value = event.key;
-    //               if (i !== inputs.length - 1) inputs[i + 1].focus(); event.preventDefault();
-    //             }
-    //             else if (event.keyCode > 64 && event.keyCode < 91) {
-    //               inputs[i].value = String.fromCharCode(event.keyCode)
-    //               ; if (i !== inputs.length - 1) inputs[i + 1].focus(); event.preventDefault();
-    //             }
-    //           }
-    //         });
-    //       }
-    //     }
-    //   }
-    // });
+          const inputs = document.querySelectorAll('#otp > *[id]');
+          for (let i = 0; i < inputs.length; i++) {
+            inputs[i].addEventListener('keydown', function (event) {
+              if (event.key === "Backspace") {
+                inputs[i].value = '';
+                if (i !== 0) inputs[i - 1].focus();
+              }
+              else {
+                if (i === inputs.length - 1 && inputs[i].value !== '') { return true; }
+                else if (event.keyCode > 47 && event.keyCode < 58) {
+                  inputs[i].value = event.key;
+                  if (i !== inputs.length - 1) inputs[i + 1].focus(); event.preventDefault();
+                }
+                else if (event.keyCode > 64 && event.keyCode < 91) {
+                  inputs[i].value = String.fromCharCode(event.keyCode)
+                    ; if (i !== inputs.length - 1) inputs[i + 1].focus(); event.preventDefault();
+                }
+              }
+            });
+          }
+        }
+      }
+    });
 
 
     $('.desk-main_home-owl-car').owlCarousel({
