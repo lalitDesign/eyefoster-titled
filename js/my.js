@@ -368,7 +368,7 @@ $(document).ready(function () {
 $(document).ready(function () {
   $('.mob_forget_change').click(function () {
     $('.mob_forget_frm').css("left", "-115%");
-    $('mob_sigin_frm').css("left", "0");
+    $('.mob_sigin_frm').css("left", "0");
   });
 });
 
