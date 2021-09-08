@@ -246,29 +246,35 @@ $(document).ready(function () {
 
 //-------------------------MOBILE Login Popup--------------------------
 
-$(document).ready(function () {
-  $('#mob_click_reg').click(function () {
-    $('.mob_fir_frm').css("bottom", "0");
-    $('html').css("position", "fixed");
-    // $('.fir_frm').css("display", "block");
-  });
-
-  $('#mob_click_reg').click(function () {
-    $('#mob_show_reg').css("bottom", "0");
-    // $('#show_reg').css("display", "block");
-  });
-});
+// $(document).ready(function () {
+//   $('#mob_click_reg').click(function () {
+//     $('.mob_fir_frm').css("bottom", "0");
+//     $('html').css("position", "fixed");
+//     // $('.fir_frm').css("display", "block");
+//   });
 
 $(document).ready(function () {
-  $('#mob_reg_can').click(function () {
-    $('.mob_fir_frm').css("bottom", "-115%");
-    $('html').css("position", "static");
-  });
+     $('#mob_click_reg').click(function () {
+       $('.mob_fir_frm').css("bottom", "0");
+      });
+     });
 
-  $('#mob_reg_can').click(function () {
-    $('#mob_show_reg').css("bottom", "-115%");
-  });
-});
+//   $('#mob_click_reg').click(function () {
+//     $('#mob_show_reg').css("bottom", "0");
+//     // $('#show_reg').css("display", "block");
+//   });
+// });
+
+// $(document).ready(function () {
+//   $('#mob_reg_can').click(function () {
+//     $('.mob_fir_frm').css("bottom", "-115%");
+//     $('html').css("position", "static");
+//   });
+
+//   $('#mob_reg_can').click(function () {
+//     $('#mob_show_reg').css("bottom", "-115%");
+//   });
+// });
 
 // ---------------Mobile first time registration-----------------------
 
