@@ -149,7 +149,7 @@
    }
 
    .mob_fir_inp::placeholder{
-     font-size: 1.2rem;
+     font-size: 1.4rem;
    }
   
    #show_form .sec_frm{
@@ -187,6 +187,10 @@
     height: auto!important;
      padding-bottom: 20rem;
   }
+
+
+  /* MOBILE OTP EXTRA CODE */
+  
 
   
 
@@ -1762,7 +1766,7 @@ background:
 
 
 
- .desk-owl-car .owl-prev { left: 87%; }
+ .desk-owl-car .owl-prev { left: 89%; }
 .desk-owl-car .owl-next { right: 60px; }
 .desk-owl-car .owl-prev i, .desk-owl-car .owl-next i {transform : scale(2,2); } 
 
