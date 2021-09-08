@@ -255,7 +255,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
      $('#mob_click_reg').click(function () {
-       $('.mob_fir_frm').css("bottom", "0");
+       $('.mob_fir_frm').css("left", "0");
       });
      });
 

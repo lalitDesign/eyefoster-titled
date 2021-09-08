@@ -135,7 +135,7 @@
 
 
 .mob_fir_frm , #mob_reg_can{
-  transition: bottom 0.7s linear!important;
+  transition: left 0.7s linear!important;
 }
     .fir_frm , #reg_can{
       transition: top 0.7s linear!important;
