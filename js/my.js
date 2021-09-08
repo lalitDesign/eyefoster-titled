@@ -265,16 +265,15 @@ $(document).ready(function () {
 //   });
 // });
 
-// $(document).ready(function () {
-//   $('#mob_reg_can').click(function () {
-//     $('.mob_fir_frm').css("bottom", "-115%");
-//     $('html').css("position", "static");
-//   });
+ $(document).ready(function () {
+   $('#mob_reg_can').click(function () {
+     $('.mob_fir_frm').css("left", "-115%");
+   });
 
 //   $('#mob_reg_can').click(function () {
 //     $('#mob_show_reg').css("bottom", "-115%");
 //   });
-// });
+ });
 
 // ---------------Mobile first time registration-----------------------
 
