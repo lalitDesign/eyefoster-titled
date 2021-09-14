@@ -3833,4 +3833,31 @@ top: 44%!important;
 
 
 
+
+
+.frame_measurements::after {
+  content: '';
+  height: 71%;
+  position: absolute;
+  top: 25px;
+  right: 30px;
+  border-right: 2px dotted #ddd;
+}
+
+.mobile .owl-theme .owl-nav.disabled+.owl-dots {
+  
+  position: absolute!important;
+  bottom: -41%!important;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@media only screen and (min-width: 1749px) {
+.lense_chose_desk{
+  margin-top: .5rem!important;
+  }
+}
+
+
+
    

@@ -560,7 +560,8 @@
 
           <form action="/action_page.php" class="otp_form">
             <div class="form-group container">
-              <input type="number" class="form-control mx-auto" id="oTp" style="border-radius: 0; width: 60%;">
+              <input type="number" class="form-control mx-auto" id="oTp" style="border-radius: 0; width: 60%; text-align: center;"
+                onKeyDown="if(this.value.length==4) return false;">
             </div>
 
             <button type="button" id="reg_btn" class="btn btn-block mt-3 btn-block" style="padding: 0.7rem 0;
@@ -994,7 +995,8 @@
           </div>
           <button type="submit" id="reg_btn" class="btn btn-block mt-3 btn-block" style="padding: 1rem 0;
               font-weight: 800; background-color: #3C589C; color: #fff; font-size: 1.2rem;">Proceed</button>
-          <p class="my-4" style="border-radius: 50%; color: black; margin-top: 2rem; font-size: 1.5rem!important;">OR</p>
+          <p class="my-4" style="border-radius: 50%; color: black; margin-top: 2rem; font-size: 1.5rem!important;">OR
+          </p>
           <button type="button" id="mob_sigin_btn" class="btn btn-dark btn-block mt-1 btn-block" style="padding: 1rem 0;
               font-weight: 800; font-size: 1.2rem;">Request an OTP</button>
           <div class="sigin_bdr d-flex mt-3">
@@ -1044,7 +1046,8 @@
               style="font-size: 1.4rem; border-radius: 0!important;" id="input4" maxlength="1" />
           </div>
           <div class="rsnd_otp mt-2">
-            <p class="ml-auto" style="font-size: 1.36rem; font-weight: 700; text-align: right; color: #035391;">Resend OTP</p>
+            <p class="ml-auto" style="font-size: 1.36rem; font-weight: 700; text-align: right; color: #035391;">Resend
+              OTP</p>
           </div>
 
           <button type="button" id="reg_btn" class="btn btn-block mt-3 btn-block" style="padding: 1rem 0!important; 

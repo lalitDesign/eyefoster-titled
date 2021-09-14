@@ -1193,13 +1193,13 @@ $(document).ready(function () {
 
 $(document).ready(function(){
   $('.mobile_single_buy_click').click(function(){
-    $('.mobile_single_buy_show').css("display","block");
+    $('.main_mobile_single_buy_show').css("display","block");
   });
 });
 
 $(document).ready(function(){
-  $('.mobile_single_buy_cancel').click(function(){
-    $('.mobile_single_buy_show').css("display","none");
+  $('.main_mobile_single_buy_show, .mobile_single_buy_cancel').click(function(){
+    $('.main_mobile_single_buy_show').css("display","none");
   });
 });
 
@@ -1231,9 +1231,17 @@ $(document).ready(function(){
 });
 
 
+$(document).ready(function(){
+  $('.click_snglpg_clr_click').click(function(){
+    $('.main_show_snglpg_clr_click').css("display", "block");
+  });
+});
 
-
-
+$(document).ready(function(){
+  $('.show1_snglpg_clr_click, .can_snglpg_clr_click').click(function(){
+    $('.main_show_snglpg_clr_click').css("display", "none");
+  });
+});
 
 //----------------------- cart page
 
@@ -1353,14 +1361,31 @@ $(document).ready(function () {
 
 // DESKTOP ADDRESS
 
+// $(document).ready(function () {
+//   $('.address_product_show').hide();
+//   $('.address_product_click').click(function () {
+//     $('.address_product_show').show();
+
+
+//   });
+// });
+
 $(document).ready(function () {
   $('.address_product_show').hide();
+  $('.address_product_click2').hide();
   $('.address_product_click').click(function () {
-    $('.address_product_show').toggle();
-
-
+    $('.address_product_show , .address_product_click2').show();
+    $('.address_product_click').hide();
   });
 });
+$(document).ready(function () {
+  $('.address_product_show').hide();
+  $('.address_product_click2').click(function () {
+    $('.address_product_show , .address_product_click').show();
+    $('.address_product_click2, .address_product_show').hide();
+  });
+});
+
 
 $(document).ready(function () {
   $('.shipping_address2').hide();
