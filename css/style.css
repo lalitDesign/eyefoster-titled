@@ -2758,6 +2758,10 @@ content: "";
   background-color: #035391!important;
 }
 
+.mob-owl-bdy2 table td{
+  vertical-align: middle;
+}
+
 
   /*-------------- Cart mobile------------------------- */
 
