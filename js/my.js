@@ -1198,7 +1198,7 @@ $(document).ready(function(){
 });
 
 $(document).ready(function(){
-  $('.main_mobile_single_buy_show, .mobile_single_buy_cancel').click(function(){
+  $('.mobile_single_buy_cancel').click(function(){
     $('.main_mobile_single_buy_show').css("display","none");
   });
 });
