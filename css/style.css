@@ -1911,6 +1911,137 @@ input,textarea:focus {
   .modal-backdrop{
     height: 0!important;
   }
+
+  .desk_sngl_info_tooltip {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .desk_sngl_info_tooltip .desk_sngl_info_tooltiptext {
+    visibility: hidden;
+    width: 400px;
+    background-color: #fff;
+    color: #000000;
+    text-align: center;
+    border-radius: 0;
+    padding: 0 3rem;
+    padding-top: 1rem;
+    
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: -400px;
+  }
+  
+  .desk_sngl_info_tooltip:hover .desk_sngl_info_tooltiptext {
+    visibility: visible;
+  }
+  .desk_sngl_info_tooltiptext ul li{
+    font-size: .72rem;
+    font-weight: 400;
+    line-height: 1.1rem;
+    text-align: left;
+    margin-bottom: 5px;
+  }
+
+  .info_modal_tooltip, .info_modal_tooltip2, .info_modal_tooltip3, .info_modal_tooltip4, .info_modal_tooltip5 {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .info_modal_tooltip .info_modal_tooltiptext {
+    visibility: hidden;
+    width: 400px;
+    border-radius: 0;
+    padding: 0 3rem;
+    padding-top: 1rem;
+    
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    top: -110px;
+    right: -380px;
+  }
+  
+  .info_modal_tooltip:hover .info_modal_tooltiptext {
+    visibility: visible;
+  }
+
+
+  /* 2 */
+
+  .info_modal_tooltip2 .info_modal_tooltiptext2 {
+    visibility: hidden;
+    width: 400px;
+    border-radius: 0;
+    padding: 0 3rem;
+    padding-top: 1rem;
+    
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    top: -110px;
+    right: -380px;
+  }
+
+  .info_modal_tooltip2:hover .info_modal_tooltiptext2 {
+    visibility: visible;
+  }
+
+  /* 3 */
+  .info_modal_tooltip3 .info_modal_tooltiptext3 {
+    visibility: hidden;
+    width: 400px;
+    border-radius: 0;
+    padding: 0 3rem;
+    padding-top: 1rem;
+    
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    top: -110px;
+    right: -380px;
+  }
+  .info_modal_tooltip3:hover .info_modal_tooltiptext3 {
+    visibility: visible;
+  }
+
+  /* 4 */
+  .info_modal_tooltip4 .info_modal_tooltiptext4 {
+    visibility: hidden;
+    width: 400px;
+    border-radius: 0;
+    padding: 0 3rem;
+    padding-top: 1rem;
+    
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    top: -110px;
+    right: -380px;
+  }
+  .info_modal_tooltip4:hover .info_modal_tooltiptext4 {
+    visibility: visible;
+  }
+
+  /* 5 */
+  .info_modal_tooltip5 .info_modal_tooltiptext5 {
+    visibility: hidden;
+    width: 400px;
+    border-radius: 0;
+    padding: 0 3rem;
+    padding-top: 1rem;
+    
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    top: -146px;
+    right: -380px;
+  }
+  .info_modal_tooltip5:hover .info_modal_tooltiptext5 {
+    visibility: visible;
+  }
 /* CART PAGE */
   
 

@@ -1067,47 +1067,47 @@ $(document).ready(function () {
 
 });
 
-// $(document).ready(function () {
-//   $('.click_1caro_single_prd').click(function () {
-//     $('.show_1caro_single_prd').css("display", "block");
-//     $('.show_2caro_single_prd').css("display", "none");
-//     $('.show_3caro_single_prd').css("display", "none");
-//     $('.show_4caro_single_prd').css("display", "none");
-//     $('.show_5caro_single_prd').css("display", "none");
-//   });
+$(document).ready(function () {
+  $('.click_1caro_single_prd').click(function () {
+    $('.show_1caro_single_prd').css("display", "block");
+    $('.show_2caro_single_prd').css("display", "none");
+    $('.show_3caro_single_prd').css("display", "none");
+    $('.show_4caro_single_prd').css("display", "none");
+    $('.show_5caro_single_prd').css("display", "none");
+  });
 
-//   $('.click_2caro_single_prd').click(function () {
-//     $('.show_2caro_single_prd').css("display", "block");
-//     $('.show_1caro_single_prd').css("display", "none");
-//     $('.show_3caro_single_prd').css("display", "none");
-//     $('.show_4caro_single_prd').css("display", "none");
-//     $('.show_5caro_single_prd').css("display", "none");
-//   });
+  $('.click_2caro_single_prd').click(function () {
+    $('.show_2caro_single_prd').css("display", "block");
+    $('.show_1caro_single_prd').css("display", "none");
+    $('.show_3caro_single_prd').css("display", "none");
+    $('.show_4caro_single_prd').css("display", "none");
+    $('.show_5caro_single_prd').css("display", "none");
+  });
 
-//   $('.click_3caro_single_prd').click(function () {
-//     $('.show_3caro_single_prd').css("display", "block");
-//     $('.show_2caro_single_prd').css("display", "none");
-//     $('.show_1caro_single_prd').css("display", "none");
-//     $('.show_4caro_single_prd').css("display", "none");
-//     $('.show_5caro_single_prd').css("display", "none");
-//   });
+  $('.click_3caro_single_prd').click(function () {
+    $('.show_3caro_single_prd').css("display", "block");
+    $('.show_2caro_single_prd').css("display", "none");
+    $('.show_1caro_single_prd').css("display", "none");
+    $('.show_4caro_single_prd').css("display", "none");
+    $('.show_5caro_single_prd').css("display", "none");
+  });
 
-//   $('.click_4caro_single_prd').click(function () {
-//     $('.show_4caro_single_prd').css("display", "block");
-//     $('.show_2caro_single_prd').css("display", "none");
-//     $('.show_3caro_single_prd').css("display", "none");
-//     $('.show_1caro_single_prd').css("display", "none");
-//     $('.show_5caro_single_prd').css("display", "none");
-//   });
+  $('.click_4caro_single_prd').click(function () {
+    $('.show_4caro_single_prd').css("display", "block");
+    $('.show_2caro_single_prd').css("display", "none");
+    $('.show_3caro_single_prd').css("display", "none");
+    $('.show_1caro_single_prd').css("display", "none");
+    $('.show_5caro_single_prd').css("display", "none");
+  });
 
-//   $('.click_5caro_single_prd').click(function () {
-//     $('.show_5caro_single_prd').css("display", "block");
-//     $('.show_2caro_single_prd').css("display", "none");
-//     $('.show_3caro_single_prd').css("display", "none");
-//     $('.show_1caro_single_prd').css("display", "none");
-//     $('.show_4caro_single_prd').css("display", "none");
-//   });
-// });
+  $('.click_5caro_single_prd').click(function () {
+    $('.show_5caro_single_prd').css("display", "block");
+    $('.show_2caro_single_prd').css("display", "none");
+    $('.show_3caro_single_prd').css("display", "none");
+    $('.show_1caro_single_prd').css("display", "none");
+    $('.show_4caro_single_prd').css("display", "none");
+  });
+});
 
 $(document).ready(function () {
   $('[data-toggle="tooltip"]').tooltip();
@@ -1252,7 +1252,25 @@ $(document).ready(function(){
   });
 });
 
-//----------------------- cart page
+// $(document).ready(function(){
+//   $('.clk_mob_lens_popup1').click(function(){
+//     $('.show_mob_lens_popup1').css("display", "block");
+//   });
+// });
+
+$(document).ready(function(){
+  $('.clk_mob_lens_popup').click(function(){
+    $(this).parents(".mob-owl-bdy2").next().css("display", "block");
+  });
+});
+
+$(document).ready(function(){
+  $('.can2_mob_lens_popup, .can_mob_lens_popup').click(function(){
+    $(this).parents(".show_mob_lens_popup").css("display", "none");
+  });
+});
+
+//----------------------- cart page   
 
 $(document).ready(function () {
   $('#cart_show_more').click(function () {
