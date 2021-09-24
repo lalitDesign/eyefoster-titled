@@ -2245,7 +2245,7 @@ input,textarea:focus {
 
   /* COUPONS CODE MODAL CSS */
   .modal.show .modal-dialog {
-    min-width: 43%!important;
+    min-width: 32%!important;
     float: right!important;
 }
 
