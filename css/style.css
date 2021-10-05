@@ -2325,6 +2325,244 @@ input .form-control .desk_coupon{
 
 
 
+
+
+
+
+/*-----------------------------------------STATICS PAGES CODE-------------------------------------------------- */
+
+.about_third_img_1{
+  width: 100%;
+  height: 35vh;
+  background-image: url(../images/who-are-we-bg2-tp-1536x249.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  padding-top: 6rem;
+}
+.about_third_img_2{
+  width: 100%;
+  height: 60vh;
+  background-image: url(../images/who-are-we-bg2-tp-700x292.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  transform: rotate(180deg);
+}
+.about_third_img_child1 , .about_third_img_child2{
+  display: flex;
+}
+.about_img_con{
+  margin-top: -18rem;
+}
+
+@media (min-width: 1800px) {
+  .about_third_img_1{
+    height: 28vh;
+   
+  }
+  .about_third_img_2{
+    height: 32vh;
+  }
+  .about_img_con{
+    margin-top: -20rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .why_shop_section{
+    padding-bottom: 2rem;
+  }
+  .about_third_img_1, .about_third_img_2{
+    background: none;
+    height: auto;
+  }
+   .about_third_img_1{
+    padding-top: 3rem;
+  }
+  .about_third_img_2{
+    margin-top: 5rem;
+  }
+  .about_img_con{
+    margin-top: 0;
+  }
+.about_third_img_child1{
+  display: block!important;
+}
+.about_third_img_child2{
+  display: block!important;
+  margin-top: 8rem;
+
+}
+
+.our_cool_vision_sec{
+  text-align: center;
+}
+}
+
+
+/* ---------GIFT OF VISION SECTION--------------------- */
+
+.gift_of_vision_form input::placeholder{
+  font-size: .85rem;
+}
+.eye_test_camp_gallery_parent{
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+}
+.eye_test_camp_gallery_big{
+  width: 39.50%;
+}
+.eye_test_camp_gallery{
+  width: 19.50%;
+}
+@media (max-width: 1024px) {
+  .eye_test_camp_last_main{
+    margin-top: 2rem!important;
+  }
+  .eye_test_camp_last_main .row{
+    --bs-gutter-x: 0!important;
+  }
+.gift_of_first_sec h1{
+  font-size: 20px!important;
+}
+.gift_of_vision_form_head{
+  text-align: center;
+}
+.eye_test_camp_gallery_parent{
+  display: block;
+}
+.eye_test_camp_gallery_big{
+  width: 100%!important;
+}
+.eye_test_camp_gallery{
+  width: 100%!important;
+}
+.eye_test_camp_gallery .img-fluid{
+  width: 100%!important;
+}
+.eye_test_camp_gallery_big .img-fluid{
+  width: 100%!important;
+}
+.eye_test_camp_last_left,.eye_test_camp_last_right{
+  text-align: center;
+}
+.eye_test_camp_last_left h5{
+  margin-top: 2rem!important;
+}
+}
+
+/* ---------EYE TEST CAMP--------------------- */
+
+
+/* ---------COLLECTIONS-----------------   */
+
+.collection_btn{
+  background: transparent!important;
+  border: 1px solid #DADADA!important;
+  font-size: 1.4rem!important;
+  padding: 0 20px 0 15px!important;
+  line-height: 55px!important;
+  color: #7a7a7a!important;
+  margin-right: 39px;
+}
+.collection_btn1{
+  background: #035391!important;
+  border: 1px solid #035391!important;
+  font-size: 1.4rem!important;
+  padding: 0 20px 0 15px!important;
+  line-height: 55px!important;
+  color: #FFFFFF!important;
+  margin-right: 39px;
+}
+
+.green_strip {
+  z-index: 3;
+  width: 168px;
+  background: #00a651;
+  text-align: center;
+  position: absolute;
+  top: 16px;
+  left: 25px;
+  color: #fff;
+  line-height: 37px;
+  font-size: .9rem;
+}
+.green_strip:after, .green_strip:before {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  content: '';
+  position: absolute;
+  right: -20px;
+}
+.green_strip::before {
+  border-width: 21px 0 0 21px;
+  border-color: transparent transparent transparent #00a651;
+  top: 16px;
+}
+.green_strip::after {
+  border-width: 21px 21px 0 0;
+  border-color: #00a651 transparent transparent;
+  top: 0;
+}
+.collection_gallery .col-12{
+  position: relative;
+}
+
+
+@media (max-width: 1024px) {
+  .collection_btn_parent{
+    display: flex!important;
+    flex-direction: column!important;
+    justify-content: center!important;
+    width: 100%!important;
+  }
+.collection_btn1{
+ margin-right: 0!important;
+ width: 80%;
+ margin: 1rem auto!important;
+}
+.collection_btn{
+  margin-right: 0!important;
+  margin: 1rem auto!important;
+  width: 80%;
+ }
+}
+
+@media (max-width: 1024px) {
+.customer_review_head_and{
+  display: none;
+}
+}
+
+.eyefoster_cash_table tr td{
+  border: 1px solid #CCC;
+  text-align: center;
+}
+
+.help_header_icon{
+  background: #D9DDE0;
+}
+
+.help_dropdown_left_child{
+  display: flex;
+  flex-direction: column;
+}
+
+.help_dropdown_left_child p{
+font-size: .8rem;
+font-weight: 400;
+color: black;
+border: 1px solid #dadada;
+margin-bottom: 0;
+padding: .8rem 0;
+padding-left: 1.5rem;
+background: #fff;
+}
+.help_dropdown_left_child p img{
+ float: right;
+ margin-right: .8rem;
+  }
   
 
 
